@@ -32,10 +32,12 @@
 
 - **EDA와 모델이 끊기지 않게**: 팀원은 EDA 결과마다 "그래서 모델에서 무엇을 바꿔야 하나"를 한 줄씩 붙인다(예: 0 비율이 주변 밀도에 따라 크게 다르다 → 0인가 분류에 밀도가 중요). 조장은 그 줄을 읽고 7절 실험을 고른다.
 
-## 같이 작업하는 방법 (git 명령 없이)
-1. **각자 자기 노트북에서 작업한다.** 조장은 `work/조장/`, 팀원은 `work/팀원/`에 둔다. 제출용 노트북은 한 사람만 고친다. 노트북은 두 사람이 같은 파일을 고치면 합치기가 어렵다.
-2. **올리기는 웹에서**: 레포 페이지 → Add file → Upload files → 파일 끌어 놓기 → 아래에서 **"Create a new branch for this commit and start a pull request"** 선택 → Propose changes → Create pull request.
-3. main에는 PR로만 합친다. 직접 main에 올리지 않는다.
+## 같이 작업하는 방법
+1. **각자 자기 폴더에서만 작업한다.** 조장은 `work/조장/`, 팀원은 `work/팀원/`. 다른 사람 폴더와 루트 파일(README, 템플릿, 데이터)은 고치지 않는다. 노트북은 두 사람이 같은 파일을 고치면 합치기가 어렵다.
+2. **자기 폴더 작업은 main에 바로 올려도 된다** (2026-10-28 정함, 폴더를 나눠 뒀기 때문).
+   - 웹: 레포 페이지 → 자기 폴더로 들어가기 → Add file → Upload files → 아래에서 "Commit directly to the main branch" → Commit changes.
+   - GitHub Desktop: 올리기 전에 **Pull origin**으로 최신을 받고 → 커밋 → Push origin.
+3. 제출용 노트북(루트)은 조장만 고친다.
 
 ## 규칙 (설명회 기준)
 - 제공된 데이터만 쓴다(추가 데이터 금지).
