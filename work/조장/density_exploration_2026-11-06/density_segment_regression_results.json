@@ -1,0 +1,393 @@
+{
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z"
+  ],
+  "parameters": {
+    "learning_rate": 0.08,
+    "max_iter": 150,
+    "max_leaf_nodes": 31,
+    "random_state": 42
+  },
+  "cuts": [
+    1.3647506592477927,
+    2.408565397956945
+  ],
+  "cut_definition": "mean +/- 2 population standard deviations of log-density among training SFR=0 galaxies",
+  "boundary_rule": "low: density <= lower; middle: lower < density <= upper; high: density > upper",
+  "training_rows": 166749,
+  "validation_rows": 41688,
+  "group_statistics": [
+    {
+      "partition": "train",
+      "group": 0,
+      "n": 138928,
+      "zeros": 435,
+      "positive": 138493,
+      "zero_fraction": 0.0031311182770931705,
+      "mean_SFR": 3.845827148044504,
+      "max_SFR": 328.931274
+    },
+    {
+      "partition": "train",
+      "group": 1,
+      "n": 27517,
+      "zeros": 13702,
+      "positive": 13815,
+      "zero_fraction": 0.49794672384344224,
+      "mean_SFR": 2.998467959868889,
+      "max_SFR": 2145.3728
+    },
+    {
+      "partition": "train",
+      "group": 2,
+      "n": 304,
+      "zeros": 301,
+      "positive": 3,
+      "zero_fraction": 0.9901315789473685,
+      "mean_SFR": 0.39222456855263155,
+      "max_SFR": 63.2745438
+    },
+    {
+      "partition": "val",
+      "group": 0,
+      "n": 34664,
+      "zeros": 115,
+      "positive": 34549,
+      "zero_fraction": 0.0033175628894530347,
+      "mean_SFR": 3.8167160945309164,
+      "max_SFR": 168.585266
+    },
+    {
+      "partition": "val",
+      "group": 1,
+      "n": 6948,
+      "zeros": 3420,
+      "positive": 3528,
+      "zero_fraction": 0.49222797927461137,
+      "mean_SFR": 3.4566463351275765,
+      "max_SFR": 884.106812
+    },
+    {
+      "partition": "val",
+      "group": 2,
+      "n": 76,
+      "zeros": 75,
+      "positive": 1,
+      "zero_fraction": 0.9868421052631579,
+      "mean_SFR": 0.7568222855263158,
+      "max_SFR": 57.5184937
+    }
+  ],
+  "validation_metrics": [
+    {
+      "population": "all",
+      "model": "pooled_HGB",
+      "n": 41688,
+      "RMSE": 9.513443932168478,
+      "MAE": 1.2956784312907579
+    },
+    {
+      "population": "all",
+      "model": "three_segment_HGB",
+      "n": 41688,
+      "RMSE": 8.61224530902243,
+      "MAE": 1.205991666389312
+    },
+    {
+      "population": "all",
+      "model": "existing_two_stage",
+      "n": 41688,
+      "RMSE": 9.434211734374387,
+      "MAE": 1.2395022571702299
+    },
+    {
+      "population": "density_low",
+      "model": "pooled_HGB",
+      "n": 34664,
+      "RMSE": 2.6959829680199094,
+      "MAE": 0.9662237319424519
+    },
+    {
+      "population": "density_low",
+      "model": "three_segment_HGB",
+      "n": 34664,
+      "RMSE": 2.7078126334531745,
+      "MAE": 0.9284664930910407
+    },
+    {
+      "population": "density_low",
+      "model": "existing_two_stage",
+      "n": 34664,
+      "RMSE": 2.8334929839272167,
+      "MAE": 0.9703118971074414
+    },
+    {
+      "population": "density_middle",
+      "model": "pooled_HGB",
+      "n": 6948,
+      "RMSE": 22.509717099402398,
+      "MAE": 2.941049920275297
+    },
+    {
+      "population": "density_middle",
+      "model": "three_segment_HGB",
+      "n": 6948,
+      "RMSE": 20.199936917383795,
+      "MAE": 2.588724019869142
+    },
+    {
+      "population": "density_middle",
+      "model": "existing_two_stage",
+      "n": 6948,
+      "RMSE": 22.222428913588555,
+      "MAE": 2.591099489441886
+    },
+    {
+      "population": "density_high",
+      "model": "pooled_HGB",
+      "n": 76,
+      "RMSE": 2.7746591583592735,
+      "MAE": 1.1401072832001442
+    },
+    {
+      "population": "density_high",
+      "model": "three_segment_HGB",
+      "n": 76,
+      "RMSE": 6.093274942105598,
+      "MAE": 1.3758366036710497
+    },
+    {
+      "population": "density_high",
+      "model": "existing_two_stage",
+      "n": 76,
+      "RMSE": 3.5022530286333238,
+      "MAE": 0.45420056497334693
+    },
+    {
+      "population": "SFR_zero",
+      "model": "pooled_HGB",
+      "n": 3610,
+      "RMSE": 3.550815491012652,
+      "MAE": 1.2142971218971765
+    },
+    {
+      "population": "SFR_zero",
+      "model": "three_segment_HGB",
+      "n": 3610,
+      "RMSE": 2.2591757076823065,
+      "MAE": 0.9400292655886006
+    },
+    {
+      "population": "SFR_zero",
+      "model": "existing_two_stage",
+      "n": 3610,
+      "RMSE": 2.9126059690021955,
+      "MAE": 0.5538125689825202
+    },
+    {
+      "population": "SFR_positive",
+      "model": "pooled_HGB",
+      "n": 38078,
+      "RMSE": 9.893973036332325,
+      "MAE": 1.303393818835031
+    },
+    {
+      "population": "SFR_positive",
+      "model": "three_segment_HGB",
+      "n": 38078,
+      "RMSE": 8.98435772736233,
+      "MAE": 1.2312063380341085
+    },
+    {
+      "population": "SFR_positive",
+      "model": "existing_two_stage",
+      "n": 38078,
+      "RMSE": 9.83047221483965,
+      "MAE": 1.3045093419529818
+    },
+    {
+      "population": "SFR_top10pct",
+      "model": "pooled_HGB",
+      "n": 4169,
+      "RMSE": 29.403706346794365,
+      "MAE": 6.582616012400708
+    },
+    {
+      "population": "SFR_top10pct",
+      "model": "three_segment_HGB",
+      "n": 4169,
+      "RMSE": 26.435122094209177,
+      "MAE": 6.1211936083363305
+    },
+    {
+      "population": "SFR_top10pct",
+      "model": "existing_two_stage",
+      "n": 4169,
+      "RMSE": 29.149072105805,
+      "MAE": 6.561144076783445
+    }
+  ],
+  "validation_delta_RMSE_and_paired_bootstrap_95CI_vs_pooled": {
+    "all": [
+      -0.9011986231460476,
+      -1.495820278601721,
+      -0.3922865958944161
+    ],
+    "density_low": [
+      0.011829665433265024,
+      -0.14686916536050043,
+      0.20751143423064577
+    ],
+    "density_middle": [
+      -2.309780182018603,
+      -3.804126268494425,
+      -1.0221331217404375
+    ],
+    "density_high": [
+      3.3186157837463246,
+      -0.6391338869240976,
+      6.7595573492334005
+    ],
+    "SFR_zero": [
+      -1.2916397833303455,
+      -2.814771817843128,
+      0.08383352277557898
+    ],
+    "SFR_positive": [
+      -0.909615308969995,
+      -1.4528817963678442,
+      -0.3336842211913831
+    ],
+    "SFR_top10pct": [
+      -2.968584252585188,
+      -4.672177175258275,
+      -1.184401886392516
+    ]
+  },
+  "validation_delta_RMSE_and_paired_bootstrap_95CI_vs_existing_two_stage": [
+    -0.8219664253519561,
+    -1.5017004945619563,
+    -0.20580665313326651
+  ],
+  "validation_iterations": {
+    "pooled": 37,
+    "segments": [
+      42,
+      26,
+      150
+    ]
+  },
+  "cv_folds": [
+    {
+      "fold": 1,
+      "cut_low": 1.3686285819967692,
+      "cut_high": 2.4053463153078583,
+      "pooled_RMSE": 14.44289575281213,
+      "segmented_RMSE": 14.093411404848405,
+      "delta_RMSE": -0.34948434796372396,
+      "heldout_max_SFR": 2145.3728,
+      "iterations": {
+        "pooled": 84,
+        "segments": [
+          66,
+          20,
+          150
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "cut_low": 1.3644475973191912,
+      "cut_high": 2.408401811714598,
+      "pooled_RMSE": 10.3247392975442,
+      "segmented_RMSE": 10.275119217225503,
+      "delta_RMSE": -0.04962008031869658,
+      "heldout_max_SFR": 1413.67932,
+      "iterations": {
+        "pooled": 35,
+        "segments": [
+          48,
+          48,
+          150
+        ]
+      }
+    },
+    {
+      "fold": 3,
+      "cut_low": 1.3621632592538502,
+      "cut_high": 2.4106140806649963,
+      "pooled_RMSE": 6.006877690077696,
+      "segmented_RMSE": 5.873663947059255,
+      "delta_RMSE": -0.13321374301844102,
+      "heldout_max_SFR": 564.127625,
+      "iterations": {
+        "pooled": 41,
+        "segments": [
+          58,
+          23,
+          150
+        ]
+      }
+    },
+    {
+      "fold": 4,
+      "cut_low": 1.3624707553731326,
+      "cut_high": 2.4086613641532106,
+      "pooled_RMSE": 5.398598487498288,
+      "segmented_RMSE": 6.513041186682492,
+      "delta_RMSE": 1.1144426991842042,
+      "heldout_max_SFR": 463.293274,
+      "iterations": {
+        "pooled": 47,
+        "segments": [
+          57,
+          26,
+          150
+        ]
+      }
+    },
+    {
+      "fold": 5,
+      "cut_low": 1.3660918026774902,
+      "cut_high": 2.4097481636405145,
+      "pooled_RMSE": 5.450839557481615,
+      "segmented_RMSE": 5.583888725702381,
+      "delta_RMSE": 0.13304916822076596,
+      "heldout_max_SFR": 334.249207,
+      "iterations": {
+        "pooled": 30,
+        "segments": [
+          48,
+          28,
+          150
+        ]
+      }
+    }
+  ],
+  "cv_pooled_OOF_RMSE": 9.056910566832345,
+  "cv_segmented_OOF_RMSE": 9.080785258715684,
+  "cv_fold_mean_delta": 0.14303473922082172,
+  "cv_fold_delta_sd": 0.5700301068761229,
+  "cv_pooled_OOF_MAE": 1.2387616294712598,
+  "cv_segmented_OOF_MAE": 1.1882882564725419,
+  "limitations": [
+    "Exploratory cut rule suggested after inspecting training EDA; CV is not an independent confirmation of the rule selection.",
+    "Single existing validation split; row-wise bootstrap assumes independent galaxies and omits model-fit uncertainty.",
+    "No hyperparameter tuning; default early_stopping=auto may differ with segment sample size.",
+    "Separate regression significance is not tested; predictive error is compared directly.",
+    "SFR=0 density distribution does not directly identify P(SFR=0 | density)."
+  ],
+  "elapsed_seconds": 5.909051179885864
+}

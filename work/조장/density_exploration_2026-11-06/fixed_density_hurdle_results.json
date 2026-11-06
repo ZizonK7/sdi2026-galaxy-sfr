@@ -1,0 +1,594 @@
+{
+  "experiment": "Frozen density-only zero probability times shared positive-only regression, middle segment only",
+  "validation": {
+    "cuts": [
+      1.3647506592477927,
+      2.408565397956945
+    ],
+    "gate_fit": {
+      "zero_prior": 0.49794672384344224,
+      "zero_truncated_normal_loc": 1.8992305093831392,
+      "zero_truncated_normal_scale": 0.2297785109005746,
+      "positive_kde_bandwidth": 0.02260450582405995,
+      "positive_kde_support_normalization": 0.9657234070682624,
+      "training_zeros": 13702,
+      "training_positive": 13815
+    },
+    "positive_regression_iterations": 24,
+    "positive_predictions_clipped": 0,
+    "middle_train_n": 27517,
+    "middle_test_n": 6948,
+    "gate_classification_metrics": {
+      "fixed_gaussian_density_gate": {
+        "log_loss": 0.36566608526704086,
+        "Brier": 0.10938307371811942,
+        "ROC_AUC": 0.9139866034132953,
+        "mean_predicted_zero_probability": 0.49309548322160696,
+        "observed_zero_fraction": 0.49222797927461137
+      },
+      "learned_density_only_gate": {
+        "log_loss": 0.3593961203136311,
+        "Brier": 0.10679716711385058,
+        "ROC_AUC": 0.9127480158730158,
+        "mean_predicted_zero_probability": 0.4948945365551273,
+        "observed_zero_fraction": 0.49222797927461137
+      },
+      "learned_all_features_gate": {
+        "log_loss": 0.23924835973171463,
+        "Brier": 0.07041316621693333,
+        "ROC_AUC": 0.9646590020023603,
+        "mean_predicted_zero_probability": 0.49335166540191666,
+        "observed_zero_fraction": 0.49222797927461137
+      }
+    }
+  },
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z"
+  ],
+  "parameters": {
+    "learning_rate": 0.08,
+    "max_iter": 150,
+    "max_leaf_nodes": 31,
+    "random_state": 42
+  },
+  "validation_metrics": [
+    {
+      "population": "all",
+      "method": "direct_segment_regression",
+      "n": 41688,
+      "RMSE": 8.61224530902243,
+      "MAE": 1.205991666389312,
+      "mean_prediction": 3.666387506489225,
+      "mean_true_SFR": 3.751126077791837
+    },
+    {
+      "population": "all",
+      "method": "fixed_gaussian_density_gate",
+      "n": 41688,
+      "RMSE": 9.207382917026033,
+      "MAE": 1.1978152773426964,
+      "mean_prediction": 3.5830847025618557,
+      "mean_true_SFR": 3.751126077791837
+    },
+    {
+      "population": "all",
+      "method": "learned_density_only_gate",
+      "n": 41688,
+      "RMSE": 9.200692537853376,
+      "MAE": 1.1925631136784822,
+      "mean_prediction": 3.583492234304652,
+      "mean_true_SFR": 3.751126077791837
+    },
+    {
+      "population": "all",
+      "method": "learned_all_features_gate",
+      "n": 41688,
+      "RMSE": 8.529326593466882,
+      "MAE": 1.1676501897691363,
+      "mean_prediction": 3.6675730441810392,
+      "mean_true_SFR": 3.751126077791837
+    },
+    {
+      "population": "middle",
+      "method": "direct_segment_regression",
+      "n": 6948,
+      "RMSE": 20.199936917383795,
+      "MAE": 2.588724019869142,
+      "mean_prediction": 3.023967123408804,
+      "mean_true_SFR": 3.4566463351275765
+    },
+    {
+      "population": "middle",
+      "method": "fixed_gaussian_density_gate",
+      "n": 6948,
+      "RMSE": 21.717924324715487,
+      "MAE": 2.5396656855894495,
+      "mean_prediction": 2.5241502998445866,
+      "mean_true_SFR": 3.4566463351275765
+    },
+    {
+      "population": "middle",
+      "method": "learned_density_only_gate",
+      "n": 6948,
+      "RMSE": 21.70090539462067,
+      "MAE": 2.5081527036041638,
+      "mean_prediction": 2.5265954903013665,
+      "mean_true_SFR": 3.4566463351275765
+    },
+    {
+      "population": "middle",
+      "method": "learned_all_features_gate",
+      "n": 6948,
+      "RMSE": 19.987728953478932,
+      "MAE": 2.358675160148088,
+      "mean_prediction": 3.03108034955969,
+      "mean_true_SFR": 3.4566463351275765
+    },
+    {
+      "population": "middle_zero",
+      "method": "direct_segment_regression",
+      "n": 3420,
+      "RMSE": 2.256018927259005,
+      "MAE": 0.9071092187358687,
+      "mean_prediction": 0.9045574339374586,
+      "mean_true_SFR": 0.0
+    },
+    {
+      "population": "middle_zero",
+      "method": "fixed_gaussian_density_gate",
+      "n": 3420,
+      "RMSE": 1.5787235204345595,
+      "MAE": 0.7019768999200202,
+      "mean_prediction": 0.7019768999200202,
+      "mean_true_SFR": 0.0
+    },
+    {
+      "population": "middle_zero",
+      "method": "learned_density_only_gate",
+      "n": 3420,
+      "RMSE": 1.4615848803052054,
+      "MAE": 0.6389453280402774,
+      "mean_prediction": 0.6389453280402774,
+      "mean_true_SFR": 0.0
+    },
+    {
+      "population": "middle_zero",
+      "method": "learned_all_features_gate",
+      "n": 3420,
+      "RMSE": 1.4743810480852457,
+      "MAE": 0.4831167750214078,
+      "mean_prediction": 0.4831167750214078,
+      "mean_true_SFR": 0.0
+    },
+    {
+      "population": "middle_positive",
+      "method": "direct_segment_regression",
+      "n": 3528,
+      "RMSE": 28.260398862672353,
+      "MAE": 4.218860816886091,
+      "mean_prediction": 5.078496924426944,
+      "mean_true_SFR": 6.807476966118594
+    },
+    {
+      "population": "middle_positive",
+      "method": "fixed_gaussian_density_gate",
+      "n": 3528,
+      "RMSE": 30.438159921248655,
+      "MAE": 4.321098692105733,
+      "mean_prediction": 4.290542881404114,
+      "mean_true_SFR": 6.807476966118594
+    },
+    {
+      "population": "middle_positive",
+      "method": "learned_density_only_gate",
+      "n": 3528,
+      "RMSE": 30.41992030612026,
+      "MAE": 4.3201394452222175,
+      "mean_prediction": 4.3564604435136465,
+      "mean_true_SFR": 6.807476966118594
+    },
+    {
+      "population": "middle_positive",
+      "method": "learned_all_features_gate",
+      "n": 3528,
+      "RMSE": 28.012166750269987,
+      "MAE": 4.17681849266885,
+      "mean_prediction": 5.501045039163126,
+      "mean_true_SFR": 6.807476966118594
+    },
+    {
+      "population": "middle_SFR_gt100",
+      "method": "direct_segment_regression",
+      "n": 36,
+      "RMSE": 264.2839893062504,
+      "MAE": 188.66438208066145,
+      "mean_prediction": 98.49563898100645,
+      "mean_true_SFR": 282.84105247222226
+    },
+    {
+      "population": "middle_SFR_gt100",
+      "method": "fixed_gaussian_density_gate",
+      "n": 36,
+      "RMSE": 293.50081479043166,
+      "MAE": 217.31703283629068,
+      "mean_prediction": 66.54089534184929,
+      "mean_true_SFR": 282.84105247222226
+    },
+    {
+      "population": "middle_SFR_gt100",
+      "method": "learned_density_only_gate",
+      "n": 36,
+      "RMSE": 293.3169577881391,
+      "MAE": 216.142675538502,
+      "mean_prediction": 67.67914879807218,
+      "mean_true_SFR": 282.84105247222226
+    },
+    {
+      "population": "middle_SFR_gt100",
+      "method": "learned_all_features_gate",
+      "n": 36,
+      "RMSE": 265.39684111457666,
+      "MAE": 190.08344896560868,
+      "mean_prediction": 100.49041831318371,
+      "mean_true_SFR": 282.84105247222226
+    }
+  ],
+  "validation_delta_RMSE_vs_direct_and_paired_bootstrap_95CI": {
+    "all": {
+      "fixed_gaussian_density_gate": [
+        0.5951376080036024,
+        -0.09621259356127178,
+        1.3849549234925282
+      ],
+      "learned_density_only_gate": [
+        0.5884472288309457,
+        -0.1048914230031155,
+        1.3937707075291434
+      ],
+      "learned_all_features_gate": [
+        -0.08291871555554842,
+        -0.48270937676450204,
+        0.38683038168333145
+      ]
+    },
+    "middle": {
+      "fixed_gaussian_density_gate": [
+        1.5179874073316917,
+        -0.16955454860647048,
+        3.43186438785507
+      ],
+      "learned_density_only_gate": [
+        1.5009684772368743,
+        -0.1952749005613327,
+        3.3962027348319763
+      ],
+      "learned_all_features_gate": [
+        -0.21220796390486285,
+        -1.2993063603179094,
+        0.9223949576554672
+      ]
+    },
+    "middle_zero": {
+      "fixed_gaussian_density_gate": [
+        -0.6772954068244457,
+        -1.384783210694582,
+        -0.0576067268025717
+      ],
+      "learned_density_only_gate": [
+        -0.7944340469537998,
+        -1.551906634561388,
+        -0.11209716226322869
+      ],
+      "learned_all_features_gate": [
+        -0.7816378791737595,
+        -1.581782136643435,
+        -0.08730936961260403
+      ]
+    },
+    "middle_positive": {
+      "fixed_gaussian_density_gate": [
+        2.1777610585763014,
+        -0.4516244586077107,
+        4.970839025654021
+      ],
+      "learned_density_only_gate": [
+        2.1595214434479075,
+        -0.5260652635416917,
+        4.986007913832862
+      ],
+      "learned_all_features_gate": [
+        -0.2482321124023663,
+        -1.8454941044193425,
+        1.4551383993647846
+      ]
+    },
+    "middle_SFR_gt100": {
+      "fixed_gaussian_density_gate": [
+        29.216825484181243,
+        4.449845138173081,
+        57.583763000406755
+      ],
+      "learned_density_only_gate": [
+        29.0329684818887,
+        3.8170578709114524,
+        57.38679016151096
+      ],
+      "learned_all_features_gate": [
+        1.1128518083262406,
+        -14.900603554776989,
+        17.22348285048167
+      ]
+    }
+  },
+  "CV": {
+    "all": {
+      "direct_segment_regression": {
+        "RMSE": 9.080785258715684,
+        "MAE": 1.1882882564725419
+      },
+      "fixed_gaussian_density_gate": {
+        "RMSE": 9.24514865300098,
+        "MAE": 1.154194845077978
+      },
+      "learned_density_only_gate": {
+        "RMSE": 9.276685636879188,
+        "MAE": 1.1516175459296867
+      },
+      "learned_all_features_gate": {
+        "RMSE": 8.985791428023814,
+        "MAE": 1.1558608475248886
+      }
+    },
+    "middle": {
+      "direct_segment_regression": {
+        "RMSE": 21.3099140867538,
+        "MAE": 2.4626700452288732
+      },
+      "fixed_gaussian_density_gate": {
+        "RMSE": 21.734014620612495,
+        "MAE": 2.256046426102895
+      },
+      "learned_density_only_gate": {
+        "RMSE": 21.815303716653208,
+        "MAE": 2.240426666864746
+      },
+      "learned_all_features_gate": {
+        "RMSE": 21.064455900384583,
+        "MAE": 2.266143258334482
+      }
+    }
+  },
+  "CV_folds": [
+    {
+      "fold": 1,
+      "cuts": [
+        1.3686285819967692,
+        2.4053463153078583
+      ],
+      "all_RMSE": {
+        "direct_segment_regression": 14.093411404848405,
+        "fixed_gaussian_density_gate": 14.742575831005983,
+        "learned_density_only_gate": 14.79196776091456,
+        "learned_all_features_gate": 14.00779412992611
+      },
+      "middle_RMSE": {
+        "direct_segment_regression": 34.321616696888604,
+        "fixed_gaussian_density_gate": 35.95517355239655,
+        "learned_density_only_gate": 36.079367976613085,
+        "learned_all_features_gate": 34.105985464285276
+      },
+      "gate_classification_metrics": {
+        "fixed_gaussian_density_gate": {
+          "log_loss": 0.36960862192059607,
+          "Brier": 0.11114418141914738,
+          "ROC_AUC": 0.9126468980225944,
+          "mean_predicted_zero_probability": 0.5040596244977802,
+          "observed_zero_fraction": 0.5108495770503861
+        },
+        "learned_density_only_gate": {
+          "log_loss": 0.36396900970477136,
+          "Brier": 0.10842007674689573,
+          "ROC_AUC": 0.9107059630718265,
+          "mean_predicted_zero_probability": 0.504875628361549,
+          "observed_zero_fraction": 0.5108495770503861
+        },
+        "learned_all_features_gate": {
+          "log_loss": 0.24123615531825288,
+          "Brier": 0.07085594208108446,
+          "ROC_AUC": 0.9644245603208886,
+          "mean_predicted_zero_probability": 0.5078301442764868,
+          "observed_zero_fraction": 0.5108495770503861
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "cuts": [
+        1.3644475973191912,
+        2.408401811714598
+      ],
+      "all_RMSE": {
+        "direct_segment_regression": 10.275119217225503,
+        "fixed_gaussian_density_gate": 10.429708376197352,
+        "learned_density_only_gate": 10.479091570315822,
+        "learned_all_features_gate": 10.040071536760609
+      },
+      "middle_RMSE": {
+        "direct_segment_regression": 24.380322855747938,
+        "fixed_gaussian_density_gate": 24.772607219695516,
+        "learned_density_only_gate": 24.897837684037604,
+        "learned_all_features_gate": 23.783068157595977
+      },
+      "gate_classification_metrics": {
+        "fixed_gaussian_density_gate": {
+          "log_loss": 0.3620637436225332,
+          "Brier": 0.10811852229793803,
+          "ROC_AUC": 0.9155456486724255,
+          "mean_predicted_zero_probability": 0.4903894312468364,
+          "observed_zero_fraction": 0.49602601156069365
+        },
+        "learned_density_only_gate": {
+          "log_loss": 0.3534918282189095,
+          "Brier": 0.10458138522273168,
+          "ROC_AUC": 0.9153096586236874,
+          "mean_predicted_zero_probability": 0.4922525216876359,
+          "observed_zero_fraction": 0.49602601156069365
+        },
+        "learned_all_features_gate": {
+          "log_loss": 0.2349090417003737,
+          "Brier": 0.06846086454042298,
+          "ROC_AUC": 0.9655260045892755,
+          "mean_predicted_zero_probability": 0.4967165598819877,
+          "observed_zero_fraction": 0.49602601156069365
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "cuts": [
+        1.3621632592538502,
+        2.4106140806649963
+      ],
+      "all_RMSE": {
+        "direct_segment_regression": 5.873663947059255,
+        "fixed_gaussian_density_gate": 5.942776586861975,
+        "learned_density_only_gate": 5.917188925561773,
+        "learned_all_features_gate": 5.795857620216648
+      },
+      "middle_RMSE": {
+        "direct_segment_regression": 13.09114730251004,
+        "fixed_gaussian_density_gate": 13.277121418092303,
+        "learned_density_only_gate": 13.208320098926718,
+        "learned_all_features_gate": 12.881230981001606
+      },
+      "gate_classification_metrics": {
+        "fixed_gaussian_density_gate": {
+          "log_loss": 0.367533610320558,
+          "Brier": 0.10956833540878705,
+          "ROC_AUC": 0.9121687965624855,
+          "mean_predicted_zero_probability": 0.4939469884299588,
+          "observed_zero_fraction": 0.48991717680950664
+        },
+        "learned_density_only_gate": {
+          "log_loss": 0.3625019454610766,
+          "Brier": 0.1075197348796748,
+          "ROC_AUC": 0.910589714621073,
+          "mean_predicted_zero_probability": 0.49453618341243116,
+          "observed_zero_fraction": 0.48991717680950664
+        },
+        "learned_all_features_gate": {
+          "log_loss": 0.24320915167492932,
+          "Brier": 0.07179822234352617,
+          "ROC_AUC": 0.9635945236698839,
+          "mean_predicted_zero_probability": 0.49349947836176283,
+          "observed_zero_fraction": 0.48991717680950664
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "cuts": [
+        1.3624707553731326,
+        2.4086613641532106
+      ],
+      "all_RMSE": {
+        "direct_segment_regression": 6.513041186682492,
+        "fixed_gaussian_density_gate": 6.061346451393732,
+        "learned_density_only_gate": 6.1045991658939425,
+        "learned_all_features_gate": 6.295931039500854
+      },
+      "middle_RMSE": {
+        "direct_segment_regression": 14.486576669765835,
+        "fixed_gaussian_density_gate": 13.266479455846683,
+        "learned_density_only_gate": 13.384192462483195,
+        "learned_all_features_gate": 13.902573245279232
+      },
+      "gate_classification_metrics": {
+        "fixed_gaussian_density_gate": {
+          "log_loss": 0.35202429850454336,
+          "Brier": 0.10470105978847404,
+          "ROC_AUC": 0.921523928992818,
+          "mean_predicted_zero_probability": 0.4934178958930628,
+          "observed_zero_fraction": 0.49356453342867357
+        },
+        "learned_density_only_gate": {
+          "log_loss": 0.34592335025171117,
+          "Brier": 0.10215162577664301,
+          "ROC_AUC": 0.9194454093263373,
+          "mean_predicted_zero_probability": 0.4922092776101378,
+          "observed_zero_fraction": 0.49356453342867357
+        },
+        "learned_all_features_gate": {
+          "log_loss": 0.2362584865483104,
+          "Brier": 0.06924929328041216,
+          "ROC_AUC": 0.9658748441717518,
+          "mean_predicted_zero_probability": 0.49398134110093145,
+          "observed_zero_fraction": 0.49356453342867357
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "cuts": [
+        1.3660918026774902,
+        2.4097481636405145
+      ],
+      "all_RMSE": {
+        "direct_segment_regression": 5.583888725702381,
+        "fixed_gaussian_density_gate": 5.4021576179974,
+        "learned_density_only_gate": 5.42124125360326,
+        "learned_all_features_gate": 5.785220334669837
+      },
+      "middle_RMSE": {
+        "direct_segment_regression": 11.165692742647881,
+        "fixed_gaussian_density_gate": 10.598325106256397,
+        "learned_density_only_gate": 10.658423225408338,
+        "learned_all_features_gate": 11.782601477783398
+      },
+      "gate_classification_metrics": {
+        "fixed_gaussian_density_gate": {
+          "log_loss": 0.3722069270306711,
+          "Brier": 0.11180965197767576,
+          "ROC_AUC": 0.9103132316354472,
+          "mean_predicted_zero_probability": 0.5011611280918465,
+          "observed_zero_fraction": 0.4990727002967359
+        },
+        "learned_density_only_gate": {
+          "log_loss": 0.36739687177830965,
+          "Brier": 0.10940969817067508,
+          "ROC_AUC": 0.9081124694585088,
+          "mean_predicted_zero_probability": 0.5054451529969715,
+          "observed_zero_fraction": 0.4990727002967359
+        },
+        "learned_all_features_gate": {
+          "log_loss": 0.2500781244270613,
+          "Brier": 0.07347720565698561,
+          "ROC_AUC": 0.9612491953170927,
+          "mean_predicted_zero_probability": 0.5013714243837916,
+          "observed_zero_fraction": 0.4990727002967359
+        }
+      }
+    }
+  ],
+  "elapsed_seconds": 8.24109959602356,
+  "limitations": [
+    "Exploratory experiment after prior inspection of this validation set; no fresh final test set.",
+    "Normality of density conditional on zero SFR is approximate; posterior also depends on positive density estimate.",
+    "Positive-class KDE uses Scott bandwidth and is renormalized on the middle interval; no bandwidth tuning.",
+    "All density fits, priors and segment cutoffs refitted within each CV training fold.",
+    "Bootstrap assumes iid validation galaxies and conditions on the fitted models.",
+    "Default early_stopping=auto retained; no hyperparameter optimization."
+  ]
+}

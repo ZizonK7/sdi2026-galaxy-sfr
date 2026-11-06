@@ -1,0 +1,48 @@
+{
+  "population": "SFR=0 galaxies in the existing EDA training split",
+  "variable": "log10_overdensity_plus_1",
+  "n": 14438,
+  "mean": 1.8866580286023689,
+  "standard_deviation_mle_ddof0": 0.260953684677288,
+  "skewness": -0.5115075407423086,
+  "excess_kurtosis": 2.0407885937754493,
+  "median": 1.875979485,
+  "minimum": 0.020895116,
+  "maximum": 2.51167631,
+  "quantile_levels": [
+    0.001,
+    0.01,
+    0.05,
+    0.25,
+    0.5,
+    0.75,
+    0.95,
+    0.99,
+    0.999
+  ],
+  "observed_quantiles": [
+    0.6020430054220001,
+    1.1024385492,
+    1.4684901945,
+    1.727104845,
+    1.875979485,
+    2.0629350549999996,
+    2.3176255485,
+    2.4748466306,
+    2.50761528284
+  ],
+  "normal_quantiles": [
+    1.0802505217990848,
+    1.279588979030236,
+    1.4574274138945806,
+    1.7106474430116378,
+    1.8866580286023689,
+    2.0626686141931,
+    2.315888643310157,
+    2.493727078174502,
+    2.693065535405653
+  ],
+  "observed_fraction_at_or_below_1_5": 0.057694971602715056,
+  "normal_fraction_at_or_below_1_5": 0.06920856186365361,
+  "split_validation": "All 14 histogram-bin counts match saved notebook EDA 1 exactly."
+}
