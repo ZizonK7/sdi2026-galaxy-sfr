@@ -1,0 +1,52 @@
+{
+  "date_kst": "2026-11-12",
+  "base_commit": "8cc51a6",
+  "original_scientific_source_commit": "c8ae0de",
+  "notebook_before_sha256": "14ef37cf7dcba2b78caf95b764b3cf9cd997ed7e8fe4a9291312aa2fcb687134",
+  "notebook_after_sha256": "0bdb1881dcdf87295985f570d5b84a6bf45752c4b6acbdf43e198b06a2ca320b",
+  "changed_cells": [
+    0,
+    87,
+    89,
+    90,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    101,
+    102,
+    105,
+    106,
+    107,
+    109,
+    112,
+    113,
+    114,
+    115,
+    117
+  ],
+  "code_cells_checked": 60,
+  "computation_ast_unchanged_except_explicit_display_and_metadata_edits": true,
+  "original_part_i_84_cells_identical": true,
+  "execution_counts_identical": true,
+  "numeric_results_identical": true,
+  "numeric_table_values_checked": {
+    "93": 117,
+    "101": 88
+  },
+  "png_outputs_identical": 10,
+  "changed_output_cells": [
+    89,
+    93,
+    96,
+    101,
+    105,
+    112,
+    117
+  ],
+  "full_training_rerun_this_edit": false,
+  "verification": "Existing metric/plot/output regression validator plus AST, RESULTS, table values, image hashes and prose scans; notebook schema validated.",
+  "limits": "Cached scientific outputs come from the prior complete 60-code-cell run; only corresponding display labels and metadata were edited. The prior Company approval belongs to the prior artifact hash."
+}
