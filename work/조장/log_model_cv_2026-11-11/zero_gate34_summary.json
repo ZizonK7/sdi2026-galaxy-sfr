@@ -1,0 +1,142 @@
+{
+ "cv": "5-fold x seeds 42,7,11,23,101 on train split",
+ "metric": "D1 log10(1+SFR) RMSE",
+ "taus": [
+  0.5,
+  0.7,
+  0.8,
+  0.9,
+  0.95,
+  0.99
+ ],
+ "mean": {
+  "soft": {
+   "d1": 0.09643,
+   "d1_zero": 0.10875,
+   "d1_pos": 0.09516,
+   "d2": 0.29074,
+   "lin": 8.08133,
+   "zero_exact_share": 0.0,
+   "pos_set_zero_per_fold": 0.0,
+   "pos_set_zero_max_sfr": 0.0
+  },
+  "tau0.5": {
+   "d1": 0.09761,
+   "d1_zero": 0.09618,
+   "d1_pos": 0.09771,
+   "d2": 0.26158,
+   "lin": 8.08223,
+   "zero_exact_share": 0.9178,
+   "pos_set_zero_per_fold": 175.76,
+   "pos_set_zero_max_sfr": 87.54296
+  },
+  "tau0.7": {
+   "d1": 0.09675,
+   "d1_zero": 0.10416,
+   "d1_pos": 0.096,
+   "d2": 0.2607,
+   "lin": 8.08152,
+   "zero_exact_share": 0.87684,
+   "pos_set_zero_per_fold": 94.96,
+   "pos_set_zero_max_sfr": 87.54296
+  },
+  "tau0.8": {
+   "d1": 0.09651,
+   "d1_zero": 0.10656,
+   "d1_pos": 0.09548,
+   "d2": 0.2651,
+   "lin": 8.08138,
+   "zero_exact_share": 0.84105,
+   "pos_set_zero_per_fold": 62.96,
+   "pos_set_zero_max_sfr": 30.44958
+  },
+  "tau0.9": {
+   "d1": 0.09645,
+   "d1_zero": 0.10822,
+   "d1_pos": 0.09524,
+   "d2": 0.27577,
+   "lin": 8.08134,
+   "zero_exact_share": 0.76878,
+   "pos_set_zero_per_fold": 36.28,
+   "pos_set_zero_max_sfr": 22.92427
+  },
+  "tau0.95": {
+   "d1": 0.09643,
+   "d1_zero": 0.10861,
+   "d1_pos": 0.09518,
+   "d2": 0.28283,
+   "lin": 8.08133,
+   "zero_exact_share": 0.68818,
+   "pos_set_zero_per_fold": 21.64,
+   "pos_set_zero_max_sfr": 22.92427
+  },
+  "tau0.99": {
+   "d1": 0.09643,
+   "d1_zero": 0.10874,
+   "d1_pos": 0.09516,
+   "d2": 0.29009,
+   "lin": 8.08133,
+   "zero_exact_share": 0.41511,
+   "pos_set_zero_per_fold": 5.68,
+   "pos_set_zero_max_sfr": 22.92427
+  }
+ },
+ "verdicts": {
+  "tau0.5": {
+   "mean_diff": 0.0011736176910848168,
+   "sd": 0.00041876371589198724,
+   "min": 0.0005560233369012457,
+   "max": 0.00219833125371198,
+   "n_worse": 25,
+   "n_better": 0,
+   "verdict": "나빠짐"
+  },
+  "tau0.7": {
+   "mean_diff": 0.00031982631924293623,
+   "sd": 0.0001707346684869281,
+   "min": 8.99826024343825e-05,
+   "max": 0.0006943769104086339,
+   "n_worse": 25,
+   "n_better": 0,
+   "verdict": "나빠짐"
+  },
+  "tau0.8": {
+   "mean_diff": 7.911159483054042e-05,
+   "sd": 8.411967628898191e-05,
+   "min": -7.048487230223999e-05,
+   "max": 0.0002471877078947249,
+   "n_worse": 22,
+   "n_better": 3,
+   "verdict": "나빠짐"
+  },
+  "tau0.9": {
+   "mean_diff": 1.9298779787103037e-05,
+   "sd": 2.894490049314445e-05,
+   "min": -2.7665204402282928e-05,
+   "max": 9.969389197894696e-05,
+   "n_worse": 19,
+   "n_better": 6,
+   "verdict": "경계"
+  },
+  "tau0.95": {
+   "mean_diff": 1.079247556439178e-06,
+   "sd": 7.058894160994758e-06,
+   "min": -1.0132722699077168e-05,
+   "max": 1.4124435015819281e-05,
+   "n_worse": 15,
+   "n_better": 10,
+   "verdict": "같음"
+  },
+  "tau0.99": {
+   "mean_diff": 2.4298013172163736e-07,
+   "sd": 8.890886248062586e-07,
+   "min": -4.091409176870675e-07,
+   "max": 2.935457504738004e-06,
+   "n_worse": 9,
+   "n_better": 16,
+   "verdict": "같음"
+  }
+ },
+ "chosen_tau": 0.9,
+ "seconds": 79.60635924339294
+}
