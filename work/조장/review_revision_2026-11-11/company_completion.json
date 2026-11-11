@@ -1,0 +1,79 @@
+{
+  "requestId": "ece29370-951e-405f-b17f-d3d38ad1dc78",
+  "status": "completed",
+  "runCount": 5,
+  "remainingRuns": 94,
+  "activeRuns": 0,
+  "statusDetail": "{\"artifactHash\":\"5ec81e9c87efa8ded4acf6cd5831b4d30bc666c3d77e77537cae45a804c9a417\",\"reviewRunId\":\"7253e12e-373b-4337-95a1-125f52191ed5\"}",
+  "lastDecision": {
+    "id": "d98050c0-3d99-4468-8d95-30750d6d083e",
+    "actor": "codex",
+    "line": "최종 교차 검토는 승인됐으나 낮은 심각도의 문서·견고성 보완7건을 제시했다. -> 승인 여부와 별개로 타당한 보완을 같은 요청에서 반영한다. 그림의 선택 offset/축 하한, 기준선 MAE, 고정셀7+인용2 설명, optional strict 추적성을 정정하고, FoF는 BOX_SIZE/지역함수로 정리해 큰10성분의 양쪽10개이상 분리 사례까지 실제 계산한다. 문턱 보정은 이미 있는 val 국소진단과 일반 보정의 미확인을 구별한다. 과학 모델 선택은 바꾸지 않으며 변경 후 전체 실행·정확한 새해시 재검토를 수행한다."
+  },
+  "full": "company_get_request",
+  "maxRuns": 99,
+  "countsByStatus": {
+    "succeeded": 4,
+    "timed_out": 1
+  },
+  "elapsedMs": 3592885,
+  "cumulativeRunMs": 1147051,
+  "waitingUserMs": 0,
+  "usage": {
+    "inputTokens": {
+      "total": 284505,
+      "knownCount": 4,
+      "unknownCount": 1
+    },
+    "outputTokens": {
+      "total": 38378,
+      "knownCount": 4,
+      "unknownCount": 1
+    },
+    "thinkingTokens": {
+      "total": 14339,
+      "knownCount": 4,
+      "unknownCount": 1
+    },
+    "cacheReadTokens": {
+      "total": 2925992,
+      "knownCount": 4,
+      "unknownCount": 1
+    },
+    "cacheWriteTokens": {
+      "total": 227701,
+      "knownCount": 2,
+      "unknownCount": 3
+    },
+    "totalTokens": {
+      "total": 3235936,
+      "knownCount": 4,
+      "unknownCount": 1
+    },
+    "costUsd": {
+      "total": 2.9500355000000003,
+      "knownCount": 2,
+      "unknownCount": 3
+    }
+  },
+  "worktrees": {
+    "removed": [
+      {
+        "runId": "6e86313e-7461-4571-97ee-55185da44118",
+        "path": "C:\\Users\\minii\\Desktop\\Folder\\ai_company\\data\\worktrees\\6e86313e-7461-4571-97ee-55185da44118",
+        "branch": "deleted"
+      },
+      {
+        "runId": "ba706799-e19f-446d-b0c6-20e7f49f01a6",
+        "path": "C:\\Users\\minii\\Desktop\\Folder\\ai_company\\data\\worktrees\\ba706799-e19f-446d-b0c6-20e7f49f01a6",
+        "branch": "deleted"
+      },
+      {
+        "runId": "fd74935f-bd38-4c4c-928c-88bc358cfd83",
+        "path": "C:\\Users\\minii\\Desktop\\Folder\\ai_company\\data\\worktrees\\fd74935f-bd38-4c4c-928c-88bc358cfd83",
+        "branch": "deleted"
+      }
+    ],
+    "failed": []
+  }
+}
