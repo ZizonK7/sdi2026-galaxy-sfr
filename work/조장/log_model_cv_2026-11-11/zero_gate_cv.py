@@ -49,7 +49,7 @@ for seed in (42, 7, 11, 23, 101):
         zero = yt == 0
         variants = {"soft": soft, **{f"tau{t}": np.where(1 - p >= t, 0.0, soft) for t in TAUS}}
         for name, zp in variants.items():
-            sfr = 10 ** zp - 1
+            sfr = np.clip(10 ** zp - 1, 0, None)          # 노트북의 from_log와 같이 0 아래를 자른다 (D2·선형 평가용)
             rows.append({"seed": seed, "fold": k, "rule": name, "d1": rm(zp, zt), "d1_zero": rm(zp[zero], zt[zero]), "d1_pos": rm(zp[~zero], zt[~zero]),
                          "d2": rm(np.log10(sfr + 0.01), np.log10(yt + 0.01)), "lin": rm(sfr, yt),
                          "zero_exact_share": float(np.mean(zp[zero] == 0)), "pos_set_zero": int(np.sum(zp[~zero] == 0)),
