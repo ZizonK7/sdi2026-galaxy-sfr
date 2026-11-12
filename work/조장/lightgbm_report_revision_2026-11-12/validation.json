@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "model_name": "TwoStageLightGBMLogSFR",
+  "algorithm": "LightGBM",
+  "code_cells": 61,
+  "png_outputs": 10,
+  "fixed_source_cells": 9,
+  "part_i_source_preserved": true,
+  "protected_data_template_mid_preserved": true,
+  "prediction_contract_checks": {
+    "validation_reproduction": true,
+    "row_order": true,
+    "fixed_union_batches": true,
+    "duplicate_null_missing_conflicting_ID_rejected": true
+  },
+  "independent_metric_differences": {
+    "validation_log_rmse": 0.0,
+    "validation_mae": 0.0,
+    "validation_rmse": 0.0,
+    "validation_r2": 0.0,
+    "validation_log_rmse_eps0.01": 5.551115123125783e-17,
+    "zero_sfr_log_rmse": 1.3877787807814457e-17,
+    "positive_sfr_log_rmse": 0.0
+  },
+  "validation_log_rmse": 0.09570484300644513,
+  "decision_after_benchmark": true,
+  "notebook_sha256": "d58ddc2f97b0a3657f84678aefc410d58014afc5754e7391e3d88f8768b58da6",
+  "historical_notebook_sha256": "0bdb1881dcdf87295985f570d5b84a6bf45752c4b6acbdf43e198b06a2ca320b"
+}

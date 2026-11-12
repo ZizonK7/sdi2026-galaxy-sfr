@@ -1,0 +1,141 @@
+{
+  "protocol_id": "model_comparison_2026-11-12",
+  "frozen_before_scoring": true,
+  "frozen_note": "이 파일은 점수 계산 전에 고정한다. 결과를 본 뒤 수정하지 않는다. benchmark.py는 이 파일을 읽고 SHA256을 manifest.json에 남길 뿐 다시 쓰지 않는다.",
+  "source": {
+    "base_commit": "6bc3988dd7effb7694192ce059f515fa496fa499",
+    "data_file": "Galaxy Features with Position and Velocity for Star Formation Rate Prediction.csv",
+    "notebook_file": "DataHub_701104_final.ipynb",
+    "extracted_functions": ["build_environment_features", "build_mass_history_features"],
+    "extraction": "ast.parse로 노트북 코드 셀에서 위 두 ast.FunctionDef만 꺼내 exec한다. 노트북의 다른 코드(설정, 학습, 진단)는 실행하지 않는다.",
+    "environment_globals": {"BOX_SIZE": 200.0, "RHO_CRIT": 2.775e11, "G_KMS": 4.30091e-9}
+  },
+  "data": {
+    "id_column": "subhalo_id",
+    "target_column": "sfr_linear",
+    "expected_rows": 208437,
+    "original_features": [
+      "log10_halo_mass", "log10_stellar_mass", "log10_BH_mass",
+      "log10_main_prog_mass", "log10_main_prog_stellar_mass", "log10_mass_ratio",
+      "log10_overdensity_plus_1", "pos_x", "pos_y", "pos_z",
+      "vel_x", "vel_y", "vel_z"
+    ],
+    "environment_features": [
+      "log_rho_5nn", "log_rho_10nn", "log1p_N_r1", "log1p_N_r2", "log1p_N_r5",
+      "dist_host13.5", "r_over_R200_13.5", "v_over_V200_13.5", "host_logm_13.5",
+      "dist_host14", "r_over_R200_14", "v_over_V200_14",
+      "fof_log_richness", "fof_is_central", "fof_group_max_logm", "fof_dv_group",
+      "halo_minus_stellar"
+    ],
+    "mass_history_features": ["dlogMs_growth", "dlogMh_growth", "bh_to_star", "prog_star_to_halo"],
+    "feature_order": "original_features + environment_features + mass_history_features (34개)",
+    "allowed_nan_features": ["fof_dv_group"],
+    "environment_ordering": "env_order = df[original_features].sort_values(original_features, kind='mergesort', na_position='last').index; env = build_environment_features(df.loc[env_order, original_features]).reindex(df.index). 최종 노트북 9.2와 같은 정렬(동률 이웃 안정화).",
+    "environment_rows": "타깃을 쓰지 않는 기하 피처이므로 CSV 전체 행(학습 + 외부 val 입력)의 합집합으로 계산한다(조교 FAQ 허용). 외부 데이터는 쓰지 않는다.",
+    "mass_history_call": "build_mass_history_features(df[original_features])"
+  },
+  "outer_split": {
+    "call": "train_test_split(df.index.to_numpy(), test_size=0.2, random_state=42, stratify=(y > 0).astype(int))",
+    "test_size": 0.2,
+    "random_state": 42,
+    "use": "반환된 train 인덱스 순서 그대로 X.iloc[train_ids].reset_index(drop=True)를 쓴다. 전체 타깃의 0 여부는 공통 층화 분할에만 쓰고 외부 val 타깃은 모델 학습·후보 채점에 쓰지 않는다.",
+    "expected_train_rows": 166749
+  },
+  "internal_cv": {"call": "KFold(n_splits=5, shuffle=True, random_state=42).split(X_train)", "n_splits": 5, "shuffle": true, "random_state": 42},
+  "target": {
+    "transform": "z = log10(y + 1.0)",
+    "inverse": "yhat = max(10**z - 1.0, 0)",
+    "metric": "rmse_log = sqrt(mean((log10(y + 1) - log10(yhat + 1))**2)), yhat은 0 이상 절단된 선형 예측",
+    "high_sfr_threshold_linear": 100.0
+  },
+  "two_stage": {
+    "classifier_target": "y > 0 (모든 학습 행)",
+    "regressor_target": "y > 0인 행만, z = log10(y + 1)",
+    "combine": "z = p * m + (1 - p) * 0, p = classifier.predict_proba(X)[:, 1], m = positive_regressor.predict(X)",
+    "zero_gate": "1 - p >= zero_threshold 이면 z = 0 (SFR = 0 출력)",
+    "zero_threshold": 0.9,
+    "zero_threshold_origin": "HGB 최종 모델에서 학습 내부 반복 CV로 고른 값. LightGBM/CatBoost에 맞게 다시 고르지 않는다."
+  },
+  "models": {
+    "hgb_single_fixed400": {
+      "library": "sklearn", "kind": "single",
+      "regressor": {"class": "HistGradientBoostingRegressor", "params": {"loss": "squared_error", "learning_rate": 0.08, "max_iter": 400, "max_leaf_nodes": 31, "max_bins": 255, "early_stopping": false, "random_state": 42}}
+    },
+    "hgb_two_stage_fixed400": {
+      "library": "sklearn", "kind": "two_stage",
+      "classifier": {"class": "HistGradientBoostingClassifier", "params": {"learning_rate": 0.08, "max_iter": 400, "max_leaf_nodes": 31, "max_bins": 255, "early_stopping": false, "random_state": 42}},
+      "regressor": {"class": "HistGradientBoostingRegressor", "params": {"loss": "squared_error", "learning_rate": 0.08, "max_iter": 400, "max_leaf_nodes": 31, "max_bins": 255, "early_stopping": false, "random_state": 42}}
+    },
+    "lightgbm_single_fixed400": {
+      "library": "lightgbm", "kind": "single",
+      "regressor": {"class": "LGBMRegressor", "params": {"objective": "regression", "n_estimators": 400, "num_leaves": 31, "max_bin": 255, "learning_rate": 0.08, "random_state": 42, "verbosity": -1, "deterministic": true, "force_col_wise": true}}
+    },
+    "lightgbm_two_stage_fixed400": {
+      "library": "lightgbm", "kind": "two_stage",
+      "classifier": {"class": "LGBMClassifier", "params": {"objective": "binary", "n_estimators": 400, "num_leaves": 31, "max_bin": 255, "learning_rate": 0.08, "random_state": 42, "verbosity": -1, "deterministic": true, "force_col_wise": true}},
+      "regressor": {"class": "LGBMRegressor", "params": {"objective": "regression", "n_estimators": 400, "num_leaves": 31, "max_bin": 255, "learning_rate": 0.08, "random_state": 42, "verbosity": -1, "deterministic": true, "force_col_wise": true}}
+    },
+    "catboost_single_fixed400": {
+      "library": "catboost", "kind": "single",
+      "regressor": {"class": "CatBoostRegressor", "params": {"loss_function": "RMSE", "iterations": 400, "depth": 5, "learning_rate": 0.08, "border_count": 254, "random_seed": 42, "verbose": false, "allow_writing_files": false, "task_type": "CPU"}}
+    },
+    "catboost_two_stage_fixed400": {
+      "library": "catboost", "kind": "two_stage",
+      "classifier": {"class": "CatBoostClassifier", "params": {"loss_function": "Logloss", "iterations": 400, "depth": 5, "learning_rate": 0.08, "border_count": 254, "random_seed": 42, "verbose": false, "allow_writing_files": false, "task_type": "CPU"}},
+      "regressor": {"class": "CatBoostRegressor", "params": {"loss_function": "RMSE", "iterations": 400, "depth": 5, "learning_rate": 0.08, "border_count": 254, "random_seed": 42, "verbose": false, "allow_writing_files": false, "task_type": "CPU"}}
+    },
+    "hgb_two_stage_reference": {
+      "library": "sklearn", "kind": "two_stage",
+      "note": "최종 노트북 FINAL_HGB와 같은 설정. early_stopping='auto', n_iter_no_change=10, tol=1e-7, validation_fraction=0.1은 라이브러리 기본값 그대로 둔다(학습 fold 내부에서 sklearn이 떼어 내는 10%로 멈춤; 채점 fold는 쓰지 않음).",
+      "classifier": {"class": "HistGradientBoostingClassifier", "params": {"learning_rate": 0.08, "max_iter": 400, "max_leaf_nodes": 31, "random_state": 42}},
+      "regressor": {"class": "HistGradientBoostingRegressor", "params": {"learning_rate": 0.08, "max_iter": 400, "max_leaf_nodes": 31, "random_state": 42}}
+    }
+  },
+  "runtime_params": {
+    "threads_default": 6,
+    "lightgbm_thread_param": "n_jobs",
+    "catboost_thread_param": "thread_count",
+    "sklearn_threads": "threadpoolctl.threadpool_limits(limits=threads)로 전체 실행을 감싼다(OpenMP/BLAS).",
+    "execution": "모델과 fold를 순서대로 하나씩 실행한다(벽시계 시간 비교용)."
+  },
+  "budget": {
+    "controlled_models": "6개 통제 모델은 모두 learning_rate 0.08, 정확히 400회 부스팅, early stopping 없음, 검증 세트·콜백 없음.",
+    "not_equal_compute": "두 단계 모델은 분류기 + 양수 회귀기로 트리를 두 배 가까이 학습하고, 라이브러리마다 트리 구조(leaf-wise 31잎 vs CatBoost 대칭 깊이 5 = 32잎)와 기본 정규화가 다르다. 계산 예산이 같다고 말하지 않는다.",
+    "no_tuning": "하이퍼파라미터 격자, 적응적 설정 변경, 채점 fold를 쓰는 early stopping, 문턱 재선택을 하지 않는다."
+  },
+  "smoke": {
+    "max_train_rows": 3000,
+    "subset": "train_test_split(arange(n_train), train_size=3000, random_state=42, stratify=(y_train > 0)) 반환 순서",
+    "n_splits": 2,
+    "iterations": 20,
+    "default_output_subdir": "smoke_results",
+    "note": "코드 경로 점검용. 점수는 비교 근거로 쓰지 않는다."
+  },
+  "full_default_output_subdir": "results",
+  "selection_rule": {
+    "rank_by": "내부 5-fold 평균 rmse_log (낮을수록 좋음)",
+    "promising_flag": "평균 rmse_log가 hgb_two_stage_reference보다 낮고, 5개 fold 중 4개 이상에서 reference보다 낮을 때만 promising=true",
+    "min_fold_wins": 4,
+    "interpretation": "탐색적 표시일 뿐 증명이 아니며 최종 모델을 자동으로 바꾸지 않는다. fold를 독립 표본으로 보는 신뢰구간·p값은 내지 않는다. 시드 반복과 공간 일반화는 범위 밖이다."
+  },
+  "reference_expected": {
+    "source": "work/조장/review_revision_2026-11-11/diagnostic_cv.csv, model E1H1_34 (최종 노트북 9.2 보조 진단)",
+    "mean_rmse_log": 0.096619,
+    "fold_rmse_log": [0.09716834069071412, 0.09629687345549166, 0.0966863419063933, 0.09575858609781603, 0.09718487129145426],
+    "fold_classifier_iterations": [200, 341, 275, 153, 170],
+    "fold_regressor_iterations": [222, 121, 224, 126, 144],
+    "abs_tolerance_per_fold": 1e-05,
+    "tolerance_note": "라이브러리 버전·스레드 수에 따른 부동소수점 차이를 허용하는 점검 기준. 벗어나면 결과를 쓰기 전에 원인을 확인한다."
+  },
+  "caveats": [
+    "전체 실행은 외부 학습 분할 안의 내부 5-fold 교차검증만 계산한다. 외부 val은 과거에 이미 여러 번 쓰였으므로 새 시험 일반화 성능이 아니다.",
+    "tau = 0.9는 HGB에서 고른 값이며 LightGBM/CatBoost에서 다시 고르지 않았다.",
+    "400회·learning_rate 0.08은 비교를 위한 고정 예산이며 어느 알고리즘에도 전역 최적 설정이라고 주장하지 않는다.",
+    "single과 two_stage는 학습하는 트리 수가 다르고, 라이브러리 간 트리 구조와 기본값(정규화, 분할 규칙, 결측 처리)이 다르다.",
+    "NaN은 각 라이브러리의 기본 결측 처리에 맡긴다(대체·스케일링 없음).",
+    "fold 간 차이는 같은 데이터를 공유하므로 독립 표본이 아니다. 유의성 검정이나 신뢰구간을 내지 않는다.",
+    "단일 시드(42)와 무작위 KFold만 쓴다. 시드 반복, 공간 블록 일반화는 다루지 않는다.",
+    "환경 피처는 CSV 전체 입력의 기하로 계산한다(타깃 미사용, 조교 FAQ 허용)."
+  ]
+}
+

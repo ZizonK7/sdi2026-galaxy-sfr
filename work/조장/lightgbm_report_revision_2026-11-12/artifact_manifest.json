@@ -1,0 +1,20 @@
+{
+  "revision": "LightGBM selection by observed accuracy/training-time tradeoff",
+  "validation": "passed",
+  "source_preservation": "Part I, fixed cells, CSV, template, mid notebook; original final notebook archived",
+  "prior_company_review_scope": "7-model benchmark before this user-directed final selection; not a review of this report revision",
+  "files_sha256": {
+    "DataHub_701104_final.ipynb": "d58ddc2f97b0a3657f84678aefc410d58014afc5754e7391e3d88f8768b58da6",
+    "work/조장/lightgbm_report_revision_2026-11-12/report.md": "38b9025cbd3958c3a6b2887c888ea96a00b6b07f73c272b61286dc74b42d29a6",
+    "work/조장/lightgbm_report_revision_2026-11-12/README.md": "17c3ea3dc6c8869c1d46f518687ccb92dc499f140c1072de03c1ef4aefcff3cd",
+    "work/조장/lightgbm_report_revision_2026-11-12/validation.json": "c1436f73d816ffa788b49115ef03e82fdfc2f80a4b9c6e5ead1ad467b8cdbfeb",
+    "work/조장/lightgbm_report_revision_2026-11-12/execution_evidence.json": "a4e12f61abe222f054d50e61030e2ac010d249b3a538a055f49cb91f963beee0",
+    "work/조장/lightgbm_report_revision_2026-11-12/independent_prediction.json": "4481a73620d7db6bc2d0c9c00782b8ee4b17b9cd6a83d0b5ac4b46ba04655607",
+    "work/조장/lightgbm_report_revision_2026-11-12/requirements.txt": "a18601c86682ae7132905f84034d6288c5484742527fe398abfb52897352efb4",
+    "work/조장/lightgbm_report_revision_2026-11-12/selection_decision.json": "f9c1560a769c2bd6a22307c3e6495f895b240ddb3a8e4ce058e5233e31148f7a",
+    "work/조장/lightgbm_report_revision_2026-11-12/reference/DataHub_701104_final_hgb.ipynb": "0bdb1881dcdf87295985f570d5b84a6bf45752c4b6acbdf43e198b06a2ca320b",
+    "work/조장/model_comparison_2026-11-12/report.md": "fd2d0678c91f9b4d94176d9ff74524948e1b71738c48ac58fe326484b3e3c507",
+    "work/조장/model_comparison_2026-11-12/README.md": "d6b2586cf063f38fb10ee72407f4e75c7b5df6bd927a197bfef8fdafd020db73",
+    "work/조장/model_comparison_2026-11-12/make_report.py": "109dce773b82198e8c4b83a8d12455052e878bd351482189486b6598ce95687a"
+  }
+}

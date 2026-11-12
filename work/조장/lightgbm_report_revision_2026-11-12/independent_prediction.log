@@ -1,0 +1,15 @@
+{
+  "algorithm": "LightGBM",
+  "n_train": 166749,
+  "n_val": 41688,
+  "classifier_iterations": 400,
+  "regressor_iterations": 400,
+  "validation_log_rmse": 0.09570484300644513,
+  "validation_mae": 0.9393481649769421,
+  "validation_rmse": 8.770310565597024,
+  "validation_r2": 0.47997917413442215,
+  "validation_log_rmse_eps0.01": 0.26656379398336716,
+  "zero_sfr_log_rmse": 0.10250023621037996,
+  "positive_sfr_log_rmse": 0.09503538994069506,
+  "independent_refit_seconds": 5.163055000004533
+}

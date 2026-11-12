@@ -1,0 +1,9 @@
+# Preserve the line endings used by the recorded SHA256 values.
+* text eol=crlf
+*.py text eol=lf
+*.png binary
+*.npz binary
+.gitignore text eol=lf
+.gitattributes text eol=lf
+reference/benchmark_company_review.json text eol=lf
+reference/benchmark_README.md whitespace=blank-at-eol,-blank-at-eof,space-before-tab,cr-at-eol

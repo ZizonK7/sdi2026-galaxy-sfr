@@ -1,0 +1,15 @@
+{
+  "request_id": "bc9bc07d-8b06-4195-bf1b-e9cecace28e4",
+  "implementation_run_id": "20f6ecf2-5549-4cdb-a01c-7a5bf43f3d56",
+  "review_run_id": "bad347e6-27e7-4163-af2c-9f8d62a322ff",
+  "reviewer": "gpt-6.1-sol",
+  "duration_ms": 141533,
+  "result": {
+    "verdict": "approved",
+    "summary": "승인합니다. 기준 커밋과 보호 대상 원본, 18개 산출물의 SHA256 및 통합 해시가 일치했습니다. 읽기 전용 독립 재계산으로 OOF 기반 316개 지표의 오차가 모두 0임을 확인했으며, 기존 HGB의 폴드별 점수와 반복 횟수도 정확히 재현됐습니다. 동일한 34개 피처·5개 폴드, 고정 학습 예산, 타깃 변환과 0 판정 로직이 요구사항에 부합합니다. 외부 검증 타깃의 후보 채점 사용은 발견되지 않았고, 보고서는 계산량·문턱 선택·일반화의 한계를 명시하며 우열이나 최적성을 과장하지 않습니다.",
+    "findings": [],
+    "questions": []
+  },
+  "company_artifact_hash": "9c3482d35d874bf8586983dd3ac749491781c4407979fc58d22e4ae139816ee1",
+  "integrated_artifact_hash": "d4e0863bd210f53f9f3ae83f7bda301ed78394f17f955093c050871f53fd86cc"
+}

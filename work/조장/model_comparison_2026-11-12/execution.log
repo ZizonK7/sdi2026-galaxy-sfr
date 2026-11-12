@@ -1,0 +1,46 @@
+[setup] root=C:\Users\minii\Desktop\Folder\sdi2026-galaxy-sfr output=C:\Users\minii\Desktop\Folder\sdi2026-galaxy-sfr\work\조장\model_comparison_2026-11-12\results smoke=False threads=6 models=['hgb_single_fixed400', 'hgb_two_stage_fixed400', 'lightgbm_single_fixed400', 'lightgbm_two_stage_fixed400', 'catboost_single_fixed400', 'catboost_two_stage_fixed400', 'hgb_two_stage_reference']
+[setup] 피처 34개 계산 10.8 s (CSV 전체 208,437행 입력 기하)
+[setup] manifest 저장. 학습 166,749행, 5-fold, 반복 400
+[hgb_single_fixed400] fold 1/5: rmse_log=0.100138 train=5.7s pred=0.23s trees(clf/reg)=0/400
+[hgb_single_fixed400] fold 2/5: rmse_log=0.099421 train=5.1s pred=0.28s trees(clf/reg)=0/400
+[hgb_single_fixed400] fold 3/5: rmse_log=0.099274 train=5.7s pred=0.35s trees(clf/reg)=0/400
+[hgb_single_fixed400] fold 4/5: rmse_log=0.097265 train=5.4s pred=0.33s trees(clf/reg)=0/400
+[hgb_single_fixed400] fold 5/5: rmse_log=0.098977 train=5.3s pred=0.32s trees(clf/reg)=0/400
+[hgb_single_fixed400] 완료, OOF 저장
+[hgb_two_stage_fixed400] fold 1/5: rmse_log=0.095864 train=17.5s pred=0.61s trees(clf/reg)=400/400
+[hgb_two_stage_fixed400] fold 2/5: rmse_log=0.095408 train=12.7s pred=0.60s trees(clf/reg)=400/400
+[hgb_two_stage_fixed400] fold 3/5: rmse_log=0.096447 train=12.3s pred=0.52s trees(clf/reg)=400/400
+[hgb_two_stage_fixed400] fold 4/5: rmse_log=0.093771 train=12.2s pred=0.60s trees(clf/reg)=400/400
+[hgb_two_stage_fixed400] fold 5/5: rmse_log=0.095211 train=12.5s pred=0.55s trees(clf/reg)=400/400
+[hgb_two_stage_fixed400] 완료, OOF 저장
+[lightgbm_single_fixed400] fold 1/5: rmse_log=0.100461 train=3.4s pred=0.27s trees(clf/reg)=0/400
+[lightgbm_single_fixed400] fold 2/5: rmse_log=0.099465 train=3.2s pred=0.27s trees(clf/reg)=0/400
+[lightgbm_single_fixed400] fold 3/5: rmse_log=0.099444 train=3.2s pred=0.26s trees(clf/reg)=0/400
+[lightgbm_single_fixed400] fold 4/5: rmse_log=0.097194 train=3.2s pred=0.25s trees(clf/reg)=0/400
+[lightgbm_single_fixed400] fold 5/5: rmse_log=0.099476 train=3.2s pred=0.25s trees(clf/reg)=0/400
+[lightgbm_single_fixed400] 완료, OOF 저장
+[lightgbm_two_stage_fixed400] fold 1/5: rmse_log=0.095920 train=6.8s pred=0.55s trees(clf/reg)=400/400
+[lightgbm_two_stage_fixed400] fold 2/5: rmse_log=0.095504 train=6.6s pred=0.55s trees(clf/reg)=400/400
+[lightgbm_two_stage_fixed400] fold 3/5: rmse_log=0.095886 train=6.6s pred=0.56s trees(clf/reg)=400/400
+[lightgbm_two_stage_fixed400] fold 4/5: rmse_log=0.094111 train=6.9s pred=0.56s trees(clf/reg)=400/400
+[lightgbm_two_stage_fixed400] fold 5/5: rmse_log=0.095414 train=6.8s pred=0.55s trees(clf/reg)=400/400
+[lightgbm_two_stage_fixed400] 완료, OOF 저장
+[catboost_single_fixed400] fold 1/5: rmse_log=0.103064 train=9.2s pred=0.02s trees(clf/reg)=0/400
+[catboost_single_fixed400] fold 2/5: rmse_log=0.102557 train=9.0s pred=0.02s trees(clf/reg)=0/400
+[catboost_single_fixed400] fold 3/5: rmse_log=0.102138 train=9.1s pred=0.02s trees(clf/reg)=0/400
+[catboost_single_fixed400] fold 4/5: rmse_log=0.101117 train=9.2s pred=0.02s trees(clf/reg)=0/400
+[catboost_single_fixed400] fold 5/5: rmse_log=0.102503 train=9.0s pred=0.01s trees(clf/reg)=0/400
+[catboost_single_fixed400] 완료, OOF 저장
+[catboost_two_stage_fixed400] fold 1/5: rmse_log=0.099001 train=20.3s pred=0.03s trees(clf/reg)=400/400
+[catboost_two_stage_fixed400] fold 2/5: rmse_log=0.099845 train=20.0s pred=0.03s trees(clf/reg)=400/400
+[catboost_two_stage_fixed400] fold 3/5: rmse_log=0.098638 train=20.1s pred=0.03s trees(clf/reg)=400/400
+[catboost_two_stage_fixed400] fold 4/5: rmse_log=0.097543 train=20.6s pred=0.03s trees(clf/reg)=400/400
+[catboost_two_stage_fixed400] fold 5/5: rmse_log=0.098431 train=20.4s pred=0.03s trees(clf/reg)=400/400
+[catboost_two_stage_fixed400] 완료, OOF 저장
+[hgb_two_stage_reference] fold 1/5: rmse_log=0.097168 train=6.9s pred=0.30s trees(clf/reg)=200/222
+[hgb_two_stage_reference] fold 2/5: rmse_log=0.096297 train=8.0s pred=0.33s trees(clf/reg)=341/121
+[hgb_two_stage_reference] fold 3/5: rmse_log=0.096686 train=8.0s pred=0.35s trees(clf/reg)=275/224
+[hgb_two_stage_reference] fold 4/5: rmse_log=0.095759 train=5.1s pred=0.22s trees(clf/reg)=153/126
+[hgb_two_stage_reference] fold 5/5: rmse_log=0.097185 train=5.8s pred=0.25s trees(clf/reg)=170/144
+[hgb_two_stage_reference] 완료, OOF 저장
+[done] 완료 모델 7/7 -> C:\Users\minii\Desktop\Folder\sdi2026-galaxy-sfr\work\조장\model_comparison_2026-11-12\results
