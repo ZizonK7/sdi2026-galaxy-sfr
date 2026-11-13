@@ -1,0 +1,765 @@
+{
+  "notebook_executed": false,
+  "basis": "git show HEAD:DataHub_701104_final.ipynb",
+  "checks": [
+    {
+      "number": 1,
+      "label": "JSON・칸 수・순서",
+      "passed": true,
+      "detail": {
+        "cell_count": 126,
+        "original_indices_in_new_order": [
+          1,
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "label": "DO NOT MODIFY 7칸 보존",
+      "passed": true,
+      "detail": {
+        "original_cell_indices": [
+          5,
+          7,
+          50,
+          51,
+          57,
+          58,
+          106
+        ],
+        "template_equal": true
+      }
+    },
+    {
+      "number": 3,
+      "label": "Part I 보존",
+      "passed": true,
+      "detail": {
+        "preserved_original_indices": [
+          1,
+          84
+        ],
+        "cell_count": 84
+      }
+    },
+    {
+      "number": 4,
+      "label": "변경 범위・출력 보존",
+      "passed": true,
+      "detail": {
+        "changed_original_indices": [
+          0,
+          87,
+          90,
+          93,
+          98,
+          99,
+          101,
+          103,
+          104,
+          107,
+          113,
+          116,
+          119,
+          120,
+          121,
+          122,
+          124
+        ],
+        "outputs_and_execution_count_preserved": true,
+        "only_deleted_metadata_key": "lightgbm_revision"
+      }
+    },
+    {
+      "number": 5,
+      "label": "변경 코드 문법・계산 보존",
+      "passed": true,
+      "detail": {
+        "parsed_original_code_indices": [
+          90,
+          93,
+          99,
+          107,
+          119,
+          124
+        ],
+        "results_dictionary_only_notes_changed": true,
+        "comment_only_code_ast_equal": [
+          90,
+          93,
+          107
+        ],
+        "algorithm_record_only_rule_file_reference_removed": true,
+        "importance_calculation_tables_prints_preserved": true
+      }
+    },
+    {
+      "number": 6,
+      "label": "내부 표현・메타데이터",
+      "passed": true,
+      "detail": {
+        "source_term_counts": {
+          "팀원": 0,
+          "조장": 0,
+          "work/": 0,
+          "protocol.json": 0
+        },
+        "lightgbm_revision_absent": true
+      }
+    },
+    {
+      "number": 7,
+      "label": "CRLF/LF 해시와 bytes 리터럴",
+      "passed": true,
+      "detail": {
+        "recorded_sha256": "ae4eef8fce45b909c5e9af3639721c51edff0f372c5e75cbf1afd36798408806",
+        "working_csv_raw_sha256": "ae4eef8fce45b909c5e9af3639721c51edff0f372c5e75cbf1afd36798408806",
+        "head_blob_lf_raw_sha256": "0710e7b29f787d79dc6e3eb2ccdc4e36c8fc104399177017c0fb761b266a6a54",
+        "working_csv_crlf_normalized_sha256": "ae4eef8fce45b909c5e9af3639721c51edff0f372c5e75cbf1afd36798408806",
+        "head_blob_crlf_normalized_sha256": "ae4eef8fce45b909c5e9af3639721c51edff0f372c5e75cbf1afd36798408806",
+        "byte_literals_verified_by_ast": true
+      }
+    },
+    {
+      "number": "13-extra",
+      "label": "RESULTS 필수 키 표시 유지",
+      "passed": true,
+      "detail": {
+        "required_keys": [
+          "model_name",
+          "features",
+          "n_features",
+          "random_seed",
+          "validation_mae",
+          "validation_rmse",
+          "validation_r2",
+          "zero_sfr_mae",
+          "positive_sfr_mae",
+          "training_seconds",
+          "notes"
+        ],
+        "bulky_keys": [
+          "algorithm_comparison",
+          "diagnostic_cv_records",
+          "diagnostic_interaction_records"
+        ]
+      }
+    },
+    {
+      "number": "1-15-extra",
+      "label": "검토 15건 반영 표시",
+      "passed": true
+    },
+    {
+      "number": 8,
+      "label": "파일 변경 범위・모양・git 상태",
+      "passed": true,
+      "detail": {
+        "git_diff_stat": " DataHub_701104_final.ipynb | 113 +++++++++++++++++++++++++--------------------\n 1 file changed, 64 insertions(+), 49 deletions(-)\n",
+        "git_status_short": " M DataHub_701104_final.ipynb\n?? \"work/\\354\\241\\260\\354\\236\\245/review_fixes_2026-11-13/\"\n",
+        "changed_paths": [
+          "DataHub_701104_final.ipynb",
+          "work/조장/review_fixes_2026-11-13/apply_fixes.py",
+          "work/조장/review_fixes_2026-11-13/static_checks.json",
+          "work/조장/review_fixes_2026-11-13/static_checks.py",
+          "work/조장/review_fixes_2026-11-13/worklog.md"
+        ],
+        "crlf_preserved": true,
+        "baseline_roundtrip_exact": true,
+        "serialization": {
+          "indent": 1,
+          "sort_keys": false,
+          "ensure_ascii": false
+        }
+      }
+    }
+  ],
+  "review_items": {
+    "1": {
+      "original_cell": 99,
+      "source_marker_present": true
+    },
+    "2": {
+      "original_cell": 122,
+      "source_marker_present": true
+    },
+    "3": {
+      "original_cell": 113,
+      "source_marker_present": true
+    },
+    "4": {
+      "original_cell": 98,
+      "source_marker_present": true
+    },
+    "5": {
+      "original_cell": 103,
+      "source_marker_present": true
+    },
+    "6": {
+      "original_cell": 120,
+      "source_marker_present": true
+    },
+    "7": {
+      "original_cell": 120,
+      "source_marker_present": true
+    },
+    "8": {
+      "original_cell": 87,
+      "source_marker_present": true
+    },
+    "9": {
+      "original_cell": 119,
+      "source_marker_present": true
+    },
+    "10": {
+      "original_cell": 116,
+      "source_marker_present": true
+    },
+    "11": {
+      "source_marker_present": true
+    },
+    "12": {
+      "original_cell": 124,
+      "source_marker_present": true
+    },
+    "13": {
+      "original_cell": 124,
+      "source_marker_present": true
+    },
+    "14": {
+      "source_marker_present": true
+    },
+    "15": {
+      "original_cell": 122,
+      "source_marker_present": true
+    }
+  },
+  "number_output_search": {
+    "0.093387": {
+      "variants": [
+        "0.093",
+        "0.093387",
+        "0.0934"
+      ],
+      "candidate_hits": [
+        {
+          "cell": 102,
+          "kind": "text/html",
+          "context": "46개 (최종) 0.093387 0.102236 0.511607"
+        },
+        {
+          "cell": 102,
+          "kind": "text/plain",
+          "context": "46개 (최종) 0.093387 0.102236 0.511607"
+        }
+      ],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.093771": {
+      "variants": [
+        "0.093771",
+        "0.0938",
+        "0.094"
+      ],
+      "candidate_hits": [
+        {
+          "cell": 99,
+          "kind": "text/html",
+          "context": "3 0.093771 0.094111 0.097543 0.000340"
+        },
+        {
+          "cell": 99,
+          "kind": "text/plain",
+          "context": "3 0.093771 0.094111"
+        },
+        {
+          "cell": 102,
+          "kind": "text/html",
+          "context": "46개 (최종) 0.093771 0.104234 0.503446"
+        },
+        {
+          "cell": 102,
+          "kind": "text/plain",
+          "context": "46개 (최종) 0.093771 0.104234 0.503446"
+        }
+      ],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.512": {
+      "variants": [
+        "0.512",
+        "0.5120",
+        "0.512000"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.503": {
+      "variants": [
+        "0.503",
+        "0.5030",
+        "0.503000"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.094063": {
+      "variants": [
+        "0.094",
+        "0.094063",
+        "0.0941"
+      ],
+      "candidate_hits": [
+        {
+          "cell": 91,
+          "kind": "text",
+          "context": "val 선택 로그 RMSE log10(SFR + 1): 0.094063 dex | 선형 RMSE 7.759"
+        },
+        {
+          "cell": 107,
+          "kind": "text/html",
+          "context": "최종 모델 (46개, 트리 400개 고정, 문턱 0.9) 0.094063 0.097979 0.093683 0.094063 0.261999 0.899722 7.758755 0.593018 -0.0598 [-0.0624, -0.0571] -0.0379 [-0.0406, -0.0356]"
+        },
+        {
+          "cell": 107,
+          "kind": "text/plain",
+          "context": "최종 모델 (46개, 트리 400개 고정, 문턱 0.9) 0.094063"
+        },
+        {
+          "cell": 107,
+          "kind": "text/plain",
+          "context": "최종 모델 (46개, 트리 400개 고정, 문턱 0.9) 0.094063"
+        }
+      ],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.586": {
+      "variants": [
+        "0.586",
+        "0.5860",
+        "0.586000"
+      ],
+      "candidate_hits": [
+        {
+          "cell": 111,
+          "kind": "text/html",
+          "context": "(100.0, 3000.0] 61 -0.3957 0.5860 0.0568 0.6718 0.7376"
+        },
+        {
+          "cell": 111,
+          "kind": "text/plain",
+          "context": "(100.0, 3000.0] 61 -0.3957 0.5860 0.0568"
+        }
+      ],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.093367": {
+      "variants": [
+        "0.093",
+        "0.093367",
+        "0.0934"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.093836": {
+      "variants": [
+        "0.0938",
+        "0.093836",
+        "0.094"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.513": {
+      "variants": [
+        "0.513",
+        "0.5130",
+        "0.513000"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.518": {
+      "variants": [
+        "0.518",
+        "0.5180",
+        "0.518000"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.094205": {
+      "variants": [
+        "0.094",
+        "0.0942",
+        "0.094205"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.638": {
+      "variants": [
+        "0.638",
+        "0.6380",
+        "0.638000"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.095962": {
+      "variants": [
+        "0.095962",
+        "0.096",
+        "0.0960"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.095340": {
+      "variants": [
+        "0.095",
+        "0.0953",
+        "0.095340"
+      ],
+      "candidate_hits": [
+        {
+          "cell": 37,
+          "kind": "text/html",
+          "context": "6.5~7.0 671 1.091 10.974 0.095 -0.069 0.232 3.130"
+        },
+        {
+          "cell": 37,
+          "kind": "text/plain",
+          "context": "6.5~7.0 671 1.091 10.974 0.095"
+        },
+        {
+          "cell": 99,
+          "kind": "text/html",
+          "context": "hgb_two_stage_fixed400 0.095340 0.000998 13.437615"
+        },
+        {
+          "cell": 99,
+          "kind": "text/plain",
+          "context": "hgb_two_stage_fixed400 0.095340 0.000998 13.437615"
+        },
+        {
+          "cell": 102,
+          "kind": "text/html",
+          "context": "42 34개 (직전 최종) 0.095340 0.103163 0.567045"
+        },
+        {
+          "cell": 102,
+          "kind": "text/plain",
+          "context": "42 34개 (직전 최종) 0.095340 0.103163 0.567045"
+        }
+      ],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "-0.00125": {
+      "variants": [
+        "-0.001",
+        "-0.00125",
+        "-0.001250",
+        "-0.0013",
+        "−0.001",
+        "−0.00125",
+        "−0.001250",
+        "−0.0013"
+      ],
+      "candidate_hits": [
+        {
+          "cell": 60,
+          "kind": "text/html",
+          "context": "(-0.001, 0.0] 3610 1.208 3.551 0.012 0.087"
+        },
+        {
+          "cell": 60,
+          "kind": "text/plain",
+          "context": "(-0.001, 0.0] 3610 1.208 3.551 0.012 0.087"
+        },
+        {
+          "cell": 111,
+          "kind": "text/html",
+          "context": "(-0.001, 0.0] 3610 0.0320 0.0980 0.0940 0.3309 0.1921"
+        },
+        {
+          "cell": 111,
+          "kind": "text/plain",
+          "context": "(-0.001, 0.0] 3610 0.0320 0.0980 0.0940"
+        },
+        {
+          "cell": 111,
+          "kind": "text/plain",
+          "context": "(-0.001, 0.0] 0.3309 0.1921"
+        },
+        {
+          "cell": 115,
+          "kind": "text/html",
+          "context": "(-0.001, 0.5] (-0.168, 0.308] 8104 0.019743 0.016818 0.000000"
+        },
+        {
+          "cell": 115,
+          "kind": "text/plain",
+          "context": "(-0.001, 0.5] (-0.168, 0.308] 8104 0.019743 0.016818"
+        },
+        {
+          "cell": 115,
+          "kind": "text/plain",
+          "context": "(-0.001, 0.5] (-0.168, 0.308] 0.000000"
+        },
+        {
+          "cell": 115,
+          "kind": "text/html",
+          "context": "(-0.001, 0.0] zero_distance 27 0.000000 -0.227052 0.636374"
+        },
+        {
+          "cell": 115,
+          "kind": "text/plain",
+          "context": "(-0.001, 0.0] zero_distance 27 0.000000 -0.227052 0.636374"
+        }
+      ],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "-0.0022": {
+      "variants": [
+        "-0.002",
+        "-0.0022",
+        "-0.002200",
+        "−0.002",
+        "−0.0022",
+        "−0.002200"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "-0.0003": {
+      "variants": [
+        "-0.000",
+        "-0.0003",
+        "-0.000300",
+        "−0.000",
+        "−0.0003",
+        "−0.000300"
+      ],
+      "candidate_hits": [
+        {
+          "cell": 18,
+          "kind": "text/html",
+          "context": "log10_mass_ratio -6.000 -6.000 -0.000 32659"
+        },
+        {
+          "cell": 18,
+          "kind": "text/plain",
+          "context": "log10_mass_ratio -6.000 -6.000 -0.000 32659"
+        },
+        {
+          "cell": 37,
+          "kind": "text/html",
+          "context": "M* vs 주계열 잔차 (확인용, 정의상 ≈0) -0.000 0.101 152311"
+        },
+        {
+          "cell": 37,
+          "kind": "text/plain",
+          "context": "M* vs 주계열 잔차 (확인용, 정의상 ≈0) -0.000 0.101 152311"
+        },
+        {
+          "cell": 93,
+          "kind": "text/html",
+          "context": "30개 모델 + SFR > 30 꼬리 분리 − 환경 분류기 + 로그 회귀기 (30 / 30개) -0.0003 0.0005 -0.0016 0.0005 20 경계 (단순한 쪽 유지)"
+        },
+        {
+          "cell": 93,
+          "kind": "text/html",
+          "context": "30개 모델 + 분류기 상한 400 − 환경 분류기 + 로그 회귀기 (30 / 30개) -0.0003 0.0002 -0.0008 0.0000 22 낫다"
+        },
+        {
+          "cell": 93,
+          "kind": "text/plain",
+          "context": "30개 모델 + SFR > 30 꼬리 분리 − 환경 분류기 + 로그 회귀기 (30 /... -0.0003 0.0005"
+        },
+        {
+          "cell": 93,
+          "kind": "text/plain",
+          "context": "30개 모델 + 분류기 상한 400 − 환경 분류기 + 로그 회귀기 (30 / 30개) -0.0003 0.0002"
+        }
+      ],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    },
+    "0.155": {
+      "variants": [
+        "0.155",
+        "0.1550",
+        "0.155000"
+      ],
+      "candidate_hits": [],
+      "note": "숫자열 후보이며 동일한 의미의 출처인지는 worklog 표를 본다."
+    }
+  },
+  "results_output_sizes": {
+    "measure": "각 값을 json.dumps(indent=2, ensure_ascii=False)로 나타낸 글자 수(키와 바깥쪽 들여쓰기 제외)",
+    "characters_by_key": {
+      "algorithm_comparison": 30291,
+      "diagnostic_cv_records": 7554,
+      "features": 994,
+      "stage2_regressor_features": 994,
+      "reproducibility": 659,
+      "diagnostic_interaction_records": 638,
+      "engineered_extra_features": 344,
+      "engineered_environment_features": 333,
+      "notes": 250,
+      "diagnostic_cv": 154,
+      "prediction_contract_checks": 147,
+      "model_params": 119,
+      "metric_audit": 95,
+      "engineered_mass_history_features": 79,
+      "algorithm": 32,
+      "zero_sfr_mae": 19,
+      "validation_log_rmse": 19,
+      "zero_sfr_log_rmse": 19,
+      "positive_sfr_log_rmse": 19,
+      "validation_log_rmse_eps1": 19,
+      "validation_log_rmse_eps0.01": 19,
+      "validation_r2": 18,
+      "positive_sfr_mae": 18,
+      "validation_mae": 17,
+      "validation_rmse": 17,
+      "training_seconds": 17,
+      "model_name": 16,
+      "log_metric_definition": 16,
+      "primary_metric_is_assumption": 4,
+      "zero_threshold_P0": 3,
+      "n_features": 2,
+      "random_seed": 2
+    },
+    "bulky_value_characters": 38483,
+    "all_value_characters": 42927,
+    "bulky_fraction": 0.8964754117455215
+  },
+  "all_passed": true
+}
