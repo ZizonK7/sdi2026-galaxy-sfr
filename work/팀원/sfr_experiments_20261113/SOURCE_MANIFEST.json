@@ -545,11 +545,6 @@
     "sha256": "2ba86a3182516600cf1606de5e210441a27ffa6795586df2961d91a8110de8be"
   },
   {
-    "path": "outputs/b_tail_diagnosis/mpl-cache/fontlist-v3.11.0.json",
-    "bytes": 287099,
-    "sha256": "fc06f83fbded6d2fb1fe20c6d487b7e1f6e73d883dd7a591c4830d12cd707c80"
-  },
-  {
     "path": "outputs/b_tail_diagnosis/oracle_diagnostics_NOT_achievable.csv",
     "bytes": 1763,
     "sha256": "a021cdadfbb76de1f30e75d72d8dc664ab7a314b00f376cf3018ec243e3b5833"
