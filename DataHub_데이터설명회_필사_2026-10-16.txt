@@ -1,0 +1,604 @@
+참석자 1 00:03
+잘 들리시나요?
+
+참석자 2 00:06
+네
+
+참석자 3 00:08
+네, 잘 들립니다.
+
+참석자 1 00:09
+네 그러면 5시가 됐으니 과학 데이터 혁신 경진대회 데이터 설명회를 시작하도록 하겠습니다.
+우선 오늘의 순서는 대사 그리고 대회 안내 그리고 그다음으로 일본 RSV 전파 데이터 소개, 다음으로는 은화별 생생률 데이터 소개 그리고 마지막으로는 경진대회 전반에 대한 질의 응답을 순서로 오늘의 설명회를 시작하도록 하겠습니다.
+우선 먼저 개회사를 해 주실 텐데요. 통계학과 박광훈 교수님께서 개회사를 해 주시겠습니다.
+
+참석자 4 00:47
+네 안녕하십니까? 소개받은 서울대학교 통계학과 교수 겸 이제 데이터 디스커버리 센터장인 박건웅입니다.
+바쁘신 일정 중에도 제1회 과학 데이터 혁신 경진대회에 함께해 주신 많은 여러분, 그리고 무엇보다 오늘 이 자리의 주인공인 참가자 여러분께 진심으로 환영의 인사를 드립니다.
+오늘 이곳 대학교에서 서울대학교에서 과학 발전의 새로운 패러다임을 제시할 뜻깊은 행사의 첫 문을 열게 되어 무척 영광스럽게 생각합니다.
+이번 대회가 성공적으로 개최될 수 있도록 물심양면으로 지원해 주신 주최 측과 관계자 여러분 그리고 훌륭한 멘토링과 심사를 맡아주실 심사위원, 교수님들, 조교님들께도 깊은 감사의 말씀을 전합니다.
+여러분 저희는 지금 AI 시대에 살고 있습니다. 인공지능과 머신러닝이 하루가 다르게 진화하는 오늘날 데이터는 단순한 기록을 넘어 미래의 향방을 결정짓는 가장 강력한 자원이 되었습니다.
+
+참석자 4 01:52
+그중에서도 과학 데이터는 인류가 직면한 기후 변화, 신약 개발, 우주 탐사 등 복잡한 난제를 해결하고 새로운 지식의 지평을 여는 핵심 열쇠입니다.
+과거의 과학이 관찰과 실험 중심이었다면 이제는 과학이 방대한 데이터 속에서 숨겨진 패턴을 찾아내고 혁신적인 인사이트를 도출하는 데이터 주도 과학으로 진화했습니다.
+우리가 오늘 이 자리에 모인 이유도 바로 여기에 있다고 생각합니다.
+이 흩어져 있는 데이터의 생명력을 불어넣고 이를 통해 사회적 과학적 가치를 창출하는 혁신가들을 발굴하기 위함입니다.
+특히 이번 대회는 제1회라는 점에서 그 의미가 남다르다고 생각합니다.
+여러분은 이 대회의 첫 번째 개척자이고 앞으로 이어질 새로운 전통의 시작점이라고 생각합니다.
+서울대학교는 그동안 대한민국 과학기술의 발전을 발전에 많은 기여를 해왔습니다.
+
+참석자 4 02:58
+이제 우리는 이 경진대회를 통해 학생들이 강의실에서 배운 이론을 넘어 실제 데이터를 만지고 분석하며 살아 있는 문제 해결 능력을 기르는 실천의 장을 마련하고자 합니다.
+오늘 여러분이 보여줄 다양한 접근법과 창의적 아이디어는 앞으로 과학 데이터 생태계를 풍성하게 만드는 소중한 밑거름이 될 것입니다.
+참가자 여러분 오늘 여러분이 마주하게 될 데이터 속에는 아직 아무도 발견하지 못한 새로운 공식과 혁신의 씨앗이 숨겨져 있을 수도 있습니다.
+때로는 그 데이터 분석 과정이 까다롭고 분석 모델이 마음처럼 작동하지 않아 밤을 새우거나 큰 어려움을 겪을 수도 있습니다.
+하지만 그 치열한 고민의 과정 자체가 여러분들을 훌륭한 데이터 기반 과학자로 성장시키는 최고의 자양분이 될 것이라고 저는 믿습니다.
+자 결과에 대한 부담감은 잠시 내려놓고 이 과정을 좀 즐겨주시기 바랍니다.
+실패를 두려워하지 않는 과감한 도전과 틀을 깨는 혁신적인 아이디어가 이 공간을 가득 채우기를 기대합니다.
+
+참석자 4 04:15
+다시 한 번 제1회 과학 데이터 혁신 경진대회에 참여해 주신 모든 분께 감사드리며 여러분 모두가 후회 없이 자신의 역량을 펼치는 뜨거운 축제의 장이 되기를 진심으로 응원합니다.
+감사합니다.
+
+참석자 1 04:33
+네 좋은 말씀해 주셔서 감사합니다. 네 의사 해 주셨던 박건웅 교수님이었고요.
+다음으로는 어 데이터 설명을 하기 전에 일정과 시상에 대해서 먼저 소개를 해드리고 데이터 설명으로 넘어가도록 하겠습니다.
+우선은 오늘 데이트 설명회가 이제 10월 16일에 있었고 오늘 이후로는 이제 10월 24일부터 11월 13일까지 3주간 데이터 분석을 진행할 수 있습니다.
+물론 먼저 신청해 주신 분들은 데이터를 분석을 먼저 하실 수 있게 다운로드를 열어놓으셨고 신청 기간은 10월 23일까지니까 신청 아직 안 하셨던 분들께서는 신청해 주시면 좋을 것 같습니다.
+그리고 중간 보고서가 11월 4일 수요일 정오에 있는데 이때 분석할 데이터를 선택하고 이제 중간 보고서를 제출해 주시면 조교 분들께서 피드백을 해 주실 겁니다.
+그리고 마지막으로 최종 보고서는 11월 13일에 있는데 이제 11월 13일에는 보고서뿐만 아니라 본인들이 분석했던 코드를 함께 제출해서 심사위원분들의 심사를 받게 됩니다.
+
+참석자 1 05:48
+그리고 상위 팀 아직 정해지지 않았지만 상위 n개의 팀에 대해서는 이제 발표와 시상이 남아 있는데요.
+11월 25일 6시에 대면으로 상위 팀 대면 발표와 장소는 이제 추후에 공지해 드리도록 하겠습니다.
+그리고 이제 시상에 있어서는 이제 대상 한 팀 100만 원 그리고 최우수상 2팀 50만 원 그리고 이제 상위 발표 진출팀에게는 이제 각 팀당 5만 원권의 상품권이 지급될 예정입니다.
+
+참석자 1 06:19
+네 이제 다음으로 이제 일본 RSV 전파 데이터셋 들 공유해 주셨고 설명을 해 주실 박상우 교수님 모셔보도록 하겠습니다.
+
+참석자 3 06:30
+네 소개 감사드립니다. 혹시 화면 공유를 허용해 주실 수 있을까요?
+
+참석자 1 06:37
+네 알겠습니다.
+
+참석자 1 06:57
+지금 한 번
+
+참석자 3 06:58
+아직 공유가 켜져 있지 않습니다라고 합니다. 요청을 제가 보내보기로 했는데요.
+됐나
+
+참석자 1 07:04
+네네 했습니다.
+
+참석자 3 07:05
+네 감사합니다. 우선 이제 이렇게 저도 이런 데이터 경진대회가 열린다고 해서 되게 많은 기대가 되기도 하고 또 제가 제 데이터를 기여할 수 있게 되어서 되게 뜻깊은 자리인 것 같습니다.
+또 오늘 되게 많은 분들이 와주셔가지고 이제 새로운 데이터 기법 방식을 통해서 과연 어떠한 질문들을 또 만들어낼 수 있고 또 어떠한 새로운 인사이트들을 도출해낼 수 있을지 참 기대가 되는 것 같습니다.
+잠깐 저는 이제 서울대학교 생명과학부에 이 조교수로 있는 박상우라고 하고요.
+오늘은 RSB 이제 RSB아웃에 대한 데이터를 설명을 드리려고 하는데 데이터 설명에 앞서 조금 어떤 연구들이 되었고 이제 어떤 식으로 저희는 기존에는 어떤 식으로 데이터를 분석을 해 왔는지 조금 설명을 드리는 게 도움이 될 것 같아서 조금 준비를 해 봤습니다.
+이제 그렇게 해서 이제 우선 RSV라는 이제 바이러스는 이제 흔한 감기들 바이러스 중에 하나입니다.
+
+참석자 3 08:01
+대부분 사람들이 한 2세쯤 되면 한 100% 정도 걸리고 아마 많은 분들이 이제 한 번 이상 많이 걸려봤을 겁니다.
+그런데 이게 저희들이 걸렸을 때는 되게 마일드한 심텀으로 끝나는데 어린이들이 걸렸을 때는 이제 에스마라든가 알러지 디벨로먼트에 되게 중요한 리스크 팩터로 작용할 수 있기 때문에 많은 사람들이 관심을 가지고 있는 감염병이고 최근에 한국에서도 백신을 개발을 해서 이제 사용 중입니다.
+그런데 RSP가 이제 그래서 전 세계적으로 많이 퍼지는데요.
+예를 들면 한국의 RSP의 패턴을 보면은 거의 매년 12월 이렇게 유행을 합니다.
+이제 다 이제 확진자 숫자가 시간에 따라 어떻게 변화하는지 본 건데 아마 코로나를 겪으면서 이런 그래프들을 많은 분들이 대부분의 분들이 이런 그래프를 보는 데 익숙해졌을 거라고 생각을 합니다.
+
+참석자 3 08:48
+사실 그래서 RSB를 연구하는 데 있어 이 예측한다라는 건 어떻게 보면 되게 간단한 질문 1차로 보일 수도 있을 것 같습니다.
+그런데 재미있는 점이 이제 이거를 공간적으로 보면 또 되게 흥미로운 이제 양상들이 나타나는데요.
+예를 들어서 미국에서 이제 2019년에 이제 이런 연구를 진행을 했었는데 여기서는 이제 온셋빅이라는 것을 봤었어요.
+그러니까 유행이 시작할 때에 언제 처음 이 유행이 크게 퍼지기 시작하는가인데 보시면 알 수 있듯이 남쪽에는 RSV가 일찍 전파를 어느 셋이 일찍 시작하고 북쪽으로 갈수록 늦게 시작하는 것을 볼 수가 있는데요.
+이거는 기후에 영향을 많이 받기 때문입니다.
+
+참석자 3 09:31
+이제 그렇게 해서 이러한 데이터를 분석을 해서 이제 오른쪽 아래에 볼 수 있듯이 이제 휴미니티와 RSP의 전파의 효과 가 있다라는 것을 밝혀내었는데 이제 그렇다면 대체 RSB의 전파라는 것은 어떻게 이제 저희가 측정을 할 수 있는 것인가 왜냐하면 전파 사람과 사람 사이에 전파가 된다는 것과 확진자의 숫자가 증가된다는 것은 살짝 다른 의미를 가지고 있습니다.
+그런데 한 개 더 재미있는 점은 이제 한국에서도 봤지만 매년 한 장소에서는 뚜렷합니다.
+그러니까 여기서도 공간적으로는 남쪽에는 조금 일찍 발생하고 유행을 하고 북쪽에서도 늦게 유행을 하지만 예를 들어 뉴욕을 딱 짚는다면은 예를 들어 뉴욕에서는 매년 11월에 유행을 한다거나 이제 2월에 유행을 한다거나 아니면 플로리다 같은 경우는 11월에 유행한다거나 이렇게 딱 정해져 있는데 이제 일본 데이터가 되게 흥미로운 점이 있습니다.
+
+참석자 3 10:21
+일본에서는 이제 전국적으로 2016년까지는 이제 겨울에 RSB가 유행을 하다가 2016년부터 가을 유행으로 전국적으로 갑자기 바뀐 것인데요.
+이러한 현상이 전 세계적으로 어떤 곳에서도 이제 관측이 되지 않았고 아직까지 설명이 되지 않았습니다.
+그래서 이걸 설명하기 위해서 다양한 가설들을 이제 제시가 되었고 이제 저희가 기존의 모델링을 통해서 이거를 설명을 했었는데 제가 생각할 때는 아직까지 이 데이터에 많은 질문들이 남아져 있기에 그런 것들을 이제 경진대회를 통해서 풀어보면 되게 흥미로울 것 같아서 이 데이터를 제시를 했습니다.
+우선 그래서 조금 더 이 데이터를 어떤 식으로 저희들이 분석을 기존에 저희 분야에서 어떻게 분석하는지 알려드리면 좋을 것 같아서 이제 물론 이제 많은 분들이 이제 데이터 경진대회에 오셨으니까 데이터를 다뤄본 경험도 있고 이런 타임 시리즈 데이터를 분석해 본 경험도 많은 분들이 계실 것 같은데요.
+
+참석자 3 11:16
+이거를 그냥 저희가 관심 있는 분 부분은 어떻게 보면은 감염병과 감염병 사이에 사람과 사람 사이에 감염병이 어떻게 전파가 되는지에 주로 관심을 가지고 있습니다.
+그러다 보니까 이거를 통계학적으로 그냥 분석하지 않고 이거를 설명할 수 있는 수학적 모델을 저는 세워서 연구를 합니다.
+즉 간단하게 보면은 사람들을 셉터블 현재 면역이 없는 사람, 인펙티드 현재 감염이 된 사람 그리고 리커버드 현재 최근에 면역 감염이 되었다가 면역이 생겨서 면역이 생긴 사람 그렇게 해서 사람을 세 가지 그룹으로 나누고 이 세 가지 그룹 사이에서 사람이 어떻게 이동을 하는지를 나타낼 수가 있고 그걸 왼쪽에 있는 이제 디플랜 시리쿠에이션으로 나타낼 수가 있습니다.
+사실 별로 수식이 그렇게 중요하지는 않습니다. 이게 목자 모델은 아니거든요.
+
+참석자 3 12:00
+그렇게 해서 그렇다면 과연 이제 오른쪽에 데이터가 주어졌을 때 트랜스미션 레잇이 어떻게 변화를 해야지 오른쪽에 있는 데이터를 설명할 수 있을 것인가라는 질문을 던질 수가 있고 이제 그런 부분들을 통계학적으로 풀어나갈 수가 있습니다.
+저희 같은 경우에는 이걸 기존에 분석할 때는 베이지안 통계를 사용을 해가지고 헤밀토니안으로 이제 이 추정을 하는데요.
+그러면 왼쪽에 이렇게 베타 베타 값 트랜스미셜레잇이 세미 애뉴얼리하게 보시면 알 수 있듯이 1월쯤에 조금 늘어났다가 한 4월 5월쯤에 잠깐 감소했다가 다시 7 8월쯤에 다시 증가했다가 감소했다가 다시 12월쯤에 다시 증가하는 이런 현상을 볼 수가 있고 이런 현상을 주면은 이 시뮬레이션 모델을 집어넣었을 때에 딱 이것만으로 그러니까 설명이 다 되는 거죠.
+
+참석자 3 12:43
+왜냐하면은 이게 재미있는 점이 뭐냐 하면은 보통 저희가 생각을 했을 때 이렇게 7월 겨울 유행에서 가을 유행으로 급격하게 변화를 한다면은 이 트랜스미션 레이이라는 게 시간에 따라서 변화하지 않았을까라고 생각을 해볼 수 있는데 변화하지 않아도 설명이 된다라는 것을 밝혔고 사실 한 가지 더 저희가 제시한 거는 이거는 그냥 가설뿐이어서 데이터가 사실 없기는 했는데요.
+이제 가설로는 아마도 2016년에 이제 일본에서 어린이집을 증축시키는 폴리시를 도입을 했습니다.
+그러다 보니까 어린이들이 이제 어린이집에 많이 가고 그럼 어린이들 사이에 접촉이 늘어나면서 RSB의 전파가 늘어나지 않았을까 그래서 그거를 두 개를 합쳤을 때 이게 설명이 된다라는 것을 이제 밝혀냈어서 논문을 작성을 하였습니다.
+그런데 이제 2020년까지만 보는 게 아니라 그런데 이제 여기는 사실 하나의 일본에 있는 하나의 혼슈 섬에서만 제가 데이터를 보여드렸는데요.
+
+참석자 3 13:42
+데이터 그걸 넘어가기 전에 그래서 이게 아마도 어떤 저희가 이 에스티메이트 한 트랜스미션 값이랑 휴뮤니티랑 이제 이렇게 상관관계를 그려봤을 때 이렇게 아까 보여드렸던 이런 유자 형태가 나온다라는 것을 밝혀냈는데 아직 통계하는 분들이 봤을 때는 이게 부족하다고 생각할 수 있을 것 같습니다.
+제가 그래도 그런 생각이 들어요. 이 휴미디티라는 것을 이렇게 포스트학으로 분석하는 게 아니라 모델에 직접 집어넣을 수 있을까 이런 조금 방법론적인 고민도 들고 이거를 다양한 아일랜드를 보면요.
+보면은 일본이 사실 한국보단 크지만은 그렇게 또 막 크지는 않을 텐데 대개 보면 각 아일랜드마다 RSB의 유행 형태가 정말로 많이 다른 것을 볼 수가 있습니다.
+그렇다면은 저희들이 예를 들면 왜 이렇게 RSB의 전파 형태가 보이는 유행의 형태가 아일랜드마다 다를 것인가라는 질문을 해볼 수가 있고 하나 더 재미있는 거는 방금까지는 제가 2020년까지의 데이터만 보여드렸어요.
+
+참석자 3 14:44
+그런데 저희들이 모두 알듯이 2020년에 무슨 일이 있었냐면은 코로나가 발생을 했었죠.
+코로나가 발생을 하면서 사회적 거리두기를 일본에서도 시행을 했었어요.
+그러다 보니까 2020년에 RSB가 사라졌습니다.
+사라졌다가 거리 두기를 점점 풀어 나가면서 보시면 알 수 있듯이 2021년에 RSB가 다시 크게 유행을 했다가 근데 이때는 또 여름에 유행을 했었어요.
+그렇다면은 이제 여기서 되게 제가 중요한 질문이 나옵니다.
+이제 한국 같은 경 이제 만약에 코로나 팬데믹이 없었더라면은 2020년에서도 계속 가을에 유행을 하지 않을까라고 예측을 했었을 것이고 아니면 홍국 한국 같은 경우에는 아마도 계속 12월에 내년 12월에 RSB가 유행을 했을 것 같아요.
+그런데 이 팬데믹이 도입이 되면서 RSB의 유행 시기가 확 바뀌었고 이걸 예측하는 게 엄청 어려워졌습니다.
+이제 기존 간단한 저희들이 사용하는 그런 모델로 예측하기가 되게 어려운데요.
+
+참석자 3 15:38
+그렇다면 이러한 것들을 어떻게 예측을 할 수 있을까라는 질문도 해볼 수 있을 것 같고 이거를 조금 더 넘어가서 여기서 다시 아까 보여드렸던 건데 여기서도 이제 2020년 이후에 패턴들을 보시면요.
+정말로 많은 차이를 보이는 것을 알 수가 있습니다.
+이거를 제가 정량적으로 설명을 할 수가 뭐라 설명드릴지 모르겠지만 보면은 차이가 많이 납니다.
+그러면 이 각각의 아일랜드마다 이거를 과연 예측을 할 수 있을까라고 생각이 들고 그래서 이제 제가 제시하는 데이터의 가장 이제 기본은 이제 이 RSB의 시계열 데이터인데요.
+이게 아일랜드뿐만 아니라 프리팩처라고 해서 한국으로 치면 약간 시군구 시군구까지는 해도 시 단위 정도로 되는 이제 데이터라고 생각을 하시면 될 것 같습니다.
+그렇게 해서 이제 여기를 히트맵으로 그려봤는데 2020년까지는 보시면 알 수 있는 게 전국적으로 되게 싱크론이 된 이제 이게 여기 커서가 안타깝게도 안 보이는데요.
+
+참석자 3 16:36
+키노트여가지고 이제 보시면 밴드가 겨울에 원래 기존에 겨울에 나오다가 2017 가 이거를 혹시 이렇게 되면은 화면 공유 이렇게 설명드리겠습니다.
+여기서 보시면은 이렇게 20 원래는 겨울에 엄청난 싱크로니를 보이다가 2016년 17년 18년까지도 가을에 전국적으로 유행지가 되게 비슷합니다.
+그런데 코로나가 지나고 나서 유행 시기가 엄청 많이 달라졌어요.
+그렇다면은 이거를 각각 예측할 수 있을 것인가 혹은 왜 어떤 곳에서는 조금 더 일찍 유행을 했고 어떤 곳에 늦게 유행을 했는가 이게 과연 기후에 대한 영향이 있을 것인가 혹은 다른 영향이 있을 것인가 아니면 그런 영향을 고려하지 않고도 예측이 가능할 것인가 그러한 되게 재미있는 질문들이 많이 나오는 것 같습니다.
+
+참석자 3 17:25
+여기서도 보면은 어떤 곳에서는 여기에서는 크게 유행을 했다가 여기서는 좀 덜 유행하는 곳들도 있고 여기 같은 경우에는 여기서 좀 약하게 유행을 하고 크게 유행을 하고 이러한 현상들에 대해서 제 생각에는 분석을 해보면 되게 재미있는 제가 제시한 질문들 말고도 정말로 많은 질문들이 있을 것 같고 사실 제가 사용하는 모델들은 되게 간단합니다.
+머신러닝 같은 것도 들어가지도 않고 그래서 여러분들의 또 새로운 데이터 분석 방식이라든가 질문에 대한 관점을 가지고 오실 수 있을 것 같아서 이러한 데이터를 제안을 했습니다.
+이거 말고도 사실 이제 각 프리팩처별로 파플레이션 사이즈랑 기후 데이터가 조금 더 들어가 있기는 한데요.
+제가 생각할 때는 이 데이터가 가장 중점이 되는 것 같습니다.
+네 그럼 혹시 질문이 있다면 질문을 받으면 되는 거겠죠.
+여기서 질문 시간을 잠깐 가지도록 하겠습니다.
+
+참석자 1 18:24
+질문 있으신 분들은 편하게 질문해 주시면 됩니다.
+
+참석자 5 18:31
+교수님 안녕하십니까? 저는 교육학과에서 인과 추론 랩실에 있는 전한나라고 합니다.
+너무 설명 잘 들었고요. 제가 궁금한 사항은 아직 제가 신청하지 않아서 데이터를 제공받지 못했는데 데이터가 몇 년도부터 몇 년도까지 제공되는 것이며 아까 말씀하실 때 이제 코로나 이후로 2021년 이후에 굉장히 독특한 양상이 나타났다고 하셨는데 마지막까지 보신 게 2024년인지 아니면 그 이후 2025년이나 2026년까지도 2026년에 올해니까 안 되고 2025년까지도 보신 게 있는지 궁금하고요.
+두 번째 질문은 이건 이제 여기 주최 측이 궁금한 사항인데 만약에 여기 대회에 참가를 해서 시상은 당연히 못 받더라도 참가한 후에 이제 논문으로 발전을 시키고 싶을 경우에는 이런 곳에서 데이터를 제공받아서 투고를 한다 이런 것도 가능한지 궁금합니다.
+
+참석자 3 19:25
+제가 먼저 답을 할까요? 아니면 두 번째 답을 먼저 선생님께서 해주시는 게 좋을까요?
+
+참석자 1 19:31
+교수님 먼저 하시면 제가 그다음에 하겠습니다. 네 좋습니다.
+
+참석자 3 19:35
+박건훈 교수님께서 아까 뭔가 말을 하
+
+참석자 4 19:38
+아닙니다. 지금 그대로 하시면 될 것 같습니다.
+
+참석자 3 19:41
+아 네 네 우선 제 제 답은요. 이제 사실 데이터가 여기 보여드린 데이터가 전부입니다.
+2013년부터 2024년까지 있고요. 이제 기존 논문에서도 사실 이걸 전부 다 분석을 하기는 했어요.
+그런데 이제 예측이라는 관점에서는 저희가 보지 않았고 이제 이거를 설명할 수 있는 그런 새로운 툴을 만들기는 했는데 이거를 제가 여기서 발표를 해버리면은 조금 어떤 여러분들의 창의력에 한계를 둘 수 있지 않을까 해서 그 부분을 제가 발표를 하지 않았고 그래도 이거는 이제 발표를 이런 컨텍스트를 주는 게 이런 분석 방식이 있다라는 걸 또 보여주는 게 좋을 것 같아서 발표를 드렸습니다.
+이제 그리고 사실 2025년은 콜래버레이터가 현재 연구를 하고 있는 부분이긴 한데요.
+2025년에는 사실 엄청나게 신기한 모습을 보이고 있습니다.
+이제 봄에도 한 번 1년에 두 번 나옵니다.
+
+참석자 3 20:30
+봄에 한 번 나오고 가을에 한 번 나오고 이렇게 두 번 나오는데 그런 경우도 일본에서 한 번도 관측된 적이 없어서 그거를 현재 연구 중인 부분도 있기는 한데 생각보다 어려운 부분도 많은 것 같습니다.
+그래서 첫 번째 데이터 질문 제가 답을 드린 것 같고 두 번째 질문은 논문에 대한 건데요.
+
+참석자 1 20:51
+제가 답변드려도 될까요?
+
+참석자 3 20:53
+네네네
+
+참석자 1 20:54
+네 일단은 데이터를 제공해 주신 분들마다 어느 정도까지 이 데이터를 자기 연구에 활용할 수 있는지가 사실 각자 다 다릅니다.
+박사님들이나 교수님 들이 올려주신 데이터마다도 다 다르고 사실 어떤 분야에 쓰실 건지에 따라서 다 다른데 그 데이터 허브 있다가 나중에 데이터 설명회가 다 끝난 후에 질의응답 시간이 있는데 그때 사실 데이터 허브에 대해서 전반적인 좀 소개를 드리려고 했습니다.
+조금 먼저 설명을 드리면은 그 데이터 허브에 올라가 있는 데이터를 제공한 사람의 이메일이나 연락처를 컨택을 먼저 하시고 선택을 먼저 하신 후에 어떻게 레퍼런스를 달아라라고 답이 오시면 그때 이제 데이터를 활용하시면 좋을 것 같습니다.
+
+참석자 5 21:44
+네 답변 감사드립니다.
+
+참석자 3 21:46
+네 감사합니다.
+
+참석자 3 21:52
+다른 질문이 또 있으시면 하셔도 하나 정도는 괜찮을 것 같다는 생각이 들고요.
+아니면 이제 그다음 이제 어 순서로 넘어가도 괜찮을 것 같습니다.
+
+참석자 2 22:04
+혹시 질문 하나 드려도 괜찮을까요?
+
+참석자 3 22:08
+시간상 괜찮겠죠? 선생님
+
+참석자 1 22:10
+네네 마지막 질문으로 하겠습니다. 네네
+
+참석자 2 22:13
+네 안녕하세요. 경제학부 최재원입니다. 다름이 아니라 만약에 전에도 말씀하신 것처럼 어떤 폴리시라든지 그런 거에 대해서도 생각을 하고 있다고 말씀해 주셨는데 그러면 혹시 물론 데이터 분석은 주어진 데이터로 진행하더라도 보조적으로 다른 정책 데이터라든지 그런 걸 추가적으로 활용해서 분석을 진행해도 괜찮을까요?
+대회 과정에서
+
+참석자 3 22:39
+그거는 선생님께서 답변을 주셔야 될 것 같습니다.
+추가적인 데이터를 사용을 해도 괜찮은 걸까요?
+
+참석자 1 22:49
+추가적인 데이터를 활용하는 거는 사실 적절치 않은 것 같습니다.
+왜냐하면 모두가 그 데이터를 공유하고 있는 게 아니기 때문에 어떤 데이터를 추가해서 섞어서 더 좋은 결과를 냈다고 하면은 공정성에 문제가 될 수 있을 것 같습니다.
+
+참석자 2 23:05
+네 감사합니다.
+
+참석자 3 23:08
+네 감사합니다.
+
+참석자 1 23:18
+네 그러면 다음으로는 이제 은하별 생성률 데이터를 소개해 드리겠습니다.
+이 데이터는 이제 물리천문학부 김지훈 교수님께서 제공을 해 주셨고 오늘 학회 일정상 김지윤 교수님 소속 이제 케이타 박사님께서 영상으로 만들어 주셨는데 영상을 시청하시기 전에 김주인 교수님께서 먼저 한마디 하시고 영상을 시청하도록 하겠습니다.
+
+참석자 6 23:48
+예 감사합니다. 방금 소개받은 물리천문학 부교수 김지훈이고요.
+이거는 이제 시뮬레이션 데이터를 가지고 이제 시뮬레이션에서 일어나는 일을 예측을 하는 그런 건데 이 데이터를 만든 시뮬레이션을 돌린 분이 이제 저희 연구실에 g램프 포다구에 있는 케이타 포크시마 박사님이다 보니까 복수 본인이 직접 설명하시는 게 좋을 것 같아서 제가 비디오를 부탁드렸고 지금 한 15분 정도 영상이 틀어질 거고요.
+앞에 이제 나온 감염병하고는 조금 다르게 이제 좀 익숙지 않은 주제니까 좀 배경 지식이 필요할 것 같아서 영상을 준비를 했으니까 한번 보시면 좋을 것 같습니다.
+끝난 후에 제가 또 조금 더 드릴 말씀드리도록 하겠습니다.
+
+참석자 1 24:34
+네 알겠습니다. 그러면은 이제 박사님 영상 시청하도록 하겠습니다.
+
+참석자 7 25:02
+타이세 토픽 프리디스팅 제시 포메이션
+
+참석자 7 25:26
+이미지 트 나이트 뷰 오브 코리아 토크 프로 스페이스 이미지 온 라이트 쇼 디서뷰션 오브 마더 코스모리컬 시뮬레이션 오브 디라시 포메이션 이제 이메이저 오브 코리아 하이 데스 리존 바이 오렌지 사고 매니 빌딩 로 피부 콘센트레이티
+
+참석자 7 26:16
+위 오픈 파인 모 계약 시 루얼 리존스 텐트 파인 모 시스
+
+참석자 7 27:15
+젠 로아 마스터 크라 레더 사바이 마치 롱
+
+참석자 7 27:52
+리메이닝 플레이션 도미네이티드 바이 스턴스
+
+참석자 7 28:36
+시 덴사 인바라먼트 텐 투 로아 sf
+
+참석자 7 28:49
+식 프로파티 위치 인바이멘터 인포메이션 컨테인 브레딕티브 인포메이션 아바 스타 포메이션
+
+참석자 7 29:33
+오버 타임 투 오브 투데이 라이크 디스
+
+참석자 7 29:50
+베리 아리 유니버 코드 마이크로 디스 스몰 럭셔 시 인제 아리 유니버스 코레스폰 스몰 디퍼런스 인 베니스티
+
+참석자 7 32:25
+인터널 프로세스 바이 사이코
+
+참석자 7 34:02
+오케이 디스 프로그램 컨디션
+
+참석자 7 34:51
+데이터 셋 콘테인 세 디파인 타이 오 인포메이션 제시 프로퍼티스 아센버리 히스토리 로컬 인버먼트 페이스 베이스 인포메이션
+
+참석자 7 36:01
+디스크라 마스 오브 메인 프로젝트 락시 인사 프리비어 시뮬레이션 납셔 시미널리 위 프로바이 스테라 마스 오브 메인 프로젠이다 마자 마슬레이쇼 컨테인 인포메이션 아바 임포턴스 오버 리센 마자 이벤트
+
+참석자 7 36:26
+프레젠 스테이트 여자 디스 라이트 스테이트 소 프로바일 인포메이션 인베럴먼트
+
+참석자 7 36:58
+디스 컨티
+
+참석자 7 37:10
+프로바이 3 디매저널 포지션 3 디매저널 베스티 시
+
+참석자 7 37:48
+캐프리 어바웃 하우 모델 보스 오퍼레이션
+
+참석자 7 38:10
+파이널리 레트 브레이프리 인스 와 레드 크
+
+참석자 7 38:59
+인터플레팅 브랜딩 모델
+
+참석자 7 39:14
+사마라이 러시 스타 포메이션 디펜 온 제라시 로파티 아센버리 히스토리 임베러먼트
+
+참석자 7 39:29
+셋 콘테인 보스 스타 포밍 크렌츠 예라고 했어요. 모델링 보스 퍼피레이션 이 임포턴트 미언 프레딕션 아큐라시 소 모델 테라스 컨트롤 디스 포메이션 콘텍트 인포메이션
+
+참석자 1 39:59
+네 지금까지 데이터 공유해 주신 캐리타 박사님의 영상이었습니다.
+다음으로 김지훈 교수님도 말씀 있으시다고 해서
+
+참석자 6 40:08
+네 제 말씀 들리시나요? 혹시 화면도 보이실까요?
+화면 괜찮습니까?
+
+참석자 1 40:19
+네 잘 보입니다.
+
+참석자 6 40:21
+고맙습니다. 짧게 하고 끝내겠습니다. 지금 저희 보셨지만은 이거는 조금 배경 지식을 알고 하시는 게 좋을 것 같고 왜냐하면 그냥 칼럼 몇 개 있고 열 몇 개 있고 그걸 갖고 다른 칼럼을 예측하는 거다라고 하면은 그냥 아무나 할 수 있는 일이지만 배경 지식을 조금 알고 하시면은 그 칼럼들의 정보를 어떻게 가장 유용하게 그 피처들을 어떻게 가장 잘 나타낼 수 있는 뉴얼 네트워크를 어떻게 만들 것인가 이런 걸 좀 생각을 해가지고 하시면은 더 좋은 이렇게 작품이 나올 수 있을 거라고 생각을 하고요.
+또 여기 지금 경진대회 웹사이트를 가보시면 오늘 이제 이수빈 연구원님께서 고생을 해 주셨는데 지금 이렇게 데이터가 두 가지가 있지만 저희 거는 보고서가 좀 너무 많이 들어오면 저희가 이거를 어떻게 채점하는데 감당이 안 될 것 같아가지고 좀 템플릿을 만들어서 여기다가 넣어뒀습니다.
+
+참석자 6 41:14
+저희 지금 아까도 이메일 연락처가 나왔지만은 이양왕이라는 학생이 이제 이거를 작성을 해줬고 이 학생이 이제 이거 여러분들 중간 점검이라든가 궁금한 점이 있다 할 때 여러분들이 응답을 할 텐데 한국말도 잘하고 하지만 이제 답변은 혹시 이제 혹시 모를 이렇게 오해를 없애기 위해서 영어로 할 수도 있어요.
+하지만 여기 지금 그 학생이 물리 전공했고 CS 전공했고 그다음에 지금 천문을 공부하고 있기 때문에 데이터 자체에 관한 이야기 그다음에 또 이제 데이터를 이해하기 위한 물리의 천문에 관한 이야기도 충분히 질문에 대한 답을 할 수 있으리라고 생각을 합니다.
+여기 파이썬 노트북 형태로 지금 보면 보시면은 보고서 템플릿이 돼 있는데 보시면 한 중간 정도까지가 미텀 리포트를 여기까지는 작성해서 내줘야지 된다 그런 거고요.
+
+참석자 6 42:11
+그래서 여기에 스튜리 리스펀스 하는 부분 이거는 우리가 데이터 로딩하는 부분이니까 지우지 말아라 여기는 우리가 벤치마크 테스트할 부분이니까 지우지 말아라 이거 저희가 이제 나중에 이거 딱 받아가지고 쉽게 쉽게 채점해서 스크린 할 수 있도록 이렇게 만들어 놓은 거니까 이거 좀 협조를 해 주시면 좋을 것 같고요.
+파이널 리포트까지 여기 좀 긴데 마지막까지 이렇게 작성을 하도록 돼 있습니다.
+이거 한번 읽어보시고 혹시 질문 있으시면은 다시 말씀드리지만은 여기 이양왕 조교 학생에게 연락을 하시면 되겠습니다.
+네 이상입니다.
+
+참석자 1 42:48
+네 교수님 감사드립니다. 혹시 질문 있으시면은 지금 몇 개 조금 더 받겠습니다.
+
+참석자 1 43:04
+혹시 추후에라도 질문 있으시면은 이양왕 조교님께 할 수 있으니까 혹시 지금 없으시더라도 추후에 궁금한 게 생겼다고 하시면은 이제 이양왕 조교님께 이메일을 드리면 좋을 것 같습니다.
+네 임지윤 교수님 감사드립니다.
+
+참석자 6 43:23
+예 고맙습니다. 저 근데 지금 조교들 연락처가 어디가 게시가 돼 있나요?
+
+참석자 1 43:28
+지금 제가 업데이트해놨습니다. 지금 새로 고침 해 보시면은 업데이트가 되어 있을 겁니다.
+
+참석자 6 43:35
+예 고맙습니다.
+
+참석자 1 43:42
+네 그래서 이제 마지막으로 질의응답 및 이 데이터 허브에 경진대회를 어떻게 참여를 하는 게 좋을지에 대해서 설명을 좀 해드려야 될 것 같아서 마지막에 질의 응답을 넣어 봤습니다.
+그래서 여기 보시면은 데이터 허브 점 snu ac KR 이 URL을 타고 들어가시면은 맨 위에 배너에 이제 제1회 과학 데이터 혁신 경진대회가 나와 있고 여기에 대회 자세히 보기 혹은 참가 신청하기를 누르게 되면은 이런 배너가 뜨고 이제 개요 데이터 일정 시상 참가 신청 중간 보고서 최종 보고서 이렇게 나옵니다.
+그래서 개요는 한번 읽어보시면은 좋을 것 같고 제가 소개해 드리고 싶은 거는 이 데이터 부분인데 데이터를 보시게 되면은 현재도 데이터를 다운로드 받을 수 있게 되어 있고 데이터 허브에서 보기를 누르시면은 이 데이터와 관련된 구체적인 정보가 나와 있습니다.
+다시 돌아가서
+
+참석자 1 44:51
+데이터 허브에서도 볼 수도 있고 바로 다운로드 받아서 분석을 실행할 수도 있습니다.
+그리고 데이터와 관련된 담당 조교는 이제 은하 같은 경우는 방금 말씀해 주셨던 이양왕 조교님께서 담당하고 계시고 이메일은 이렇게 메일로 보내주시면 될 것 같습니다.
+그리고 이제 일본 RSV 전파 데이터 같은 경우에는 이제 다운로드는 이렇게 받으시면 되고 조교님은 강민지 조교님입니다.
+그리고 이제 여기서 좀 중요한 게 은하 데이터와 이제 RSV 데이터가 제출해야 되는 보고서 템플릿이 다릅니다.
+그래서 은하 데이터를 분석하고 싶으신 분들은 꼭 보고서 템플릿을 다운받으셔서 주피터 노트북 형태로 제출을 해 주셔야 되고 RSV 데이터를 사용하시는 분들께서는 따로 보고서 템플릿이 없어서 주피터 노트북을 제출해 주셔도 되고 PDF 형태로 제출해 주셔도 상관이 없습니다.
+
+참석자 1 45:50
+그래서 아직 참가 신청 안 하신 분들은 여기 참가 신청 탭에 들어가셔서 참가 신청을 해 주시면 될 것 같고 그리고 중간 보고서 이제 중간 보고서 일정이 11월 4일 수요일까지 중간 보고서를 제출해 주셔야 되고 중간 보고서를 제출해 주시면 이제 어떤 어려움이 있거나 이제 조교분들께 물어보고 싶은 게 있으면 조교 피드백 할 수 있는 시간을 드리니까 11월 4일까지 중간 보고서 제출해 주시고 그리고 마지막으로 11월 13일에 그런 피드백을 받은 받은 후에 이제 최종 결과물을 11월 13일에 제출해 주시면 됩니다.
+11월 13일에 제출해 주시는 최종 보고서도 똑같이 이 사이트에서 최종 보고서 코드 누르시고 제출해 주시면 됩니다.
+
+참석자 1 46:42
+네 이상으로 데이터 설명회 마치겠습니다. 혹시 추가로 궁금하시거나 데이터 아니면 이런 진행과 관련돼서 궁금하신 분들은 이메일 주셔도 되고 지금 질문해 주셔도 되고 아니면 채팅으로 주셔도 될 것 같습니다.
+그리고 질문이 없으신 분들은 이제 나가보셔도 좋을 것 같습니다.
+수고하셨습니다.
+
+참석자 1 47:10
+저 질문 하나만 드려도 괜찮을까요? 네네. 중간 보고서나 최종 보고서 작성에 있어서 AI 활용에 대한 규정이나 언어에 대한 원칙이 있는지 한 번만 여쭤보겠습니다.
+AI 활용이나 언어에 대한 규칙은 따로 없습니다.
+편하신 언어를 쓰셔도 되고 편하신 AI를 활용하셔도 되고 좀 자유롭게 어차피 정답이 정해진 문제들이 아니기 때문에 자유롭게 진행 분석해 주시면 좋을 것 같습니다.
+다만 근데 네 한 가지 말씀드릴 게 다만 다른 사람 혹은 다른 이제 기타부에 올라온 걸 그대로 베끼거나 그런 류의 이제 코드 복사는 이제 안 된다는 점 말씀드립니다.
+네 알겠습니다. 감사합니다. 네
+
+참석자 5 48:12
+그러면 AI 사용 관련해서 추가 질의 드리면 그 사용 범위를 명확하게 이런 부분에서 썼다라고 명시를 해야 되는지 아니면 그런 거 없이 그냥 자유롭게 쓰면 되는 걸까요?
+
+참석자 1 48:24
+따로 명시해 주셔도 해 주실 필요는 없고 아직 그런 규정은 아직 없기 때문에 자유롭게 분석을 해 주셔도 상관없을 것 같습니다.
+
+참석자 5 48:36
+네 감사합니다.
+
+참석자 8 48:49
+추가 데이터 관련해서 질의 드리고 싶은데요. 아까 일본 RSV 관련해서는 추가 데이터 사용이 제한된다고 말씀해 주셨는데 천문에 관해 질문 혹시 실측 데이터를 활용해도 되는지
+
+참석자 7 49:02
+대해서 여쭤보고 싶습니다.
+
+참석자 1 49:04
+실직 데이터라는 게 제공된 데이터 말고 이제 본인이 따로 갖고 계시는 실증 데이터를 말씀하시는 건가요?
+
+참석자 7 49:10
+네 여기서 제공되는 데이터는 시뮬레이션
+
+참석자 8 49:14
+데이터이다 보니 약간 차이가 있을 수도 있을 것 같은데
+
+참석자 6 49:17
+네네. 여기 있는 제가 답변드리면 여기 있는 데이터만 갖고 하는 걸로 좀 하면 좋겠습니다.
+
+참석자 7 49:25
+네 알겠습니다.
+
+참석자 6 49:26
+네 고맙습니다. 감사합니다.
+
+참석자 1 49:37
+또 질문 있으실까요? 그리고 오늘 이렇게 데이터 설명회 한 부분은 녹화한 후에 추후에 다시 돌려볼 수 있게 데이터 허브에 올려둘 예정이니까 혹시 늦게 들어오셨거나 이해가 안 되신 분들은 녹화본을 보고 한 번 더 이해하시면 좋을 것 같습니다.
+
+참석자 1 50:12
+네 그럼 질문이 없으신 것 같아서 채팅으로 주셔도 됐는데 아직 채팅으로 네 채팅으로 주신 부분도 제가 다 설명을 드린 것 같아서 추가 질문 없으시면은 여기까지 하도록 하겠습니다.
+오늘 참여해 주셔서 감사드립니다.
+
+참석자 6 50:35
+수고하셨습니다.
+
+참석자 1 50:37
+네 수고하셨습니다.
+
+참석자 3 50:38
+감사합니다. 안녕히 계세요.
+
+==================================================
+[보충 2026-11-13] 25:00–40:10 영어 구간 다시 받아쓰기
+==================================================
+
+위 원문에서 '참석자 7' 구간(25:02–39:59, Keita Fukushima 박사 녹화 영상, 영어)은 영어를 한글 소리로 적어서 내용을 알아볼 수 없다.
+그래서 원본 녹화 영상(SNU IDIS DataHub.mp4, 51:10)의 25:00–40:10을 faster-whisper large-v3-turbo(언어: 영어)로 다시 받아썼다.
+
+- 위 원문은 한 글자도 고치지 않았다. 이 구간은 따로 덧붙인 것이다.
+- 받아쓰기 오류(예: "Gylaxies", "subhero ID", "machinami model")는 고치지 않고 그대로 두었다.
+- 시각은 영상 기준 분:초다.
+- 말로 읽지 않고 화면에만 있던 슬라이드 문구는 맨 아래 [화면 문구]에 따로 적었다.
+
+--- 음성 (25:00–40:10) ---
+
+[25:00.0 - 25:03.5] introduce the problem for this competition.
+[25:03.5 - 25:07.9] As the title says, the topic is predicting galaxy's transformation.
+[25:07.9 - 25:18.4] First, I have two images on the title slide, can you guess what they are?
+[25:18.4 - 25:24.6] They actually look similar, both are mostly dark with bright regions distributed in a
+[25:24.6 - 25:26.7] wave-like pattern.
+[25:26.7 - 25:32.5] The image on the left is a night view of Korea talking from space.
+[25:32.5 - 25:38.5] The image on the right shows the distribution of the matter in a cosmological simulation
+[25:38.5 - 25:40.8] of galaxy formation.
+[25:40.8 - 25:49.0] In the image of Korea, there are high density regions shown by orange circle, where many
+[25:49.0 - 25:52.4] buildings, roads and people are concentrated.
+[25:52.4 - 25:57.7] There are also lower regions shown by yellow circle, where there are fewer buildings and
+[25:57.7 - 25:58.7] people.
+[25:59.6 - 26:05.8] And of course, the life of people can be quite different depending on where they live.
+[26:08.5 - 26:16.1] Interestingly, galaxies also show something similar. In the dense region here of the universe,
+[26:16.7 - 26:23.7] we often find more red galaxies while lower regions, they tend to find more blue galaxies.
+[26:26.0 - 26:30.1] So, galaxy evolution is influenced by the surrounding environment.
+[26:30.1 - 26:38.8] The question is, but why? So what is actually different between these galaxies?
+[26:38.8 - 26:45.8] If we compare the two galaxies shown here, one is blue and the other is much redder.
+[26:45.8 - 26:50.8] The shape or morphology also looks different.
+[26:50.8 - 26:55.8] Let us first think about where this color difference comes from.
+[26:55.8 - 27:06.9] Actually, a massive star is very hot, which represents a blue color with short lifetime.
+[27:06.9 - 27:12.9] So massive stars quickly make a supernova.
+[27:12.9 - 27:23.4] And then lower mass stars are cooler and can survive much longer.
+[27:23.4 - 27:37.4] So, if a galaxy is actually forming stars, it continuously produces new massive blue stars, and the galaxy can look blue, like this.
+[27:37.4 - 27:50.4] On the other hand, if the galaxy stops forming new stars, the existing massive blue stars disappear relatively quickly due to the supernova.
+[27:52.7 - 27:58.6] Then what remains is the population dominated by older and redder stars.
+[28:00.0 - 28:10.1] As a result, the galaxy becomes redder. We call these suppressions or stopping of star formation
+[28:10.7 - 28:19.3] quenching. And these galaxies are the quiescent galaxies. Blue galaxies are typically
+[28:20.2 - 28:24.3] actively forming stars while redder galaxies are less active.
+[28:25.4 - 28:36.4] We quantify this using the star formation rate, or SFR, which measures how much stellar mass forms per unit time.
+[28:36.4 - 28:45.5] Gylaxies in denser environments tend to have lower SFR.
+[28:45.5 - 28:48.5] The building asks two important questions.
+[28:50.1 - 29:00.8] Which gylaxie properties or which environmental information contain predictive information about star formations?
+[29:00.8 - 29:03.5] So what controls the SFR of the galaxy?
+[29:04.4 - 29:12.0] Some form from gas, but the SFR also depend on galaxy properties, assembly history, and environment.
+[29:12.7 - 29:22.1] To understand these factors, let's briefly look at how galaxy forms and evolved.
+[29:24.5 - 29:31.0] This picture shows the evolution of the universe. The universe evolved was nearly uniform,
+[29:33.6 - 29:40.7] but over time, matter evolved into the cosmic wave that we observe today like this.
+[29:42.0 - 29:49.6] This point, each point is the galaxies. Then we can observe information about this survey,
+[29:50.6 - 30:00.1] this very early universe through the cosmic microwave background like this. And these
+[30:00.1 - 30:11.1] These small fluctuations that we see in the early universe correspond to small differences in density, like this here.
+[30:11.1 - 30:19.4] If we cut the density distribution here, we can put it like this.
+[30:19.4 - 30:30.4] Over cosmic time, slightly denser regions attract more matter through gravity, they become denser and denser.
+[30:30.4 - 30:36.5] Then this gravitational growth produces a cosmic wave that we observe today.
+[30:37.1 - 30:41.3] Because this evolution becomes non-linear, numerical simulations are needed.
+[30:43.3 - 30:47.1] The evolution also depends on the Cosmetical Model of Radcliffe.
+[30:49.1 - 30:56.0] But assuming these parameters, which come from observations, we can simulate
+[30:56.0 - 30:59.2] of the universe and galaxies.
+[30:59.2 - 31:12.1] The galaxy forms inside of the dark matter halo, which is a concentrated region of the dark matters.
+[31:12.1 - 31:20.1] The gas falls into the halo and cools, then forms stars.
+[31:20.1 - 31:32.6] Supernova happens inside of the galaxies, which pushes over the thermal gas to the outside of the galaxies.
+[31:32.6 - 31:42.7] then the summation here shows a cycle in barion cycle the bion cycle is this continuous cycle
+[31:42.7 - 31:53.6] or the gas inflow some formation and output from this simulation so the such uh what's called
+[31:53.6 - 32:05.5] large-scale structured evolution and with galaxy evolutions. If we focus on the much more
+[32:07.8 - 32:22.1] over dense regions here we can see galaxy clusters and in these regions galaxy interact and merge
+[32:22.1 - 32:30.1] together very often. So galaxy evolution depends on both internal process of variant cycle
+[32:30.8 - 32:43.0] and also the environmental effects of the merger and so on. So to study all of these complex
+[32:44.0 - 32:49.2] processes together numerical simulations are extremely useful. In our cosmological
+[32:49.2 - 32:55.1] hydrangea simulations we start from the initial density fluctuation from dark matter and barium
+[32:55.1 - 33:02.6] matter here then we simulate the evolution of the universe with solving the evolution of the galaxies
+[33:04.5 - 33:15.1] here is the image of our simulations here's a video of the version of the universe in our
+[33:15.1 - 33:23.8] simulation we can see there's a low density fluctuations but which is evolved with time
+[33:25.3 - 33:34.7] then we can see the galaxy clusters form like these regions then each region there is a lot
+[33:34.7 - 33:40.0] of galaxies exist in the over density region and this low density region there's also a
+[33:40.0 - 33:54.1] guarantee form but the number density is super low and this type of simulation is useful to
+[33:56.5 - 34:04.8] understanding the evolution of the galaxies okay then let's move to the
+[34:06.8 - 34:19.1] this problem these competitions we make we simulate the galaxies around 20 000 200 000 galaxies exist
+[34:20.0 - 34:31.0] The things we'd like to ask to you to make a machinami model which represents the star formation rate in each galaxies.
+[34:31.0 - 34:34.0] Here's the CSV file.
+[34:34.0 - 34:42.0] The CSV is structured so that each row corresponds to one galaxy.
+[34:42.0 - 34:49.0] Then the columns describe the different properties of the galaxy.
+[34:49.0 - 34:56.5] galaxy here. The data sets contain several different types of information.
+[34:56.5 - 35:03.5] Galaxy properties, assembly history, local environment, place space information, and
+[35:03.5 - 35:06.5] finally the target SFR.
+[35:06.5 - 35:11.5] Let me briefly explain what some of these quantities mean physically.
+[35:11.5 - 35:18.5] First, halo mass is the total mass of the dark matter halo in which the galaxy lives.
+[35:18.5 - 35:23.5] This is the dark matter signature that I introduced a few slides ago.
+[35:23.5 - 35:31.5] Stellar mass is the total mass of stars that the galaxy has already formed.
+[35:31.5 - 35:39.5] We also provide the black hole mass because the growth of the central black hole as the associated feedback,
+[35:39.5 - 35:45.5] which can suppress star formation, can be related to galaxy evolution.
+[35:45.5 - 35:52.5] so this quantity describes the present-day property of the galaxy and its halo, poshalo.
+[35:54.1 - 35:59.0] We also provide information about the past evolution of each galaxy.
+[35:59.6 - 36:06.0] The main progenitor mass describes the mass of the main progenitor of the galaxy
+[36:06.0 - 36:12.8] in the previous simulation snapshot. Similarly, we provide the stellar mass of the main progenitor.
+[36:12.8 - 36:21.6] The merger mass ratio contains information about the importance of a recent merger event.
+[36:21.6 - 36:28.5] So these quantities tell you something about how the galaxy arrives at its present state
+[36:28.5 - 36:34.3] rather than only describes its current state.
+[36:34.3 - 36:38.5] We also provide information about the environment.
+[36:38.5 - 36:46.3] The over-density tells us how much dark matter is concentrated around the galaxy compared
+[36:46.3 - 36:49.5] with the average density of the universe.
+[36:49.5 - 36:57.9] In the dead set, the local dark matter over-density is measured within a region around nearby galaxies,
+[36:57.9 - 36:59.1] like this.
+[36:59.1 - 37:08.1] So this quantity is a simple way of describing whether a galaxy builds in the dense or face
+[37:08.1 - 37:17.2] environment. Finally, we provide three-dimensional positions and the three-dimensional velocity
+[37:17.2 - 37:23.0] of the galaxies. Together, these give you phase-space information of each galaxies.
+[37:24.0 - 37:29.8] And the final column is quantified that you want to predict the SFR.
+[37:33.2 - 37:39.1] There's a few important notes, most related features in localismic unit,
+[37:39.6 - 37:43.2] while SFR is linear and can be zero.
+[37:43.8 - 37:47.6] The disk set contains both star forming and quiescent galaxies.
+[37:48.4 - 37:53.0] So think carefully about how to model both operations.
+[37:53.8 - 37:59.0] Finally, do not use subhero ID which is also listed on the CSV file
+[37:59.6 - 38:04.9] because that parameter is just an ID of each galaxies.
+[38:05.8 - 38:08.3] So do not use input features.
+[38:11.4 - 38:15.0] Finally, let me briefly introduce our related work.
+[38:15.6 - 38:24.4] We use a graph neural network where galaxies are node and nearby galaxies which are connected by H.
+[38:25.9 - 38:32.2] Here, we predict space-based transformation rate, which is SFR divided by Xcelamax.
+[38:33.0 - 38:36.9] We find that adding information such as galaxy distribution
+[38:37.6 - 38:46.0] and data velocities improves the prediction of the quenching so using GNN you can directly use
+[38:46.6 - 38:53.1] geometrical alternative information which represents the accurate of the
+[38:53.9 - 39:05.5] low SL Hurley compared to without age information by interest by interpreting the trending model
+[39:06.3 - 39:13.0] we can then investigate which environmental information matters. This work will be submitted
+[39:13.0 - 39:20.4] very soon. To summarize, galaxy star formation depends on galaxy properties, assembly history,
+[39:20.4 - 39:27.2] and environment. We provide these quantities from a cosmological simulation and the task is to
+[39:27.2 - 39:35.5] to predict SFR. The dataset contains both star forming and quenched galaxy, so modeling
+[39:35.5 - 39:42.4] both population is important. Beyond prediction accuracy, we also hope your model can tell
+[39:42.4 - 39:49.8] us what controlled galaxy star formation. Here is our contact information. Thank you
+[39:49.8 - 39:51.9] and I look forward to seeing your vision.
+
+--- [화면 문구] 영상 프레임에서 직접 읽음 ---
+
+화면 오른쪽이 Zoom 참가자 창에 가려진 부분은 [가려짐]으로 적었다. 시각은 슬라이드가 바뀐 시점이다.
+
+37:30.9–38:10.4  This is not a simple regression problem
+  • Mass columns are logarithmic
+  • SFR is linear
+  • Linear SFR may emphasize high-SFR        ← 말로는 읽지 않음
+  • log SFR must deal with SFR=0             ← 말로는 읽지 않음
+  • SFR = 0 exists
+  • subhalo_id = identifier only
+  [상자] A good model must deal with both populations
+         (Star forming galaxies: SFR>0 & Quenched galaxies SFR~0)
+  (음성은 "most related features in logarithmic unit, while SFR is linear and can be zero"까지만 말했다.)
+
+38:10.4–39:14.6  Our related work: Environmental quenching usin[가려짐]
+  We investigated whether environmental information improves the pre[가려짐] galaxy quenching (submit soon).
+  GNN without edge / GNN with edge features (Node: a galaxy, Edge: connection be[가려짐])
+  Prediction: sSFR = Star Form[가려짐] / M[가려짐]
+  그림: Predicted sSFR 대 Actual sSFR 산점도 두 개(edge 없음 / edge 있음)
+  [상자] Environment contains predictive information that is not fully encoded in a galaxy's own properties.
+
+39:14.6–39:53.7  Can you predict SFR — and learn what matters?
+  • Galaxy evolution has a fundamental question: Why do some galaxies stop forming stars?
+  • We provide these quantities as a machine-learning dataset
+  • But predicting SFR is difficult because the population contains both star[가려짐] and quenched galaxies
+  • Our ongoing work already shows that environmental information help[가려짐] quenching
+  • Now the challenge is yours: How accurately can you predict SFR, and what can your model teach us about galaxy evolution?
+  Contact: Yiyang Wang (조교 이메일)
+
+--- 확인 범위 ---
+
+- 음성은 25:00–40:10 전체를, 슬라이드는 34:00–40:10을 확인했다. 25:00–34:00(은하 형성 물리 설명)의 슬라이드는 따로 보지 않았다.
+- 이 범위에서 평가 지표나 채점 방법(RMSE, metric, score, 로그 공간 평가 등)은 음성에도 슬라이드에도 나오지 않는다.
