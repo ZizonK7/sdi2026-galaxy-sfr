@@ -1,0 +1,38 @@
+===== CELL 69 differs (images 0 -> 0, chars 50 -> 50) | # 7절: 2단계(hurdle) 모델 — ŷ = P(SFR>0 | x) × E[SFR | SFR>0, x]
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -Training time: 0.9 s
+    +Training time: 0.8 s
+===== CELL 90 differs (images 0 -> 0, chars 341 -> 341) | # 9.2 최종 모델 코드 — (1) 위치·속도에서 환경 피처를 만든다 (타깃 미사용, 전체 은하의 기하만 사용)
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -환경 피처 17개, 계산 2.9 s
+    +환경 피처 17개, 계산 2.7 s
+===== CELL 91 differs (images 0 -> 0, chars 1341 -> 1341) | # 9.2 최종 모델 코드 — (2) 로그 공간의 2단계 모델
+    --- 
+    +++ 
+    @@ -3 +3 @@
+    -Training time: 7.6 s
+    +Training time: 4.6 s
+===== CELL 107 differs (images 0 -> 0, chars 2446 -> 2421) | # 10절 보조: 이미 사용한 공통 val의 비교·민감도 진단. 이 표로 모델을 재선택하지 않는다.
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    - .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } selected log RMSE selected | SFR=0 selected | SFR&gt;0 D1 log RMSE D2 log RMSE linear MAE linear RMSE l
+    + .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } selected log RMSE selected | SFR=0 selected | SFR&gt;0 D1 log RMSE D2 log RMSE linear MAE linear RMSE l
+===== CELL 111 differs (images 0 -> 0, chars 1854 -> 1855) | # 11절 보조: 선택 로그 공간에서 최종 모델의 오차 구성 — 참 SFR 구간별, 0 판정, 물리적 부분집합(중심/위성 × 호스트 질량)
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    - .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } n mean_residual_dex RMSE_dex SSE_share baseline RMSE_dex Part II draft RMSE_dex true SFR bin (-0.001, 0
+    + .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } n mean_residual_dex RMSE_dex SSE_share baseline RMSE_dex 선형 두 단계(30/13) RMSE_dex true SFR bin (-0.001, 
+===== CELL 124 differs (images 0 -> 0, chars 5666 -> 5665) | # STUDENT TODO — update model_name and notes; keep required keys.
+    --- 
+    +++ 
+    @@ -153 +153 @@
+    -  "training_seconds": 7.616482496261597,
+    +  "training_seconds": 4.60812520980835,
+code cells same: 57, differ: 6
+execution_count sequential from 1: True
