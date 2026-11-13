@@ -1,0 +1,4 @@
+model,overall_improvement_percent,tail100_improvement_percent,zero_improvement_percent,overall_improved_folds,tail100_improved_folds
+leader_two_stage,0.027991854539214826,0.626716540647943,-1.1571028995834123,3,2
+three_T10,-0.03763463290943677,1.016742341835442,1.1950183392211835,1,2
+zero_preserved_three_T10,-0.08056651918121568,2.0391180852540196,-0.7186779930271359,2,3

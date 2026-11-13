@@ -1,0 +1,13 @@
+{
+  "objective": "Replace only the tail regressor in hierarchical46; compare final mixture errors, especially extreme SFR>100 and actual0",
+  "baseline": "Two HGB400 binary gates, HGB400 mid and tail experts,46features,T10,P0>=.9 zero rule",
+  "candidates": "Six fixed configurations in tail_models.py: LightGBM400/31 and600/63; CatBoost400/depth6 and600/depth8; ExtraTrees300/leaf3 and300/leaf10",
+  "target": "log10(1+SFR), fitted only to TRUE SFR>10 training rows",
+  "fixed": "Both gate probability arrays and mid-expert OOF logs are reused exactly; same46features, train-fold-only residual curves, source data and reference geometry",
+  "missing": "Original FoF singleton NaN retained; native model handling (CatBoost nan_mode=Min). No target-derived imputation.",
+  "selection": "Rank baseline+six candidates by seed42 mean5fold FINAL overall log RMSE; freeze winner before seed7. Independently record best extreme-tail score, but do not choose using expert-only/oracle scores. No re-selection from seed7 outcomes.",
+  "confirmation": "Evaluate all fixed configurations on seed7 for sensitivity and family comparison; report frozen seed42 winner without re-selection",
+  "constraints": "No threshold/weight changes, extra data, early stopping, adaptive hyperparameter searches or holdout scoring. Different libraries have different tree structures and compute costs; not a matched-budget benchmark.",
+  "artifacts": "Save frozen selected model if it beats baseline in selection; otherwise retain baseline as selected. Save most accurate tail-only candidate as a separate diagnostic option if distinct, without automatic production replacement.",
+  "interpretation": "Same original training80% observations as previous work; repeated-CV exploratory comparison, not a new independent test. No push or current-model overwrite."
+}

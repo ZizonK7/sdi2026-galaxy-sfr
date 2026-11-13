@@ -1,0 +1,58 @@
+{
+  "overall_winner": "lgb_400_31",
+  "extreme_tail_winner": "hgb400_baseline",
+  "selected_on_seed42_only": true,
+  "reselection_on_seed7": false,
+  "candidates": {
+    "lgb_400_31": {
+      "family": "LightGBM",
+      "params": {
+        "n_estimators": 400,
+        "num_leaves": 31,
+        "learning_rate": 0.08,
+        "reg_lambda": 0.0
+      }
+    },
+    "lgb_600_63": {
+      "family": "LightGBM",
+      "params": {
+        "n_estimators": 600,
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "reg_lambda": 5.0
+      }
+    },
+    "cat_400_depth6": {
+      "family": "CatBoost",
+      "params": {
+        "iterations": 400,
+        "depth": 6,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 3.0
+      }
+    },
+    "cat_600_depth8": {
+      "family": "CatBoost",
+      "params": {
+        "iterations": 600,
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 5.0
+      }
+    },
+    "extra_300_leaf3": {
+      "family": "ExtraTrees",
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 3
+      }
+    },
+    "extra_300_leaf10": {
+      "family": "ExtraTrees",
+      "params": {
+        "n_estimators": 300,
+        "min_samples_leaf": 10
+      }
+    }
+  }
+}

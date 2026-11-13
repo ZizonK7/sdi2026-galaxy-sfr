@@ -1,0 +1,105 @@
+{
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "train_rows": 166749,
+  "catalogue_rows": 208437,
+  "holdout_evaluated": false,
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z",
+    "log_rho_5nn",
+    "log_rho_10nn",
+    "log1p_N_r1",
+    "log1p_N_r2",
+    "log1p_N_r5",
+    "dist_host13.5",
+    "r_over_R200_13.5",
+    "v_over_V200_13.5",
+    "host_logm_13.5",
+    "dist_host14",
+    "r_over_R200_14",
+    "v_over_V200_14",
+    "fof_log_richness",
+    "fof_is_central",
+    "fof_group_max_logm",
+    "fof_dv_group",
+    "halo_minus_stellar",
+    "dlogMs_growth",
+    "dlogMh_growth",
+    "bh_to_star",
+    "prog_star_to_halo"
+  ],
+  "feature_source_commit": "6bc3988dd7effb7694192ce059f515fa496fa499",
+  "reference_catalogue": "Fixed full unlabeled catalogue; same geometry as A34; target excluded",
+  "metric": "RMSE log10(1+SFR)",
+  "tail_threshold": 10,
+  "log_offset": 1,
+  "zero_gate": false,
+  "cv": "Original train split; outer KFold(5,shuffle=True,random_state=42); inner 20% split stratified by 3 regimes; seed=1000+fold",
+  "tuning": "Two configs each CatBoost/LightGBM, three ExtraTrees; choose by full mixture inner log RMSE, refit on entire outer training fold.",
+  "combination": "Per role choose only a single swap that improves inner score; if joint inner score worsens baseline, fall back to best improving single swap. No outer-fold labels used for combination.",
+  "hgb_params": {
+    "learning_rate": 0.08,
+    "max_iter": 150,
+    "max_leaf_nodes": 31,
+    "random_state": 42
+  },
+  "grid": {
+    "cat": [
+      {
+        "iterations": 300,
+        "depth": 6
+      },
+      {
+        "iterations": 600,
+        "depth": 8
+      }
+    ],
+    "lgb": [
+      {
+        "n_estimators": 300,
+        "num_leaves": 31
+      },
+      {
+        "n_estimators": 600,
+        "num_leaves": 63
+      }
+    ],
+    "extra": [
+      {
+        "n_estimators": 300,
+        "min_samples_leaf": 3
+      },
+      {
+        "n_estimators": 300,
+        "min_samples_leaf": 5
+      },
+      {
+        "n_estimators": 300,
+        "min_samples_leaf": 10
+      }
+    ]
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0"
+  },
+  "final_model_fitted": true,
+  "elapsed_seconds": 1178.4816319942474,
+  "validation": "3 tests passed; OOF overall/group/fold scores independently recomputed; baseline reproduced; saved component reconstruction matches selected combination; final serialized model prediction roundtrip passed.",
+  "runtime_note": "macOS LightGBM used existing sklearn/.dylibs/libomp.dylib via DYLD_LIBRARY_PATH; no system library changes."
+}

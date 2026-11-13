@@ -1,0 +1,9 @@
+{
+  "status": "Follow-up after observing seed99 zero-RMSE increase of the globally applied frozen blends; exploratory, not preregistered before the first experiment",
+  "candidate": "Use the already frozen 50:50 strict_balance prediction only when baseline predicted SFR>10; otherwise keep baseline prediction exactly",
+  "rationale": "Protect low-SFR predictions, using the existing tail-training boundary10 as a fixed inference routing threshold",
+  "no_target_routing": "The routing decision uses predicted SFR only, not actual SFR or validation class labels",
+  "evaluation": "Reuse the same seed42/7/99 OOF arrays. No threshold grid or fraction retuning. This is descriptive repeated-CV evidence, not independent confirmation of the new routing rule.",
+  "acceptance": "Extreme RMSE must decrease, overall mean-fold RMSE ratio<=1.001, zero pooled RMSE ratio<=1.0 in each seed. Preserve and report the failure of the initial global-blend strict-zero acceptance rule separately.",
+  "artifacts": "Save protected_model only if acceptance passes on all seeds; otherwise report results without replacing original recommended_model or current_model.json"
+}

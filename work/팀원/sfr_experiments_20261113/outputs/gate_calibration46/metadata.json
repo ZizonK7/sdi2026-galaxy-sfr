@@ -1,0 +1,143 @@
+{
+  "source_model_sha256": "c8878b1af31ed5845bd2967cefe5ee850c7f7d253d2ad9ad44bbdd9d84e54fb7",
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "source_fingerprint": "58093a5cd51f45a50e4adee3ef58640053f1781650fc5f832275d32c5761f508",
+  "cache_identity": "e4b6f3373c48e94e7c5a0bf4478f621bfe13f4104b93b92473028dd90e00f7d6",
+  "current_pointer_sha256": "0ab15cefe00356a6e4da9cc63f662295a43d88bd9953acaa330b1858b8d5d0f4",
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z",
+    "log_rho_5nn",
+    "log_rho_10nn",
+    "log1p_N_r1",
+    "log1p_N_r2",
+    "log1p_N_r5",
+    "dist_host13.5",
+    "r_over_R200_13.5",
+    "v_over_V200_13.5",
+    "host_logm_13.5",
+    "dist_host14",
+    "r_over_R200_14",
+    "v_over_V200_14",
+    "fof_log_richness",
+    "fof_is_central",
+    "fof_group_max_logm",
+    "fof_dv_group",
+    "halo_minus_stellar",
+    "dlogMs_growth",
+    "dlogMh_growth",
+    "bh_to_star",
+    "prog_star_to_halo",
+    "mass_growth_product",
+    "merger_flag",
+    "merger_growth_product",
+    "merger_strength_growth_product",
+    "stellar_growth_residual_at_mass",
+    "bh_residual_at_stellar_mass",
+    "nn_log_distance",
+    "nn_log_stellar_mass_ratio",
+    "nn_relative_speed",
+    "nn_r_over_primary_R200",
+    "nn3_max_log_stellar_mass_ratio",
+    "nn3_min_relative_speed"
+  ],
+  "train_rows": 166749,
+  "tail_rows": 11696,
+  "extreme_rows": 209,
+  "seeds": [
+    42,
+    7,
+    99
+  ],
+  "variants": {
+    "baseline": [
+      null,
+      "none"
+    ],
+    "sigmoid_positive": [
+      "sigmoid",
+      "positive"
+    ],
+    "sigmoid_tail": [
+      "sigmoid",
+      "tail"
+    ],
+    "sigmoid_both": [
+      "sigmoid",
+      "both"
+    ],
+    "isotonic_positive": [
+      "isotonic",
+      "positive"
+    ],
+    "isotonic_tail": [
+      "isotonic",
+      "tail"
+    ],
+    "isotonic_both": [
+      "isotonic",
+      "both"
+    ]
+  },
+  "inner_folds": 3,
+  "inner_seed": 314,
+  "saved_models": {
+    "sigmoid_positive": {
+      "file": "sigmoid_positive.joblib",
+      "sha256": "6d1df5cf3dc5f32d63ea1072d5a0ab88e9f191d467b5d31023ff48394a519d9f"
+    },
+    "sigmoid_tail": {
+      "file": "sigmoid_tail.joblib",
+      "sha256": "0b8c8bf7cde4657171c5c3848a94ea8f0749ed93dcf3705b38e2ec35e1095011"
+    },
+    "sigmoid_both": {
+      "file": "sigmoid_both.joblib",
+      "sha256": "dfa2754f54c217ba4ba042876c616da5a588bc9cc4d012fef8aa49f75738f4c7"
+    },
+    "isotonic_positive": {
+      "file": "isotonic_positive.joblib",
+      "sha256": "511ca4fa55dbccb74645b3a9889c75afdb5412919a3b942370a239029c631ecd"
+    },
+    "isotonic_tail": {
+      "file": "isotonic_tail.joblib",
+      "sha256": "58fe4b2d732854033de642b3e5336f1e2d5fe626fff1fff6347880bac55141c8"
+    },
+    "isotonic_both": {
+      "file": "isotonic_both.joblib",
+      "sha256": "f7d3c003173bb66a5bea808eae056e658f683c1793f27899f4db548733a08eba"
+    }
+  },
+  "holdout_scored": false,
+  "current_model_replaced": false,
+  "variant_selected_on_outer_labels": false,
+  "checks": {
+    "baseline_reconstructed": true,
+    "inner_coverage_once": true,
+    "inner_outer_disjoint": true,
+    "true_positive_conditional_calibration": true,
+    "fixed_expert_predictions": true,
+    "calibrated_zero_rule": true,
+    "saved_reload": true,
+    "raw_interface": true,
+    "source_model_unchanged": true
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  }
+}

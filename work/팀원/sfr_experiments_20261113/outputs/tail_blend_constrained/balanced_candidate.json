@@ -1,0 +1,21 @@
+{
+  "file": "balanced_model.joblib",
+  "sha256": "c8878b1af31ed5845bd2967cefe5ee850c7f7d253d2ad9ad44bbdd9d84e54fb7",
+  "config": {
+    "name": "lgb_w3_a50",
+    "partner": "lgb_w3",
+    "alpha": 0.5
+  },
+  "objective": "overall log RMSE and actual SFR>100 log RMSE decrease in all three seeds",
+  "objective_met": true,
+  "additional_strict_zero_guardrail_met": false,
+  "zero_rmse_pct_changes": {
+    "42": -0.0211871290802467,
+    "7": -0.0500224123456072,
+    "99": 0.0582603129816616
+  },
+  "original_acceptance_and_recommendation_preserved": true,
+  "raw_interface_verified": true,
+  "current_model_replaced": false,
+  "independent_test": false
+}

@@ -1,0 +1,15 @@
+{
+  "objective": "Evaluate probability calibration with frozen balanced50:50 tail regressors; compare actual0 and actualSFR>100 errors while tracking overall cost",
+  "baseline": "Current experimental balanced_model.joblib: hierarchical46, HGB400 binary gates and mid expert, equal log blend of LightGBM400/31 unweighted and SFR>100-weight3 tail experts",
+  "fixed_variants": "Uncalibrated plus sigmoid_positive, sigmoid_tail, sigmoid_both, isotonic_positive, isotonic_tail, isotonic_both. All six are prespecified; no adaptive method, subset or threshold tuning.",
+  "sigmoid": "Logistic regression on clipped probability logit, C=1e6, tol1e-8, max_iter1000; no class/sample weighting. This is sigmoid/logit scaling, not a private sklearn Platt implementation with smoothed labels.",
+  "isotonic": "Increasing isotonic regression on probability, clipped to0..1 with out_of_bounds=clip",
+  "calibration_data": "For each outer training fold, StratifiedKFold3 shuffle random_state314 over true0/mid/tail strata. Each inner feature engineer and both HGB gates fit only inner-train rows. Pool inner-held-out probabilities to fit maps. Positive map uses all outer-train rows; conditional-tail map uses TRUE-positive outer-train rows only.",
+  "refit_transfer": "Apply cross-fitted maps to full-outer-training gate predictions, keeping those full-data gates fixed. As with non-ensemble cross-fit calibration, calibration-fit probabilities come from smaller training subsets; outer evaluation tests the transfer.",
+  "evaluation": "Outer5fold seeds42,7,99 on original train80%; preserve reference catalogue and fold-local feature curves. Reuse verified old raw components for42/7; refit identical full-fold components for99 and reproduce previous balanced baseline. Original holdout20% targets not scored.",
+  "selection": "No hyperparameter or variant selection is fitted to outer validation labels. Report every prespecified variant and save all six full-train models. Any ranking/acceptance is exploratory description, not an unbiased post-selection test score.",
+  "assessment": "Report whole/zero/extreme log RMSE; whole cost reference+0.1%relative. Separately flag variants improving whole+extreme in all seeds, and variants also not worsening zero. Do not reject useful tradeoffs merely because strict all-zero guardrail fails.",
+  "diagnostics": "Unweighted Brier/log-loss for positive gate on all rows and tail gate on true positives; gate calibration scores are diagnostics, final-mixture log RMSE remains primary. Record forced-zero positives and extreme false zeros.",
+  "unchanged": "46features, true-tail trainingSFR>10, evaluation extremeSFR>100, P0>=.9 exact-zero rule and final nonnegative floor. Calibration may change which rows exceed the0.9 threshold.",
+  "limitations": "Same previously used observations; repeated-CV exploration, not independent testing. No push or current_model replacement."
+}

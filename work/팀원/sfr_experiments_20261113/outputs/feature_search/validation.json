@@ -1,0 +1,7 @@
+{
+  "recomputed_metric_checks": 32,
+  "oof_coverage": true,
+  "nonnegative_finite": true,
+  "no_target_or_identifier_features": true,
+  "model_hash": true
+}

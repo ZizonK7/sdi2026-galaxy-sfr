@@ -1,0 +1,8 @@
+{
+  "accepted_all": false,
+  "original_recommendation_unchanged": "baseline",
+  "inference_threshold": 10.0,
+  "fraction": 0.5,
+  "post_hoc_followup": true,
+  "independent_test": false
+}

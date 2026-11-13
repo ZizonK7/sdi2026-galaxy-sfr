@@ -1,0 +1,296 @@
+[
+  {
+    "path": "outputs/a34_feature_weighting/fixed_experts.npz",
+    "bytes": 2467693,
+    "sha256": "2b50dcdcee891de26ea7674c2eb4a0a207c82172ab92bcf3ecef705001e6108b",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_feature_weighting/oof_predictions.npz",
+    "bytes": 8103511,
+    "sha256": "4fbc798eaa1a12a282a8d265b4a1f51f66cfbd5f31effc8a4c3466573ee55adf",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_feature_weighting/oof_probabilities.npz",
+    "bytes": 20373935,
+    "sha256": "771281a5f21e00b4f8b4b42d79590ecbd907536c6847a635b7f603597489e713",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_model_comparison/baseline_reference.npz",
+    "bytes": 3003092,
+    "sha256": "1d9517978180fc3e90a6fbec66bb83642ed4c066fcc2e2d3854881da6ed8d187",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_model_comparison/oof_components.npz",
+    "bytes": 21592745,
+    "sha256": "1b301f66351a6406566d08b380f40257463bae6dcef1b177b35f687c4a8771e2",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_model_comparison/oof_predictions.npz",
+    "bytes": 13206716,
+    "sha256": "9952d518c93a232cc47b20357a414e1465d93f31a766832c5b5bbf733f6b82c6",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_random_forest/oof_components.npz",
+    "bytes": 19881881,
+    "sha256": "ab4820ccd0338c424c0fe1521cb06468614e80d50441baffa4b1d136f16d8a09",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_random_forest/oof_predictions.npz",
+    "bytes": 14467912,
+    "sha256": "dd39a5601228e72e41b2540df047fdabb5ba30e3b6e34492d2d94fe9b0e61582",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a34_zero_gate_adopted/oof_predictions.npz",
+    "bytes": 5485106,
+    "sha256": "570f595a201e86962160913846cd838fd9f18de2d16cd4a365d3b66b0c8262e3",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_component_comparison/baseline_reference.npz",
+    "bytes": 3003343,
+    "sha256": "f4563f2de42273a62fa7037a237d6d417271352fb4e38c00ba4da2f198d2c172",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_component_comparison/oof_components.npz",
+    "bytes": 20446374,
+    "sha256": "b316729d15a82b2a2f1f8bff7b2ef77cf685af6fd0b94835d910c9faf028ecc2",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_component_comparison/oof_predictions.npz",
+    "bytes": 10676383,
+    "sha256": "7841c4cdf30ee0e96bddf4abc9da0f7e0eb4d1cc5b83b1841cc7696329716048",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_feature_comparison/baseline_reference.npz",
+    "bytes": 3003343,
+    "sha256": "f4563f2de42273a62fa7037a237d6d417271352fb4e38c00ba4da2f198d2c172",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_feature_comparison/oof_predictions.npz",
+    "bytes": 6829992,
+    "sha256": "7b8dd3c90b90e69c7584098f2cf58a3fc4263874c529a1a9dfe258930e7a4c1a",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_feature_comparison/oof_probabilities.npz",
+    "bytes": 16772956,
+    "sha256": "2a28e444be2e98555b2883208bc72eff8aaf6de4b2ab0f922792fcc59f9a360c",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_log_development/oof_predictions.npz",
+    "bytes": 20591622,
+    "sha256": "e2f85c14378a8274e6d5061c42926421885de7700caf8d471fecb49d91ef69a5",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/a_log_development/reference_predictions.npz",
+    "bytes": 6738691,
+    "sha256": "3f153199a8f165c6678cd5edd41910d7d934a0def6158e98d568597a4ad85f07",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/b_tail_diagnosis/oof_components.npz",
+    "bytes": 8771656,
+    "sha256": "6df5f497bc4e654a25decf4598217b332540638d567e6ccfbc19b0ae11c1d0c7",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/feature_search/confirmation_oof.npz",
+    "bytes": 6538182,
+    "sha256": "86f9dd49698f05f631fe896980ae390a6cce3886e6ceb7fa065a3be51c093710",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/feature_search/stage2_oof.npz",
+    "bytes": 6535112,
+    "sha256": "d7da18cec43df9e72a4940bc1f76372fed64dfac4dc94e3bca60d62c6cf4b300",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/gate_calibration46/components_seed42.npz",
+    "bytes": 4848905,
+    "sha256": "3797305229c5da1033f4e64f8fa4b21f746b5ca812713998a361edaa9ebb2290",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/gate_calibration46/components_seed7.npz",
+    "bytes": 4849054,
+    "sha256": "6f18f4f545decddb43bb1fb758cb71dabc7f988781361083369e40567a175d24",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/gate_calibration46/components_seed99.npz",
+    "bytes": 4851458,
+    "sha256": "2d92d646c9235d8ea4766bc3b72056a4de589754e1e58462b765f14d08039e4f",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/gate_calibration46/oof_seed42.npz",
+    "bytes": 10170409,
+    "sha256": "0fe8909085aac89f5e91279b067bac8b93bd81b4ba6cf002ec54c16044a2af3f",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/gate_calibration46/oof_seed7.npz",
+    "bytes": 10166532,
+    "sha256": "596d14d512c7f53a7641d2be5d6cefa4e53e53803137fa6f534b8c24012be517",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/gate_calibration46/oof_seed99.npz",
+    "bytes": 10167035,
+    "sha256": "2547ac1c21fa05780b0b8cf079184e966cd8c3f7f974209e79e7c1d38f8967f2",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_gate46/oof_seed42.npz",
+    "bytes": 11314760,
+    "sha256": "0187c4f8ddcf8f35a675a46b768111e7f8d8985fcf0e60531da009f53607876f",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_gate46/oof_seed7.npz",
+    "bytes": 11314502,
+    "sha256": "c8ef3ab5015f226d18dc3125c7349456e008b5846541c3771fd7e9c37772444e",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_models/oof_seed42.npz",
+    "bytes": 10156020,
+    "sha256": "ec036222301fdc074fcc923282e156cb3f2b56d15053c5d8d811c64866214c66",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_models/oof_seed7.npz",
+    "bytes": 10155538,
+    "sha256": "0e946d914af771e32ed9ef6a485a663e4a09d053f67ac89b6640ec665cc5db29",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_models/tail_components_seed42.npz",
+    "bytes": 8413231,
+    "sha256": "b9e59db6d5224ef961a00c28d72763948a3096970b09355379f8966ddf07411e",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_models/tail_components_seed7.npz",
+    "bytes": 8415317,
+    "sha256": "6a1f17838d3abf40396ee79b58d64219204bb3d905689dd0ee982f8a7fede1c2",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_weighting/oof_seed42.npz",
+    "bytes": 14972464,
+    "sha256": "fd65a24b75d23086a12beb700e4a55ed2810fc36cbe387b153beadd76ea59376",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_weighting/oof_seed7.npz",
+    "bytes": 14971291,
+    "sha256": "4d44ac55743a499e627bafc036b91311a6c121d104815db3be9607530243c3d6",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_weighting/tail_components_seed42.npz",
+    "bytes": 9657677,
+    "sha256": "c8317f14a1ba768c187d294fefce0bf42b3b465b4c28b7fbb351872a3a4a3afd",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/hierarchical_tail_weighting/tail_components_seed7.npz",
+    "bytes": 9659690,
+    "sha256": "6ad047df9e7cdef04e1cc5744ead6080d6a9da3f1f37c6d9364ea366a9751873",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/leader_three_regime_experiment/oof_components.npz",
+    "bytes": 15875486,
+    "sha256": "e8e1257ae3aab97b5ba89b9a2e500bf80e26f9d6d32fe5845451b930000c2db9",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/leader_three_regime_experiment/oof_predictions.npz",
+    "bytes": 6537456,
+    "sha256": "c9b23dc6a9e9a5bb13f3b87ee807eb4913a959ff78fad710d67765b5f3322084",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/leader_three_regime_experiment/zero_preserved_oof.npz",
+    "bytes": 4041955,
+    "sha256": "0ce5e16d13e2abf86114c93175f9e9964d3c59357b734332525df3b098fbb052",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/log_sfr_reevaluation/oof_predictions.npz",
+    "bytes": 20235122,
+    "sha256": "1b64eae1ca9a4ddc211d801af7f3e9dc2725a9ca18d4905cc23623f907044af1",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/mass_growth_residual_experiment/oof_predictions.npz",
+    "bytes": 10220241,
+    "sha256": "821955c41487a1a1842f4a9d8c5fedf3d918b7cb7a7d2dc65d4daf16cde47ffb",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/mass_growth_residual_experiment/oof_three_components.npz",
+    "bytes": 12537440,
+    "sha256": "4f8eb80a90a076d3081c648718ca2e13c1ed6222c12f2a38e877f647616f16c7",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/tail_blend_constrained/oof_seed42.npz",
+    "bytes": 5353271,
+    "sha256": "923402ec99870a98138e4022aeddb7392dde738806c4152eba60426157b9df47",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/tail_blend_constrained/oof_seed7.npz",
+    "bytes": 5353023,
+    "sha256": "677b681d369d331f872ed7a274d5ca903e255b14b58f3aecc8ad9b8d276b7ea3",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/tail_blend_constrained/oof_seed99.npz",
+    "bytes": 5352529,
+    "sha256": "8b2a5db30bbecdbe03767d36d5bc2f91edf0729824c3acfaadb6dbec1e924aa6",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/tail_blend_constrained/protected_oof_seed42.npz",
+    "bytes": 2931721,
+    "sha256": "25218807099829d2a340c4f36eee385d42b1b90bfaca733eabeb6da5b0395d4b",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/tail_blend_constrained/protected_oof_seed7.npz",
+    "bytes": 2931850,
+    "sha256": "5160415fc364f095d4f6218d6e8e0ed82cc3e129de993b3c1803d9cffa95ad85",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/tail_blend_constrained/protected_oof_seed99.npz",
+    "bytes": 2931466,
+    "sha256": "bd42600ae1be8e56447c54bfc047cc0d6d423e7abbec491a6223c2d1cd2df26d",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  },
+  {
+    "path": "outputs/team_lead_model_21d02b5/validation_predictions.npz",
+    "bytes": 991425,
+    "sha256": "8cd0adf53feaf0f2968b889dc64e2186d660a4482de645816beab37968810cdb",
+    "reason": "Per-row OOF/component arrays retained locally; summary and fold metrics included"
+  }
+]

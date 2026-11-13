@@ -1,0 +1,103 @@
+{
+  "status": "remaining_artifacts_uploading",
+  "included_files": 364,
+  "pending_files": [
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/b_tail_diagnosis/diagnosis_view.ipynb",
+      "bytes": 210778
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/b_tail_diagnosis/mpl-cache/fontlist-v3.11.0.json",
+      "bytes": 287099
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/gate_calibration46/sigmoid_tail.joblib",
+      "bytes": 3212403
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_gate46/hierarchical46.joblib",
+      "bytes": 2959215
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_models/extreme_tail_option.joblib",
+      "bytes": 2959233
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_models/selected_model.joblib",
+      "bytes": 2714832
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_weighting/hgb_w2.joblib",
+      "bytes": 2961128
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_weighting/hgb_w3.joblib",
+      "bytes": 2958500
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_weighting/hgb_w5.joblib",
+      "bytes": 2958150
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_weighting/lgb_w2.joblib",
+      "bytes": 2743167
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_weighting/lgb_w3.joblib",
+      "bytes": 2743881
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_weighting/lgb_w5.joblib",
+      "bytes": 2745249
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/hierarchical_tail_weighting/selected_model.joblib",
+      "bytes": 2714627
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/leader_three_regime_experiment/best_three_regime.joblib",
+      "bytes": 3520586
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/leader_three_regime_experiment/zero_preserved_three_regime.joblib",
+      "bytes": 4257167
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/mass_growth_residual_experiment/leader_two_stage_residual.joblib",
+      "bytes": 1446643
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/mass_growth_residual_experiment/three_T10_residual.joblib",
+      "bytes": 3527017
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/mass_growth_residual_experiment/zero_preserved_three_T10_residual.joblib",
+      "bytes": 4265241
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/tail_blend_constrained/balanced_model.joblib",
+      "bytes": 3207616
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/tail_blend_constrained/recommended_model.joblib",
+      "bytes": 2714627
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/tail_blend_constrained/strict_balance.joblib",
+      "bytes": 3207616
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/tail_blend_constrained/tail_priority.joblib",
+      "bytes": 3207617
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/team_lead_model_21d02b5/DataHub_701104_final.ipynb",
+      "bytes": 1983533
+    },
+    {
+      "path": "work/팀원/sfr_experiments_20261113/outputs/team_lead_model_21d02b5/team_lead_hgb400.joblib",
+      "bytes": 1442599
+    }
+  ],
+  "note": "Code/results committed; remaining fitted models and larger notebook/metadata files will follow. Active model pointer unchanged."
+}

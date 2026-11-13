@@ -1,0 +1,163 @@
+{
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "source_fingerprint": "58093a5cd51f45a50e4adee3ef58640053f1781650fc5f832275d32c5761f508",
+  "source_model_sha256": "09a7eb10dfdadf76a59b319d05dada6815af4cdf13cc3547c55fc0827ffbf86e",
+  "previous_model_sha256": "6f722bcac69e3f033265b97591bdea36bc0959e95a86acb471b363b2b2abeb78",
+  "current_pointer_sha256": "0ab15cefe00356a6e4da9cc63f662295a43d88bd9953acaa330b1858b8d5d0f4",
+  "seeds": [
+    42,
+    7
+  ],
+  "train_rows": 166749,
+  "tail_train_rows": 11696,
+  "extreme_train_rows": 209,
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z",
+    "log_rho_5nn",
+    "log_rho_10nn",
+    "log1p_N_r1",
+    "log1p_N_r2",
+    "log1p_N_r5",
+    "dist_host13.5",
+    "r_over_R200_13.5",
+    "v_over_V200_13.5",
+    "host_logm_13.5",
+    "dist_host14",
+    "r_over_R200_14",
+    "v_over_V200_14",
+    "fof_log_richness",
+    "fof_is_central",
+    "fof_group_max_logm",
+    "fof_dv_group",
+    "halo_minus_stellar",
+    "dlogMs_growth",
+    "dlogMh_growth",
+    "bh_to_star",
+    "prog_star_to_halo",
+    "mass_growth_product",
+    "merger_flag",
+    "merger_growth_product",
+    "merger_strength_growth_product",
+    "stellar_growth_residual_at_mass",
+    "bh_residual_at_stellar_mass",
+    "nn_log_distance",
+    "nn_log_stellar_mass_ratio",
+    "nn_relative_speed",
+    "nn_r_over_primary_R200",
+    "nn3_max_log_stellar_mass_ratio",
+    "nn3_min_relative_speed"
+  ],
+  "configs": {
+    "hgb_w1": [
+      "hgb",
+      1
+    ],
+    "hgb_w2": [
+      "hgb",
+      2
+    ],
+    "hgb_w3": [
+      "hgb",
+      3
+    ],
+    "hgb_w5": [
+      "hgb",
+      5
+    ],
+    "lgb_w1": [
+      "lgb",
+      1
+    ],
+    "lgb_w2": [
+      "lgb",
+      2
+    ],
+    "lgb_w3": [
+      "lgb",
+      3
+    ],
+    "lgb_w5": [
+      "lgb",
+      5
+    ]
+  },
+  "tail_threshold": 10,
+  "weight_threshold": 100,
+  "zero_threshold": 0.9,
+  "target": "log10(1+SFR)",
+  "final_selection": {
+    "nested_overall": "lgb_w1",
+    "nested_hgb": "hgb_w1",
+    "nested_lgb": "lgb_w1"
+  },
+  "saved_models": {
+    "hgb_w2": {
+      "candidate": "hgb_w2",
+      "file": "hgb_w2.joblib",
+      "sha256": "6ecd0193061f025a1c440fd47c7698d45cfa0fa3f81b6d50d843c5d8004bd4df"
+    },
+    "hgb_w3": {
+      "candidate": "hgb_w3",
+      "file": "hgb_w3.joblib",
+      "sha256": "b9fc9a74ee2ca9a1f33f4b50cae3db18b5a8f904f87275062049a6d29812302d"
+    },
+    "hgb_w5": {
+      "candidate": "hgb_w5",
+      "file": "hgb_w5.joblib",
+      "sha256": "2399f9561eb53b0b4a67107e8083972daceab49647d38257a36d76e4a9b468d9"
+    },
+    "lgb_w2": {
+      "candidate": "lgb_w2",
+      "file": "lgb_w2.joblib",
+      "sha256": "6fccbb1477a6f2501628d04f876d019984886242b8edcbec2baae0ad6f27a6c6"
+    },
+    "lgb_w3": {
+      "candidate": "lgb_w3",
+      "file": "lgb_w3.joblib",
+      "sha256": "0539b2ca56e872b16441e053c30f5c316d038287b801cd9c448c8f1b91a40d34"
+    },
+    "lgb_w5": {
+      "candidate": "lgb_w5",
+      "file": "lgb_w5.joblib",
+      "sha256": "f704902d26f574c7d09185655cc274c9987e2f9d74e98df50e4c3cebeb469a4e"
+    },
+    "selected_model": {
+      "candidate": "lgb_w1",
+      "file": "selected_model.joblib",
+      "sha256": "2a04721ecab37b8ad8b0bd10c1328f4121c98cf492ad42fc8b53d9679bce508a"
+    }
+  },
+  "holdout_evaluated": false,
+  "current_model_replaced": false,
+  "checks": {
+    "baselines_reproduced": true,
+    "outer_coverage_once": true,
+    "internal_selection_disjoint": true,
+    "unweighted_evaluation": true,
+    "zero_routing_identical": true,
+    "gates_and_mid_fixed": true,
+    "saved_reload": true,
+    "raw_interface": true,
+    "source_model_unchanged": true
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  }
+}

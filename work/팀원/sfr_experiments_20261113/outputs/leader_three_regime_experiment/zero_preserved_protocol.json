@@ -1,0 +1,8 @@
+{
+  "status": "Exploratory follow-up decided after four initial folds showed higher zero-regime RMSE",
+  "candidate": "Use the best original three-regime candidate by its prespecified overall CV metric. Reuse its OOF middle and tail experts and conditional tail probability. Replace only P0 with the original HGB400 binary gate fitted separately within each fold.",
+  "probabilities": "P0 = 1-p_positive_original; Ptail = p_positive_original * p_tail_three/(p_mid_three+p_tail_three); Pmid = p_positive_original - Ptail",
+  "zero_threshold": 0.9,
+  "new_tuning": "None. One additional configuration; same folds, features, HGB parameters and metric.",
+  "interpretation": "Adaptive exploratory comparison, not an independent test. Binary zero-threshold decisions are preserved; zero-regime RMSE can still change because of the positive experts."
+}

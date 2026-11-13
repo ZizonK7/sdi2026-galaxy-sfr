@@ -1,0 +1,296 @@
+{
+  "commit": "fef00ffaf2992104c8d6dc0e87ab0b30275d8c9d",
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "n_train": 166749,
+  "holdout_evaluated": false,
+  "sklearn": "1.9.1",
+  "cv": "Original train split; KFold(5, shuffle=True, random_state=42)",
+  "hgb_params": {
+    "learning_rate": 0.08,
+    "max_iter": 150,
+    "max_leaf_nodes": 31,
+    "random_state": 42
+  },
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z"
+  ],
+  "elapsed_seconds": 109.35838198661804,
+  "scenario_note": "Offsets define separate hypothetical evaluation scenarios; not tuned hyperparameters or confirmed official formulas.",
+  "experiment_note": "A retains 3-class gate; experts learn log(y+offset); soft mode mixes in log space before inverse transform. Ablations compare linear-space mixture, hard routing, support clipping, and T=10.",
+  "learning_details": [
+    {
+      "fold": 1,
+      "offset": 1.0,
+      "T": 30,
+      "class_counts": [
+        11496,
+        120187,
+        1716
+      ],
+      "classifier_trees": 58,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 1,
+      "offset": 1.0,
+      "T": 10,
+      "class_counts": [
+        11496,
+        112599,
+        9304
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 1,
+      "offset": 0.001,
+      "T": 30,
+      "class_counts": [
+        11496,
+        120187,
+        1716
+      ],
+      "classifier_trees": 58,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 1,
+      "offset": 0.001,
+      "T": 10,
+      "class_counts": [
+        11496,
+        112599,
+        9304
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 2,
+      "offset": 1.0,
+      "T": 30,
+      "class_counts": [
+        11542,
+        120109,
+        1748
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 2,
+      "offset": 1.0,
+      "T": 10,
+      "class_counts": [
+        11542,
+        112487,
+        9370
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 2,
+      "offset": 0.001,
+      "T": 30,
+      "class_counts": [
+        11542,
+        120109,
+        1748
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 2,
+      "offset": 0.001,
+      "T": 10,
+      "class_counts": [
+        11542,
+        112487,
+        9370
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 3,
+      "offset": 1.0,
+      "T": 30,
+      "class_counts": [
+        11583,
+        120084,
+        1732
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 3,
+      "offset": 1.0,
+      "T": 10,
+      "class_counts": [
+        11583,
+        112476,
+        9340
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 3,
+      "offset": 0.001,
+      "T": 30,
+      "class_counts": [
+        11583,
+        120084,
+        1732
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 3,
+      "offset": 0.001,
+      "T": 10,
+      "class_counts": [
+        11583,
+        112476,
+        9340
+      ],
+      "classifier_trees": 150,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 4,
+      "offset": 1.0,
+      "T": 30,
+      "class_counts": [
+        11540,
+        120089,
+        1770
+      ],
+      "classifier_trees": 132,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 4,
+      "offset": 1.0,
+      "T": 10,
+      "class_counts": [
+        11540,
+        112383,
+        9476
+      ],
+      "classifier_trees": 104,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 4,
+      "offset": 0.001,
+      "T": 30,
+      "class_counts": [
+        11540,
+        120089,
+        1770
+      ],
+      "classifier_trees": 132,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 4,
+      "offset": 0.001,
+      "T": 10,
+      "class_counts": [
+        11540,
+        112383,
+        9476
+      ],
+      "classifier_trees": 104,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 5,
+      "offset": 1.0,
+      "T": 30,
+      "class_counts": [
+        11591,
+        120099,
+        1710
+      ],
+      "classifier_trees": 121,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 5,
+      "offset": 1.0,
+      "T": 10,
+      "class_counts": [
+        11591,
+        112515,
+        9294
+      ],
+      "classifier_trees": 149,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 5,
+      "offset": 0.001,
+      "T": 30,
+      "class_counts": [
+        11591,
+        120099,
+        1710
+      ],
+      "classifier_trees": 121,
+      "mid_trees": 150,
+      "tail_trees": 150
+    },
+    {
+      "fold": 5,
+      "offset": 0.001,
+      "T": 10,
+      "class_counts": [
+        11591,
+        112515,
+        9294
+      ],
+      "classifier_trees": 149,
+      "mid_trees": 150,
+      "tail_trees": 150
+    }
+  ],
+  "tests": "3 unit tests passed; all OOF predictions finite/nonnegative; log-space mixture identity verified.",
+  "numerical_note": "Hard-routed zero class returns exact zero; inverse-transform floating roundoff (~2e-19 at offset=.001) corrected without changing routes or training."
+}

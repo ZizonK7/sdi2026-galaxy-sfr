@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "metric_checks": 1453,
+  "screen_selection_reproduced": true,
+  "exact_fold_rows_verified": true,
+  "source_oof_blends_reconstructed": true,
+  "acceptance_reproduced": true,
+  "zero_gate_rule_preserved": true,
+  "zero_output_differences": {
+    "42": {
+      "baseline": 0,
+      "tail_priority": 0,
+      "strict_balance": 0
+    },
+    "7": {
+      "baseline": 0,
+      "tail_priority": 0,
+      "strict_balance": 0
+    },
+    "99": {
+      "baseline": 0,
+      "tail_priority": 0,
+      "strict_balance": 0
+    }
+  },
+  "hashes_verified": true,
+  "current_model_unchanged": true,
+  "unit_tests": 5,
+  "balanced_user_objective_verified": true,
+  "protected_followup_reconstructed": true,
+  "training_run_checks": {
+    "zero_gate_rule_preserved": true,
+    "screen_clipping_equivalence": true,
+    "new_seed99_fit": true,
+    "fold_feature_engineering": true,
+    "log_blend_equivalence": true,
+    "fixed_gates_and_mid": true,
+    "saved_reload": true,
+    "raw_interface": true,
+    "source_models_unchanged": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "objective": "Test 2x,3x,5x loss weights on true SFR>100 rows of the SFR>10 tail expert; preserve the hierarchical46 architecture",
+  "models": "HGB400/31 and LightGBM400/31, each with fixed weights 1,2,3,5; weight1 is that family's own baseline",
+  "target": "log10(1+SFR); training-only sample weights 1 for 10<SFR<=100, multiplier for SFR>100; no weight normalization",
+  "fixed": "Same 46 features and train-fold-only residual curves, two HGB gates, HGB mid expert, tail boundary10, zero rule P0>=0.9",
+  "evaluation": "Original train80%, identical seed42/7 five-fold splits and cached gate/mid OOF predictions; metrics remain unweighted final-mixture log RMSE",
+  "selection": "All eight fixed configurations are reported. Additionally, within each outer training fold, stratified inner holdout20% at random_state142 chooses the lowest overall final-mixture log RMSE among all eight and within each family. Inner feature engineer, two gates and all experts fit only inner-train rows. Outer labels never select that fold's weight.",
+  "selection_ties": "Sort by inner overall log RMSE then configuration name; no extreme-only model selection",
+  "final_artifacts": "Select final candidate on the same internal20% procedure within the original train80%, then refit on all original train80%. Also save all six weighted configurations for inspection. Do not change current model or push.",
+  "constraints": "No target-weighted evaluation, threshold/feature changes, adaptive new weights or original holdout20% scoring. Nested procedure uses one internal validation split, not full inner cross-validation.",
+  "interpretation": "Repeated exploratory CV on previously used observations; seed7 is not a new independent test. Ranking fixed configurations on outer scores is descriptive, not an unbiased estimate of a post-hoc best configuration. Nested selection scores evaluate the prescribed selection procedure."
+}

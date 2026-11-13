@@ -1,0 +1,105 @@
+{
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z",
+    "log_rho_5nn",
+    "log_rho_10nn",
+    "log1p_N_r1",
+    "log1p_N_r2",
+    "log1p_N_r5",
+    "dist_host13.5",
+    "r_over_R200_13.5",
+    "v_over_V200_13.5",
+    "host_logm_13.5",
+    "dist_host14",
+    "r_over_R200_14",
+    "v_over_V200_14",
+    "fof_log_richness",
+    "fof_is_central",
+    "fof_group_max_logm",
+    "fof_dv_group",
+    "halo_minus_stellar",
+    "dlogMs_growth",
+    "dlogMh_growth",
+    "bh_to_star",
+    "prog_star_to_halo"
+  ],
+  "train_rows": 166749,
+  "catalogue_rows": 208437,
+  "metric": "RMSE log10(1+SFR)",
+  "tail_threshold": 10,
+  "log_offset": 1,
+  "zero_gate": false,
+  "holdout_evaluated": false,
+  "reference_policy": "Same fixed full unlabeled catalogue as previous A34 runs; target excluded from geometry.",
+  "contexts": {
+    "HGB": {
+      "gate": {
+        "family": "hgb",
+        "params": {}
+      },
+      "mid": {
+        "family": "hgb",
+        "params": {}
+      },
+      "tail": {
+        "family": "hgb",
+        "params": {}
+      }
+    },
+    "LGB": {
+      "gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "tail": {
+        "family": "hgb",
+        "params": {}
+      }
+    }
+  },
+  "rf_grid": [
+    {
+      "min_samples_leaf": 3
+    },
+    {
+      "min_samples_leaf": 10
+    }
+  ],
+  "rf_fixed": {
+    "n_estimators": 200,
+    "bootstrap": true,
+    "gate_max_features": "sqrt",
+    "regression_max_features": 0.7,
+    "n_jobs": 4,
+    "random_state": 42
+  },
+  "cv": "Same outer KFold(5, shuffle=True, random_state=42); inner 20% stratified by target regime, seed1000+fold; select separately by full mixture RMSE in each context.",
+  "baseline_reuse": "Outer component predictions reused only after data, row order, parameters and fold checks. Recreated inner HGB scores match previous run within 1e-12.",
+  "selection_note": "LGB context fixes the previously chosen LightGBM/LightGBM/HGB architecture. Its new OOF score is distinct from the prior fold-varying combination-selection score.",
+  "sklearn": "1.9.1",
+  "elapsed_seconds": 2175.8948459625244,
+  "validation": "Two RF tests passed; cached folds/rows/parameters verified; inner HGB scores reproduced; saved overall/group/fold scores recomputed; selected combinations reconstructed from component predictions."
+}

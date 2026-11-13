@@ -1,0 +1,336 @@
+[
+  {
+    "fold": 1,
+    "context": "HGB",
+    "baseline_inner": 0.09796072617396392,
+    "combo_inner": 0.09792462991269858,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.10011000470145334,
+      "mid": 0.09864335155856661,
+      "tail": 0.09792462991269858
+    },
+    "accepted_slots": [
+      "tail"
+    ],
+    "fallback": false
+  },
+  {
+    "fold": 1,
+    "context": "LGB",
+    "baseline_inner": 0.0969851173842534,
+    "combo_inner": 0.09694799409274112,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.09976040676497408,
+      "mid": 0.09780015595802485,
+      "tail": 0.09694799409274112
+    },
+    "accepted_slots": [
+      "tail"
+    ],
+    "fallback": false
+  },
+  {
+    "fold": 2,
+    "context": "HGB",
+    "baseline_inner": 0.09660369642480576,
+    "combo_inner": 0.09660369642480576,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.09924611905563249,
+      "mid": 0.09698822591931737,
+      "tail": 0.09675286561030887
+    },
+    "accepted_slots": [],
+    "fallback": false
+  },
+  {
+    "fold": 2,
+    "context": "LGB",
+    "baseline_inner": 0.09587202343150478,
+    "combo_inner": 0.09587202343150478,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.09862683143405779,
+      "mid": 0.09680349631805013,
+      "tail": 0.09600260608375416
+    },
+    "accepted_slots": [],
+    "fallback": false
+  },
+  {
+    "fold": 3,
+    "context": "HGB",
+    "baseline_inner": 0.09874610488221194,
+    "combo_inner": 0.09874610488221194,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.10059117140432954,
+      "mid": 0.09922111665400252,
+      "tail": 0.0990884738832082
+    },
+    "accepted_slots": [],
+    "fallback": false
+  },
+  {
+    "fold": 3,
+    "context": "LGB",
+    "baseline_inner": 0.09661737479895763,
+    "combo_inner": 0.09661737479895763,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.10014263063527076,
+      "mid": 0.09756814106343867,
+      "tail": 0.0970970943360578
+    },
+    "accepted_slots": [],
+    "fallback": false
+  },
+  {
+    "fold": 4,
+    "context": "HGB",
+    "baseline_inner": 0.09758212456230958,
+    "combo_inner": 0.09758212456230958,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.09940050076620793,
+      "mid": 0.09812839037660664,
+      "tail": 0.09787994770905281
+    },
+    "accepted_slots": [],
+    "fallback": false
+  },
+  {
+    "fold": 4,
+    "context": "LGB",
+    "baseline_inner": 0.09535634572420061,
+    "combo_inner": 0.09535634572420061,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.0990781233372445,
+      "mid": 0.09633901836495462,
+      "tail": 0.09568894287002423
+    },
+    "accepted_slots": [],
+    "fallback": false
+  },
+  {
+    "fold": 5,
+    "context": "HGB",
+    "baseline_inner": 0.09836898371558107,
+    "combo_inner": 0.09836898371558107,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.10022402189190574,
+      "mid": 0.09879183373453854,
+      "tail": 0.09885120540046828
+    },
+    "accepted_slots": [],
+    "fallback": false
+  },
+  {
+    "fold": 5,
+    "context": "LGB",
+    "baseline_inner": 0.09751181267376445,
+    "combo_inner": 0.09751181267376445,
+    "selected_specs": {
+      "gate": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "mid": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      },
+      "tail": {
+        "family": "rf",
+        "params": {
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "selected_inner_scores": {
+      "gate": 0.09994631034270839,
+      "mid": 0.09832569277396919,
+      "tail": 0.0979314659618291
+    },
+    "accepted_slots": [],
+    "fallback": false
+  }
+]

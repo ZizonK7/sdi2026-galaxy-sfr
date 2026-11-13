@@ -1,0 +1,14 @@
+{
+  "frozen_candidate": "best_joint_add_all",
+  "improvement_percent_vs_three_baseline_seed42": 2.0731279665090363,
+  "improvement_percent_vs_three_baseline_seed7": 1.3020871377988876,
+  "confirmation_overall_improved_folds_vs_three_baseline": 5,
+  "confirmation_mean_rmse_delta_vs_current_A": -0.0011659281118930054,
+  "current_A_seed42_pooled_oof_rmse": 0.09523115210984322,
+  "selected_seed42_pooled_oof_rmse": 0.0939760692199162,
+  "confirmation_zero_rmse_delta_vs_current_A": 0.00018213405083529477,
+  "confirmation_tail100_rmse_delta_vs_current_A": -0.039720205013347276,
+  "confirmation_overall_improved_folds_vs_current_A": 5,
+  "replaces_current_model": false,
+  "scope": "Best frozen plan in HGB400 three-regime feature search; not a global optimum or independent-test claim"
+}

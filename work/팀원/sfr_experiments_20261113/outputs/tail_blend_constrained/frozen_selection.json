@@ -1,0 +1,12 @@
+{
+  "tail_priority": {
+    "name": "lgb_w3_a75",
+    "partner": "lgb_w3",
+    "alpha": 0.75
+  },
+  "strict_balance": {
+    "name": "lgb_w3_a50",
+    "partner": "lgb_w3",
+    "alpha": 0.5
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "model": "A34_both",
+  "threshold": 0.9,
+  "metric": "RMSE log10(1+SFR)",
+  "n": 166749,
+  "gated_rows": 11183,
+  "true_zero_gated": 11013,
+  "positive_gated": 170,
+  "zero_output_precision": 0.984798354645444,
+  "true_zero_recall": 0.7627787782241308,
+  "positive_gated_actual_median": 0.615855187,
+  "positive_gated_actual_max": 22.9242706,
+  "gated_soft_prediction_median": 0.006252704820934651,
+  "zero_mse_change_total_weight": -1.077249132569214e-05,
+  "positive_mse_change_total_weight": 1.182244019185446e-05,
+  "improved_folds": 2,
+  "interpretation": "Threshold fixed by user; post-processing existing OOF predictions, no retraining or threshold optimization; holdout not evaluated."
+}

@@ -1,0 +1,707 @@
+[
+  {
+    "fold": 1,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.10011000470145334,
+      "LGB": 0.09976040676497408
+    },
+    "seconds": 46.117392778396606,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.10151741335721627,
+      "LGB": 0.10113670554467125
+    },
+    "seconds": 41.69591283798218,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09864335155856661,
+      "LGB": 0.09780015595802485
+    },
+    "seconds": 81.90418076515198,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09885261270785584,
+      "LGB": 0.09800321057906379
+    },
+    "seconds": 71.42960095405579,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09792462991269858,
+      "LGB": 0.09694799409274112
+    },
+    "seconds": 4.426469802856445,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09807239888319615,
+      "LGB": 0.09710060418422468
+    },
+    "seconds": 3.6525650024414062,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "outer_refit",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 52.85367798805237,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "outer_refit",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 113.65779376029968,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "phase": "outer_refit",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 6.166205167770386,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09924611905563249,
+      "LGB": 0.09862683143405779
+    },
+    "seconds": 39.38985538482666,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.10046952977783564,
+      "LGB": 0.09984780049722507
+    },
+    "seconds": 39.38361191749573,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09698822591931737,
+      "LGB": 0.09680349631805013
+    },
+    "seconds": 81.27873301506042,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09721721373409957,
+      "LGB": 0.09698060254458774
+    },
+    "seconds": 72.50652885437012,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09675286561030887,
+      "LGB": 0.09600260608375416
+    },
+    "seconds": 4.967292070388794,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09691884733856873,
+      "LGB": 0.09612514085188581
+    },
+    "seconds": 3.775022029876709,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "outer_refit",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 53.5344340801239,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "outer_refit",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 106.99626278877258,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "phase": "outer_refit",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 5.778693914413452,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.10059117140432954,
+      "LGB": 0.10014263063527076
+    },
+    "seconds": 38.9941680431366,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.10171019671922485,
+      "LGB": 0.10122082308191459
+    },
+    "seconds": 38.29804706573486,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09922111665400252,
+      "LGB": 0.09756814106343867
+    },
+    "seconds": 82.12023091316223,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09934028576431703,
+      "LGB": 0.0976776617163289
+    },
+    "seconds": 72.82353925704956,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.0990884738832082,
+      "LGB": 0.0970970943360578
+    },
+    "seconds": 4.457906007766724,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09922482570381733,
+      "LGB": 0.09726465831848288
+    },
+    "seconds": 3.6664681434631348,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "outer_refit",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 52.332337856292725,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "outer_refit",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 108.15527009963989,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "phase": "outer_refit",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 6.297639846801758,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09940050076620793,
+      "LGB": 0.0990781233372445
+    },
+    "seconds": 40.60945105552673,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.10067333863882122,
+      "LGB": 0.1003386811544615
+    },
+    "seconds": 37.31344819068909,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09812839037660664,
+      "LGB": 0.09633901836495462
+    },
+    "seconds": 80.21676802635193,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09825766266582026,
+      "LGB": 0.09642277904813586
+    },
+    "seconds": 70.29292821884155,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09787994770905281,
+      "LGB": 0.09568894287002423
+    },
+    "seconds": 4.576891899108887,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09820185919312757,
+      "LGB": 0.09603264562547917
+    },
+    "seconds": 3.7155048847198486,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "outer_refit",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 54.13027787208557,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "outer_refit",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 111.13232088088989,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "phase": "outer_refit",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 6.415290117263794,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.10022402189190574,
+      "LGB": 0.09994631034270839
+    },
+    "seconds": 38.71258616447449,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "inner",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.10130629215480723,
+      "LGB": 0.10097882766421963
+    },
+    "seconds": 38.580965995788574,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09879183373453854,
+      "LGB": 0.09832569277396919
+    },
+    "seconds": 83.86359763145447,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "inner",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.0989054186535017,
+      "LGB": 0.09846200807808882
+    },
+    "seconds": 71.32944393157959,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "scores": {
+      "HGB": 0.09885120540046828,
+      "LGB": 0.0979314659618291
+    },
+    "seconds": 4.694849014282227,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "inner",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 10
+      }
+    },
+    "scores": {
+      "HGB": 0.09904074133580963,
+      "LGB": 0.09807479439443348
+    },
+    "seconds": 3.6791770458221436,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "outer_refit",
+    "slot": "gate",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 51.15126180648804,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "outer_refit",
+    "slot": "mid",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 105.65584683418274,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "phase": "outer_refit",
+    "slot": "tail",
+    "spec": {
+      "family": "rf",
+      "params": {
+        "min_samples_leaf": 3
+      }
+    },
+    "seconds": 5.625262022018433,
+    "warnings": []
+  }
+]

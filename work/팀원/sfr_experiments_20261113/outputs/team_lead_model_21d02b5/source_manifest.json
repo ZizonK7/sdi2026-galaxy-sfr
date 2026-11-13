@@ -1,0 +1,45 @@
+{
+  "repository": "ZizonK7/sdi2026-galaxy-sfr",
+  "branch": "codex/team-lead-work",
+  "commit": "21d02b5d0c829aff67cafd89da62c3386ac7864f",
+  "notebook_git_blob_sha": "2139283816711f2d116e0136b6f00598591c3a90",
+  "extracted_definitions": [
+    {
+      "cell_index": 90,
+      "name": "build_environment_features"
+    },
+    {
+      "cell_index": 90,
+      "name": "build_mass_history_features"
+    },
+    {
+      "cell_index": 91,
+      "name": "to_log"
+    },
+    {
+      "cell_index": 91,
+      "name": "from_log"
+    },
+    {
+      "cell_index": 91,
+      "name": "log_rmse"
+    },
+    {
+      "cell_index": 91,
+      "name": "TwoStageLogSFR"
+    },
+    {
+      "cell_index": 92,
+      "name": "prepare_prediction_union"
+    },
+    {
+      "cell_index": 92,
+      "name": "predict_sfr"
+    }
+  ],
+  "adaptations": [
+    "Explicit model/reference arguments for standalone predict_sfr",
+    "build_features wraps original functions with original catalogue sort"
+  ],
+  "upstream_fitted_artifact_available": false
+}

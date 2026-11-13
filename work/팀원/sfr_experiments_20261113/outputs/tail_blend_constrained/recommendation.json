@@ -1,0 +1,7 @@
+{
+  "recommended": "baseline",
+  "approved": {
+    "tail_priority": false,
+    "strict_balance": false
+  }
+}

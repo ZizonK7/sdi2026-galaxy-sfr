@@ -1,0 +1,377 @@
+[
+  {
+    "fold": 1,
+    "model": "baseline",
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "seconds": 15.917579174041748,
+    "classifier_log_loss": 0.07832775793546803,
+    "zero_log_loss": 0.03504589635440722,
+    "density_splits": 3505,
+    "bh_splits": 3187,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "model": "density_x2",
+    "weights": [
+      2.0,
+      1.0
+    ],
+    "seconds": 16.599148988723755,
+    "classifier_log_loss": 0.0791465676259495,
+    "zero_log_loss": 0.03580061628280853,
+    "density_splits": 19649,
+    "bh_splits": 2933,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "model": "BH_x2",
+    "weights": [
+      1.0,
+      2.0
+    ],
+    "seconds": 16.739166021347046,
+    "classifier_log_loss": 0.07846175904668828,
+    "zero_log_loss": 0.035346013273643166,
+    "density_splits": 3167,
+    "bh_splits": 16947,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "model": "both_x1_5",
+    "weights": [
+      1.5,
+      1.5
+    ],
+    "seconds": 17.866870164871216,
+    "classifier_log_loss": 0.07857358830401681,
+    "zero_log_loss": 0.03514872818774679,
+    "density_splits": 10598,
+    "bh_splits": 9133,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "model": "both_x2",
+    "weights": [
+      2.0,
+      2.0
+    ],
+    "seconds": 17.259042024612427,
+    "classifier_log_loss": 0.07813232931833904,
+    "zero_log_loss": 0.03541539818512275,
+    "density_splits": 17933,
+    "bh_splits": 15022,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "baseline",
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "seconds": 17.414308071136475,
+    "classifier_log_loss": 0.07379854251940444,
+    "zero_log_loss": 0.032400118992931284,
+    "density_splits": 3545,
+    "bh_splits": 3258,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "density_x2",
+    "weights": [
+      2.0,
+      1.0
+    ],
+    "seconds": 16.85713219642639,
+    "classifier_log_loss": 0.074115698615637,
+    "zero_log_loss": 0.03286820958959941,
+    "density_splits": 19578,
+    "bh_splits": 2914,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "BH_x2",
+    "weights": [
+      1.0,
+      2.0
+    ],
+    "seconds": 16.60756802558899,
+    "classifier_log_loss": 0.07464080256136435,
+    "zero_log_loss": 0.03328337025478747,
+    "density_splits": 3070,
+    "bh_splits": 17143,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "both_x1_5",
+    "weights": [
+      1.5,
+      1.5
+    ],
+    "seconds": 16.913498878479004,
+    "classifier_log_loss": 0.07387013611734125,
+    "zero_log_loss": 0.032958951871012,
+    "density_splits": 10625,
+    "bh_splits": 9572,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "both_x2",
+    "weights": [
+      2.0,
+      2.0
+    ],
+    "seconds": 17.08425498008728,
+    "classifier_log_loss": 0.07436216402230722,
+    "zero_log_loss": 0.033101346734138636,
+    "density_splits": 17850,
+    "bh_splits": 15466,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "baseline",
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "seconds": 21.304716110229492,
+    "classifier_log_loss": 0.07624970568931597,
+    "zero_log_loss": 0.03257433714148914,
+    "density_splits": 3442,
+    "bh_splits": 3218,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "density_x2",
+    "weights": [
+      2.0,
+      1.0
+    ],
+    "seconds": 17.29990816116333,
+    "classifier_log_loss": 0.07601979961821002,
+    "zero_log_loss": 0.03258073477744112,
+    "density_splits": 19068,
+    "bh_splits": 2954,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "BH_x2",
+    "weights": [
+      1.0,
+      2.0
+    ],
+    "seconds": 16.499444007873535,
+    "classifier_log_loss": 0.07671416097555768,
+    "zero_log_loss": 0.032683485207474376,
+    "density_splits": 3182,
+    "bh_splits": 16985,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "both_x1_5",
+    "weights": [
+      1.5,
+      1.5
+    ],
+    "seconds": 16.527220964431763,
+    "classifier_log_loss": 0.07652965484111306,
+    "zero_log_loss": 0.03271561961879056,
+    "density_splits": 10507,
+    "bh_splits": 9465,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "both_x2",
+    "weights": [
+      2.0,
+      2.0
+    ],
+    "seconds": 16.54916787147522,
+    "classifier_log_loss": 0.07637266771419042,
+    "zero_log_loss": 0.03257311126546301,
+    "density_splits": 17939,
+    "bh_splits": 15468,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "baseline",
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "seconds": 17.23900008201599,
+    "classifier_log_loss": 0.06999840474321002,
+    "zero_log_loss": 0.03140800530123726,
+    "density_splits": 3493,
+    "bh_splits": 3172,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "density_x2",
+    "weights": [
+      2.0,
+      1.0
+    ],
+    "seconds": 16.212085008621216,
+    "classifier_log_loss": 0.07053758198969833,
+    "zero_log_loss": 0.032037847150391784,
+    "density_splits": 19734,
+    "bh_splits": 2838,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "BH_x2",
+    "weights": [
+      1.0,
+      2.0
+    ],
+    "seconds": 17.425039768218994,
+    "classifier_log_loss": 0.069900082449479,
+    "zero_log_loss": 0.03155284429620318,
+    "density_splits": 3128,
+    "bh_splits": 16638,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "both_x1_5",
+    "weights": [
+      1.5,
+      1.5
+    ],
+    "seconds": 16.181068897247314,
+    "classifier_log_loss": 0.07001267115887355,
+    "zero_log_loss": 0.0318655573462862,
+    "density_splits": 10490,
+    "bh_splits": 9272,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "both_x2",
+    "weights": [
+      2.0,
+      2.0
+    ],
+    "seconds": 16.492166996002197,
+    "classifier_log_loss": 0.07021680218417452,
+    "zero_log_loss": 0.03176149503345864,
+    "density_splits": 18372,
+    "bh_splits": 15138,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "baseline",
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "seconds": 16.377006769180298,
+    "classifier_log_loss": 0.0762783410152456,
+    "zero_log_loss": 0.03433469670382883,
+    "density_splits": 3555,
+    "bh_splits": 3266,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "density_x2",
+    "weights": [
+      2.0,
+      1.0
+    ],
+    "seconds": 15.900135040283203,
+    "classifier_log_loss": 0.07648480859163331,
+    "zero_log_loss": 0.03438277922175705,
+    "density_splits": 19944,
+    "bh_splits": 2817,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "BH_x2",
+    "weights": [
+      1.0,
+      2.0
+    ],
+    "seconds": 16.082418203353882,
+    "classifier_log_loss": 0.07608522282903464,
+    "zero_log_loss": 0.0344034975001028,
+    "density_splits": 3256,
+    "bh_splits": 16932,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "both_x1_5",
+    "weights": [
+      1.5,
+      1.5
+    ],
+    "seconds": 16.2117760181427,
+    "classifier_log_loss": 0.07605583936965414,
+    "zero_log_loss": 0.034665751846797065,
+    "density_splits": 10965,
+    "bh_splits": 9459,
+    "total_splits": 111600,
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "both_x2",
+    "weights": [
+      2.0,
+      2.0
+    ],
+    "seconds": 16.42383909225464,
+    "classifier_log_loss": 0.07639871368651212,
+    "zero_log_loss": 0.03465210376966778,
+    "density_splits": 18217,
+    "bh_splits": 15307,
+    "total_splits": 111600,
+    "warnings": []
+  }
+]

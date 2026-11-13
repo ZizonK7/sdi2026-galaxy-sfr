@@ -1,0 +1,11 @@
+fold,context,accepted_slots,gate_leaf,mid_leaf,tail_leaf
+1,HGB,tail,3,3,3
+1,LGB,tail,3,3,3
+2,HGB,none,3,3,3
+2,LGB,none,3,3,3
+3,HGB,none,3,3,3
+3,LGB,none,3,3,3
+4,HGB,none,3,3,3
+4,LGB,none,3,3,3
+5,HGB,none,3,3,3
+5,LGB,none,3,3,3

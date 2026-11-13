@@ -1,0 +1,13 @@
+{
+  "model_path": "/Users/ljh/Documents/Codex/2026-11-11/x20/outputs/a34_zero_gate_adopted/A34_zero_gate_090.joblib",
+  "module_directory": "/Users/ljh/Documents/Codex/2026-11-11/x20/outputs/a34_zero_gate_adopted",
+  "metadata_path": "/Users/ljh/Documents/Codex/2026-11-11/x20/outputs/a34_zero_gate_adopted/metadata.json",
+  "prediction_policy": "P(SFR=0)>=0.9 => exactly0; otherwise original log-space mixture prediction",
+  "zero_threshold": 0.9,
+  "architecture": [
+    "LightGBM",
+    "LightGBM",
+    "HGB"
+  ],
+  "n_features": 34
+}

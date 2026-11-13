@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "metric_checks": 2398,
+  "baseline_predictions_reproduced": true,
+  "weighted_mixtures_reconstructed": true,
+  "internal_selection_disjoint_and_reproduced": true,
+  "training_weight_counts_verified": true,
+  "zero_outputs_unchanged": true,
+  "artifact_hashes_verified": true,
+  "current_model_unchanged": true,
+  "analytic_and_boundary_tests_passed": 3,
+  "training_run_checks": {
+    "baselines_reproduced": true,
+    "outer_coverage_once": true,
+    "internal_selection_disjoint": true,
+    "unweighted_evaluation": true,
+    "zero_routing_identical": true,
+    "gates_and_mid_fixed": true,
+    "saved_reload": true,
+    "raw_interface": true,
+    "source_model_unchanged": true
+  }
+}

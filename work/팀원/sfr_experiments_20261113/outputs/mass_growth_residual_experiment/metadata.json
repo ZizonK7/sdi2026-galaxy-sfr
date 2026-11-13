@@ -1,0 +1,41 @@
+{
+  "feature": "stellar_growth_residual_at_mass",
+  "n_features_before": 34,
+  "n_features_after": 35,
+  "n_bins": 20,
+  "fitted_reference": "Per-fold training input only; final artifacts fit reference on original training 80%",
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "original_rows": 208437,
+  "training_rows": 166749,
+  "holdout_evaluated": false,
+  "production_model_changed": false,
+  "checks": {
+    "source_modules_match_baseline": true,
+    "fold_indices_and_labels_match": true,
+    "oof_coverage_once": true,
+    "saved_model_reload": true,
+    "raw_interface": true
+  },
+  "artifacts": {
+    "leader_two_stage": {
+      "file": "leader_two_stage_residual.joblib",
+      "sha256": "a8f64e556de6d7b1987d476ad3a6a26f9cc3cd387486607edbdf1511c7eb69d4"
+    },
+    "three_T10": {
+      "file": "three_T10_residual.joblib",
+      "sha256": "04bce0818268cbbb70bfc2d0c273bcbad24567b90f94729ce133543c532f5250"
+    },
+    "zero_preserved_three_T10": {
+      "file": "zero_preserved_three_T10_residual.joblib",
+      "sha256": "e7bd5c037070ff7fd7b66a515066c63700454745c5ab7c1f2aff204409ba5544"
+    }
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "caution": "Exploratory ablation on previously used CV, not an independent test. No claim of time-normalized growth."
+}

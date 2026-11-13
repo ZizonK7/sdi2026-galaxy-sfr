@@ -1,0 +1,13 @@
+{
+  "objective": "Search feature additions and removals for the team-lead-derived three-regime HGB400 T=10 model; overall log10(1+SFR) RMSE primary, zero and extreme-tail diagnostics secondary",
+  "data": "Original train80% only; original20% holdout not scored. Same fixed unlabeled catalogue for geometry. Conditional residual curves fitted on each training fold only.",
+  "fixed_model": "HGB lr=.08, max_iter=400, max_leaf_nodes=31, early_stopping=False, seed42. True zero/mid/tail training labels; P0>=.9 zero rule; soft log mixture.",
+  "additions": ["mass-growth product", "merger-growth block", "mass-conditioned growth residual", "mass-conditioned BH residual", "nearest-companion block", "all additions"],
+  "removals": ["raw positions", "raw velocities", "both raw phase-space groups", "raw progenitor masses", "raw merger", "raw BH", "host14 distances and speeds", "FoF relative speed"],
+  "stage1": "Screen all14 feature-set variants using folds1and2 of original train KFold5 seed42. Save component outputs and evaluate joint feature-set replacement and each one-component replacement against the cached original 3-class baseline.",
+  "stage2": "Full5fold seed42 on best joint screened plan, best per-component choices, and stacked independently beneficial additions/removals per component. Include unchanged baseline. Deduplicate plans and reuse exact fold component caches. Selection by lowest mean fold overall log RMSE, tie fewer total component features.",
+  "stacking_rule": "For each component, add individual blocks and remove groups that improve its one-component screening mean RMSE by at least0.00002. Include growth residual even if previously weak; no special treatment based on current results.",
+  "confirmation": "Freeze selected plan before running KFold5 seed7. Compare selected plan vs unchanged three-class baseline, team-lead two-stage, and current adopted A. Do not reselect based on confirmation. This is a split-sensitivity check on reused observations, not independent external validation.",
+  "baseline_reuse": "Validate cached source rows, labels, folds and source model code. Original34 environment sorting must match team-lead source. Current A comparison retains its original unsorted reference feature calculation.",
+  "scope": "Best within this declared feature search, not a global optimum. No automatic push or replacement of current model. Persist fitted best candidate and feature transforms."
+}

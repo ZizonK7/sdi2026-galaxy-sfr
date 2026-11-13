@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "recomputed_metric_checks": 2457,
+  "inner_outer_splits_checked": 45,
+  "all_predictions_reconstructed": true,
+  "baseline_reproduced": true,
+  "calibrated_zero_rule_verified": true,
+  "diagnostics_reproduced": true,
+  "model_hashes_verified": true,
+  "current_model_unchanged": true,
+  "unit_tests": 4,
+  "training_run_checks": {
+    "baseline_reconstructed": true,
+    "inner_coverage_once": true,
+    "inner_outer_disjoint": true,
+    "true_positive_conditional_calibration": true,
+    "fixed_expert_predictions": true,
+    "calibrated_zero_rule": true,
+    "saved_reload": true,
+    "raw_interface": true,
+    "source_model_unchanged": true
+  }
+}

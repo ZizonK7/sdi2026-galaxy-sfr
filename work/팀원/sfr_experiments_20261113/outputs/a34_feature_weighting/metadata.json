@@ -1,0 +1,79 @@
+{
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z",
+    "log_rho_5nn",
+    "log_rho_10nn",
+    "log1p_N_r1",
+    "log1p_N_r2",
+    "log1p_N_r5",
+    "dist_host13.5",
+    "r_over_R200_13.5",
+    "v_over_V200_13.5",
+    "host_logm_13.5",
+    "dist_host14",
+    "r_over_R200_14",
+    "v_over_V200_14",
+    "fof_log_richness",
+    "fof_is_central",
+    "fof_group_max_logm",
+    "fof_dv_group",
+    "halo_minus_stellar",
+    "dlogMs_growth",
+    "dlogMh_growth",
+    "bh_to_star",
+    "prog_star_to_halo"
+  ],
+  "metric": "RMSE log10(1+SFR)",
+  "train_rows": 166749,
+  "holdout_evaluated": false,
+  "contexts": "Fixed LightGBM gate / LightGBM mid / HGB tail, 34 inputs, T10, log offset1, soft mixture; only gate retrained.",
+  "weighted_columns": [
+    "log10_overdensity_plus_1",
+    "log10_BH_mass"
+  ],
+  "variants": {
+    "baseline": [
+      1.0,
+      1.0
+    ],
+    "density_x2": [
+      2.0,
+      1.0
+    ],
+    "BH_x2": [
+      1.0,
+      2.0
+    ],
+    "both_x1_5": [
+      1.5,
+      1.5
+    ],
+    "both_x2": [
+      2.0,
+      2.0
+    ]
+  },
+  "mechanism": "LightGBM feature_contri: multiply each candidate feature split gain by its multiplier; all other features remain1. No input scaling, class/sample weighting or forced direction.",
+  "evaluation": "Same KFold(5,shuffle=True,random_state=42). Fixed prespecified multipliers, no outer-fold-driven tuning. Comparing and selecting after CV remains exploratory model development.",
+  "permutation": "Baseline gate only; stratified 3000 validation rows per fold, two permutations each for all34 features plus two groups. Experts unchanged. Correlated/derived inputs limit independent or causal interpretation.",
+  "reference_catalogue": "Same fixed full unlabeled galaxy catalogue, target excluded from geometry.",
+  "source_versions": {
+    "sklearn": "1.9.1",
+    "lightgbm": "4.7.0"
+  },
+  "elapsed_seconds": 512.6751701831818,
+  "validation": "2 tests passed; named feature weighting and LightGBM parameter uptake checked; baseline fold gate probabilities reproduced; saved all/group/fold scores and fixed-expert mixture independently recomputed."
+}

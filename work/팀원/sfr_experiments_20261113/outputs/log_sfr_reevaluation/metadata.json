@@ -1,0 +1,64 @@
+{
+  "commit": "fef00ffaf2992104c8d6dc0e87ab0b30275d8c9d",
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "sklearn": "1.9.1",
+  "n_train": 166749,
+  "holdout_evaluated": false,
+  "metrics_note": "Scenario scores, not official scores: exact zero handling remains unspecified. Negative predictions clipped to 0 for all log scores; raw predictions for original linear RMSE.",
+  "model_note": "Original model classes/settings. A_hard_T30 reuses A_soft_T30 fitted model; C reuses unchanged B_T30 OOF gates and mid regressor. Log1p and smearing reference reproduce definitions in midterm notebook.",
+  "reproduction_checks": {
+    "TwoStage": {
+      "observed": 9.126031716958476,
+      "expected_rounded": 9.126
+    },
+    "B_T30": {
+      "observed": 8.798250536759287,
+      "expected_rounded": 8.798
+    },
+    "HGB_linear": {
+      "observed": 9.056910566832345,
+      "expected_rounded": 9.057
+    },
+    "A_soft_T10": {
+      "observed": 8.855726998561094,
+      "expected_rounded": 8.856
+    },
+    "A_soft_T30": {
+      "observed": 8.932461620252077,
+      "expected_rounded": 8.932
+    },
+    "A_soft_T100": {
+      "observed": 11.136402545410744,
+      "expected_rounded": 11.136
+    },
+    "A_hard_T30": {
+      "observed": 9.767930174249189,
+      "expected_rounded": 9.768
+    },
+    "B_T10": {
+      "observed": 8.817506694151792,
+      "expected_rounded": 8.818
+    },
+    "C_leaf10_300": {
+      "observed": 8.953261456635815,
+      "expected_rounded": 8.953
+    },
+    "C_leaf5_300": {
+      "observed": 8.943265938744732,
+      "expected_rounded": 8.943
+    },
+    "C_weight_sqrt": {
+      "observed": 9.03008045556054,
+      "expected_rounded": 9.03
+    },
+    "C_weight_linear": {
+      "observed": 9.176312506019348,
+      "expected_rounded": 9.176
+    },
+    "C_leaf5_sqrt": {
+      "observed": 8.820771021243743,
+      "expected_rounded": 8.821
+    }
+  },
+  "elapsed_seconds": 126.26131892204285
+}

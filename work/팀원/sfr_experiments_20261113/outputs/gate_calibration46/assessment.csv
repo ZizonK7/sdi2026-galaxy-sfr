@@ -1,0 +1,7 @@
+model,extreme_improves_all,zero_nonworse_all,overall_nonworse_all,overall_cost_within_01pct_all
+sigmoid_positive,False,True,False,True
+sigmoid_tail,False,False,True,True
+sigmoid_both,False,True,True,True
+isotonic_positive,False,True,False,False
+isotonic_tail,False,False,False,True
+isotonic_both,False,True,False,True

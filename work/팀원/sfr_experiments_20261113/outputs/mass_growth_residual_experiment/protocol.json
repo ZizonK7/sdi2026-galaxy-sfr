@@ -1,0 +1,14 @@
+{
+  "feature": "stellar_growth_residual_at_mass",
+  "definition": "dlogMs_growth - estimated E[dlogMs_growth | current log10_stellar_mass]",
+  "growth": "log10_stellar_mass - log10_main_prog_stellar_mass, a cumulative log mass ratio, not a time-normalized rate",
+  "estimator": "20 training-fold stellar-mass quantile bins; mean growth per bin at median mass; linear interpolation between nodes, constant outside training node range; duplicate quantile edges removed",
+  "fitting": "Fit reference curve only on each CV training fold, using input features only, no SFR. Transform training and validation with the same frozen curve. Refit on original training 80% for saved artifacts.",
+  "comparison": "Add exactly one feature (34 -> 35). Same source catalogue sorting and original training 80%, KFold(5,shuffle=True,random_state=42), HGB400 lr=.08 leaves31 no early stopping, zero threshold .9.",
+  "architectures": ["leader two-stage", "three-regime T=10", "zero-preserved three-regime T=10"],
+  "baseline": "Previously verified OOF predictions from leader_three_regime_experiment; validate source rows, labels and fold mapping before reuse",
+  "primary": "Mean fold overall log10(1+SFR) RMSE",
+  "secondary": ["fixed SFR>100 log RMSE", "SFR>30 and >10 log RMSE", "zero log RMSE", "zero precision/recall", "tail probabilities and expert-only diagnostic"],
+  "holdout": "Not scored or used for feature fitting, candidate selection or model fitting",
+  "production": "Save candidates and report; do not overwrite the current model or push"
+}

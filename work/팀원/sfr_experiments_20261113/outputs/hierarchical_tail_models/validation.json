@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "recomputed_metric_checks": 1526,
+  "oof_rows_per_seed": 166749,
+  "model_variants_per_seed": 7,
+  "zero_routing_identical": true,
+  "source_predictions_reconstructed": true,
+  "frozen_seed42_selection_verified": true,
+  "artifact_hashes_verified": true,
+  "original_source_model_unchanged": true,
+  "current_model_still_A34": true,
+  "training_run_checks": {
+    "baseline_predictions_reconstructed": true,
+    "oof_coverage_once": true,
+    "gate_probabilities_fixed": true,
+    "mid_regressor_fixed": true,
+    "source_model_unchanged": true,
+    "saved_reload": true,
+    "raw_interface": true
+  }
+}

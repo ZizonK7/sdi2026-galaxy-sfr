@@ -1,0 +1,302 @@
+[
+  {
+    "fold": 1,
+    "model": "A13_baseline",
+    "n_features": 13,
+    "seconds": 4.647319078445435,
+    "classifier_trees": 150,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11496,
+      112599,
+      9304
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "model": "A17_mass",
+    "n_features": 17,
+    "seconds": 3.831562042236328,
+    "classifier_trees": 86,
+    "mid_trees": 142,
+    "tail_trees": 150,
+    "class_counts": [
+      11496,
+      112599,
+      9304
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "model": "A30_environment",
+    "n_features": 30,
+    "seconds": 6.0983710289001465,
+    "classifier_trees": 118,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11496,
+      112599,
+      9304
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 1,
+    "model": "A34_both",
+    "n_features": 34,
+    "seconds": 5.968248128890991,
+    "classifier_trees": 114,
+    "mid_trees": 145,
+    "tail_trees": 150,
+    "class_counts": [
+      11496,
+      112599,
+      9304
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "A13_baseline",
+    "n_features": 13,
+    "seconds": 4.773722887039185,
+    "classifier_trees": 150,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11542,
+      112487,
+      9370
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "A17_mass",
+    "n_features": 17,
+    "seconds": 4.6522932052612305,
+    "classifier_trees": 139,
+    "mid_trees": 128,
+    "tail_trees": 150,
+    "class_counts": [
+      11542,
+      112487,
+      9370
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "A30_environment",
+    "n_features": 30,
+    "seconds": 6.281376838684082,
+    "classifier_trees": 141,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11542,
+      112487,
+      9370
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 2,
+    "model": "A34_both",
+    "n_features": 34,
+    "seconds": 6.953038692474365,
+    "classifier_trees": 144,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11542,
+      112487,
+      9370
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "A13_baseline",
+    "n_features": 13,
+    "seconds": 4.781893968582153,
+    "classifier_trees": 150,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11583,
+      112476,
+      9340
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "A17_mass",
+    "n_features": 17,
+    "seconds": 3.5678787231445312,
+    "classifier_trees": 78,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11583,
+      112476,
+      9340
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "A30_environment",
+    "n_features": 30,
+    "seconds": 6.518409967422485,
+    "classifier_trees": 145,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11583,
+      112476,
+      9340
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 3,
+    "model": "A34_both",
+    "n_features": 34,
+    "seconds": 5.7189040184021,
+    "classifier_trees": 103,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11583,
+      112476,
+      9340
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "A13_baseline",
+    "n_features": 13,
+    "seconds": 3.9246439933776855,
+    "classifier_trees": 104,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11540,
+      112383,
+      9476
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "A17_mass",
+    "n_features": 17,
+    "seconds": 4.19855523109436,
+    "classifier_trees": 104,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11540,
+      112383,
+      9476
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "A30_environment",
+    "n_features": 30,
+    "seconds": 7.0369651317596436,
+    "classifier_trees": 129,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11540,
+      112383,
+      9476
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 4,
+    "model": "A34_both",
+    "n_features": 34,
+    "seconds": 7.045047998428345,
+    "classifier_trees": 101,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11540,
+      112383,
+      9476
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "A13_baseline",
+    "n_features": 13,
+    "seconds": 4.8948750495910645,
+    "classifier_trees": 149,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11591,
+      112515,
+      9294
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "A17_mass",
+    "n_features": 17,
+    "seconds": 4.092835187911987,
+    "classifier_trees": 97,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11591,
+      112515,
+      9294
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "A30_environment",
+    "n_features": 30,
+    "seconds": 6.258781909942627,
+    "classifier_trees": 121,
+    "mid_trees": 150,
+    "tail_trees": 150,
+    "class_counts": [
+      11591,
+      112515,
+      9294
+    ],
+    "warnings": []
+  },
+  {
+    "fold": 5,
+    "model": "A34_both",
+    "n_features": 34,
+    "seconds": 6.573991060256958,
+    "classifier_trees": 108,
+    "mid_trees": 146,
+    "tail_trees": 150,
+    "class_counts": [
+      11591,
+      112515,
+      9294
+    ],
+    "warnings": []
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "primary_experiment": "Replace the 46-feature HGB400 multiclass gate with a binary zero/positive HGB and a second binary mid/tail HGB trained only on TRUE positive rows",
+  "joint_probabilities": "p0=1-p_positive; pmid=p_positive*(1-p_tail_given_positive); ptail=p_positive*p_tail_given_positive",
+  "frozen": "46 features, training-fold-only residual curves, same sorted fixed catalogue, HGB400 lr.08 leaves31 no early stopping seed42, true expert boundary T10, zero probability threshold.9",
+  "experts": "Unchanged OOF mid/tail regressors from feature_search caches. Validate cache fingerprint, feature columns and row alignment; reconstruct original predictions before each comparison. Final artifact reuses the existing all-training fitted experts.",
+  "isolation_diagnostic": "Also compute zero_gate_only: replace only p0 with the new binary classifier, keeping the original multiclass gate's conditional mid/tail ratio. This requires no additional fit and isolates zero-gate versus conditional-tail-gate effects.",
+  "validation": "KFold5 seed42 and seed7 on original training80%. Same observations as earlier experiments, so repeated-CV exploration, not an independent test. Original20% holdout not scored.",
+  "metrics": "Overall mean-fold log10(1+SFR) RMSE; pooled zero and SFR>100 RMSE, zero precision/recall, false zeros, severe zero/tail mistakes, per-fold changes",
+  "selection": "One fixed hierarchical configuration; do not tune thresholds, weights, iterations or feature sets based on these results. Save requested hierarchical candidate regardless of outcome; no automatic production replacement or push."
+}

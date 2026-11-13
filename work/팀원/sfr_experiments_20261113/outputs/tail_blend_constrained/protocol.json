@@ -1,0 +1,12 @@
+{
+  "objective": "Improve actual SFR>100 log RMSE, with overall mean-fold log RMSE increasing no more than0.1% relative and actual-zero pooled log RMSE not increasing",
+  "baseline": "Latest unweighted hierarchical46 with LightGBM400/31 tail, two HGB400 binary gates and HGB400 mid expert",
+  "fixed": "46features, true-regime training at SFR>10, P0>=.9 zero rule, log10(1+SFR) target; 100 is the extreme evaluation/weight threshold, not a new routing boundary",
+  "candidates": "Baseline LightGBM tail blended in log space with hgb_w1,hgb_w2,hgb_w3,hgb_w5,lgb_w2,lgb_w3,lgb_w5; candidate fractions .25,.5,.75. Twenty-one fixed blends plus unchanged baseline.",
+  "selection": "On seed42 OOF only, freeze two candidates: tail_priority minimizes extreme RMSE subject to overall ratio<=1.001 and zero RMSE<=baseline; strict_balance uses overall ratio<=1.0 and zero<=baseline. Include baseline as feasible fallback, tie-break overall RMSE then name.",
+  "validation": "Evaluate frozen candidates on existing seed7 OOF, then freshly fit five-fold seed99 without tuning. Same original train80% observations; all three seeds are exploratory repeated CV, not independent held-out tests.",
+  "acceptance": "Use tail_priority if extreme improves and overall ratio<=1.001 and zero ratio<=1.0 on all three seeds; otherwise strict_balance if it meets the same requirements (and its stricter overall<=1.0) on all three seeds; otherwise keep baseline. This is a prespecified acceptance gate, not an unbiased estimate of post-selection risk.",
+  "constraints": "Unweighted evaluation. Original holdout20% targets not scored. No adaptive fractions or new candidates after inspecting validation. No push or current_model.json replacement. The0.1% relative limit is an explicitly stated working assumption.",
+  "clipping": "Mix raw tail log predictions before the original final SFR>=0 floor. Saved-SFR blends on seed42/7 are verified against original unclipped components. Negative-log boundary cases on seed99 do not change the model, ratios or selection. Gate-based P0>=.9 zeros are always preserved; additional floor-induced zeros are reported separately.",
+  "artifacts": "Save frozen candidate models and a recommended_model chosen by acceptance; original models remain unchanged. Reuse fixed fitted gates/mid and source tail experts for final full-train artifacts."
+}

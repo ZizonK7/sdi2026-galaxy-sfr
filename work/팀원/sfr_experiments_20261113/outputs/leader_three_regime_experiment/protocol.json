@@ -1,0 +1,16 @@
+{
+  "source_commit": "21d02b5d0c829aff67cafd89da62c3386ac7864f",
+  "purpose": "Compare three-regime models against the latest team-lead two-stage model, emphasizing zero and extreme-tail diagnostics without changing the overall log-RMSE objective",
+  "features": "Original sorted fixed reference catalogue; 13 raw + 17 environment + 4 mass features",
+  "metric": "RMSE log10(1+SFR)",
+  "split": "Original stratified 80:20, seed 42; only original training 80% used in this experiment",
+  "cv": {"n_splits": 5, "shuffle": true, "random_state": 42},
+  "baseline": "TwoStageLogSFR HGB400, early_stopping=False, zero_threshold=0.9",
+  "candidates": [10, 30, 100],
+  "candidate_definition": "True SFR == 0 / 0<SFR<=T / SFR>T. HGB400 multiclass gate and two HGB400 log regressors trained on true regimes. Soft probability mixture in log space. P0>=0.9 forces zero.",
+  "training_params": {"learning_rate": 0.08, "max_iter": 400, "max_leaf_nodes": 31, "early_stopping": false, "random_state": 42},
+  "candidate_selection": "Lowest mean 5-fold overall log RMSE among three candidates; this is exploratory selection on the same CV, not an independent test",
+  "secondary_metrics": ["zero log RMSE", "exact-zero precision and recall", "false-zero count", "fixed SFR>10, >30, >100 log RMSE and log bias", "linear tail RMSE", "per-fold paired changes"],
+  "promotion": "Save best three-regime candidate for use and review; do not overwrite current adopted A or automatically push",
+  "holdout": "Not evaluated or used for selection in this experiment"
+}

@@ -1,0 +1,98 @@
+{
+  "commit": "fef00ffaf2992104c8d6dc0e87ab0b30275d8c9d",
+  "data_git_blob_sha": "06479cedd323253f08af9983c73f395cc02d3774",
+  "features": [
+    "log10_halo_mass",
+    "log10_stellar_mass",
+    "log10_BH_mass",
+    "log10_main_prog_mass",
+    "log10_main_prog_stellar_mass",
+    "log10_mass_ratio",
+    "log10_overdensity_plus_1",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "vel_x",
+    "vel_y",
+    "vel_z"
+  ],
+  "n_train": 166749,
+  "holdout_evaluated": false,
+  "baseline_reproduced": true,
+  "cv": "Original 80% train split; KFold(5,shuffle=True,random_state=42)",
+  "metric": "RMSE in log10(1+SFR); fixed comparison convention, official zero handling not established",
+  "target": "ln(1+SFR)",
+  "tail_threshold": 10,
+  "log_offset": 1,
+  "mixture": "probability-weighted mean in log space",
+  "versions": {
+    "sklearn": "1.9.1",
+    "catboost": "1.2.10",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3"
+  },
+  "hgb_params": {
+    "learning_rate": 0.08,
+    "max_iter": 150,
+    "max_leaf_nodes": 31,
+    "random_state": 42
+  },
+  "catboost_params": {
+    "iterations": 300,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 5,
+    "random_seed": 42,
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "verbose": false
+  },
+  "variants": {
+    "A_baseline": [
+      "hgb_gate",
+      "hgb_mid",
+      "hgb_tail"
+    ],
+    "E1_cat_gate": [
+      "cat_gate",
+      "hgb_mid",
+      "hgb_tail"
+    ],
+    "E2_spline_gate": [
+      "spline_gate",
+      "hgb_mid",
+      "hgb_tail"
+    ],
+    "E3_cat_mid": [
+      "hgb_gate",
+      "cat_mid",
+      "hgb_tail"
+    ],
+    "E4_spline_mid": [
+      "hgb_gate",
+      "spline_mid",
+      "hgb_tail"
+    ],
+    "E5_cat_tail": [
+      "hgb_gate",
+      "hgb_mid",
+      "cat_tail"
+    ],
+    "E6_extra_tail": [
+      "hgb_gate",
+      "hgb_mid",
+      "extra_tail"
+    ]
+  },
+  "selected_components": [
+    "hgb_gate",
+    "hgb_mid",
+    "extra_tail"
+  ],
+  "combination_note": "No new combination: selected components equal an existing candidate.",
+  "elapsed_seconds": 313.214998960495,
+  "tuning": "One prespecified configuration per replacement; different capacities/training time; no hyperparameter search.",
+  "features_note": "Spline gate adds density x stellar mass basis interaction. Spline mid adds stellar x BH and stellar x progenitor-stellar interactions. All transforms fit on fold training subset.",
+  "leader_hypotheses": "Density helps zero classification; stellar/progenitor/BH mass helps positive regression. Previous observations were different model/metric; hypotheses only.",
+  "validation": "3 unit tests passed; baseline OOF reproduced within 1e-9; all final/fold scores independently recomputed; finite/nonnegative predictions."
+}

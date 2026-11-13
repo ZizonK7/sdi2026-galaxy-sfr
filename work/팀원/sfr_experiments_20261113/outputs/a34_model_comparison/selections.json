@@ -1,0 +1,479 @@
+[
+  {
+    "stage": "fold1",
+    "inner_split_seed": 1001,
+    "inner_train_n": 106719,
+    "inner_valid_n": 26680,
+    "baseline_rmse": 0.09796072617396392,
+    "best_specs": {
+      "cat_gate": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_tail": {
+        "family": "cat",
+        "params": {
+          "iterations": 300,
+          "depth": 6
+        }
+      },
+      "lgb_tail": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 300,
+          "num_leaves": 31
+        }
+      },
+      "extra_tail": {
+        "family": "extra",
+        "params": {
+          "n_estimators": 300,
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "inner_scores": {
+      "cat_gate": 0.09932804175482263,
+      "lgb_gate": 0.09723626850792103,
+      "cat_mid": 0.09763008721516327,
+      "lgb_mid": 0.09770852694980493,
+      "cat_tail": 0.09781270175702779,
+      "lgb_tail": 0.0979025776774845,
+      "extra_tail": 0.0980845153929589
+    },
+    "combo_specs": {
+      "gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "tail": {
+        "family": "cat",
+        "params": {
+          "iterations": 300,
+          "depth": 6
+        }
+      }
+    },
+    "combo_keys": {
+      "gate": "lgb_gate",
+      "mid": "cat_mid",
+      "tail": "cat_tail"
+    },
+    "combo_rmse": 0.09664300950698586,
+    "combo_fallback": false
+  },
+  {
+    "stage": "fold2",
+    "inner_split_seed": 1002,
+    "inner_train_n": 106719,
+    "inner_valid_n": 26680,
+    "baseline_rmse": 0.09660369642480576,
+    "best_specs": {
+      "cat_gate": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_tail": {
+        "family": "cat",
+        "params": {
+          "iterations": 300,
+          "depth": 6
+        }
+      },
+      "lgb_tail": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 300,
+          "num_leaves": 31
+        }
+      },
+      "extra_tail": {
+        "family": "extra",
+        "params": {
+          "n_estimators": 300,
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "inner_scores": {
+      "cat_gate": 0.0984917300100319,
+      "lgb_gate": 0.09642908154208693,
+      "cat_mid": 0.09605253455164958,
+      "lgb_mid": 0.09600897569184719,
+      "cat_tail": 0.09659735599108657,
+      "lgb_tail": 0.09656816765738513,
+      "extra_tail": 0.09698732459512463
+    },
+    "combo_specs": {
+      "gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "tail": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 300,
+          "num_leaves": 31
+        }
+      }
+    },
+    "combo_keys": {
+      "gate": "lgb_gate",
+      "mid": "lgb_mid",
+      "tail": "lgb_tail"
+    },
+    "combo_rmse": 0.09583295921148316,
+    "combo_fallback": false
+  },
+  {
+    "stage": "fold3",
+    "inner_split_seed": 1003,
+    "inner_train_n": 106719,
+    "inner_valid_n": 26680,
+    "baseline_rmse": 0.09874610488221194,
+    "best_specs": {
+      "cat_gate": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_tail": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_tail": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 300,
+          "num_leaves": 31
+        }
+      },
+      "extra_tail": {
+        "family": "extra",
+        "params": {
+          "n_estimators": 300,
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "inner_scores": {
+      "cat_gate": 0.09983749707097928,
+      "lgb_gate": 0.09699542582696528,
+      "cat_mid": 0.09851108368839569,
+      "lgb_mid": 0.09830300828580091,
+      "cat_tail": 0.09894289235898983,
+      "lgb_tail": 0.09875429219096493,
+      "extra_tail": 0.09925359392805483
+    },
+    "combo_specs": {
+      "gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "tail": {
+        "family": "hgb",
+        "params": {}
+      }
+    },
+    "combo_keys": {
+      "gate": "lgb_gate",
+      "mid": "lgb_mid"
+    },
+    "combo_rmse": 0.09661737479895763,
+    "combo_fallback": false
+  },
+  {
+    "stage": "fold4",
+    "inner_split_seed": 1004,
+    "inner_train_n": 106719,
+    "inner_valid_n": 26680,
+    "baseline_rmse": 0.09758212456230958,
+    "best_specs": {
+      "cat_gate": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_tail": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_tail": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 300,
+          "num_leaves": 31
+        }
+      },
+      "extra_tail": {
+        "family": "extra",
+        "params": {
+          "n_estimators": 300,
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "inner_scores": {
+      "cat_gate": 0.0989682443330681,
+      "lgb_gate": 0.0957150113689989,
+      "cat_mid": 0.0971078333041945,
+      "lgb_mid": 0.09724393534039727,
+      "cat_tail": 0.09784926541599424,
+      "lgb_tail": 0.0976544887456113,
+      "extra_tail": 0.09843401214965794
+    },
+    "combo_specs": {
+      "gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "tail": {
+        "family": "hgb",
+        "params": {}
+      }
+    },
+    "combo_keys": {
+      "gate": "lgb_gate",
+      "mid": "cat_mid"
+    },
+    "combo_rmse": 0.09523572311491715,
+    "combo_fallback": false
+  },
+  {
+    "stage": "fold5",
+    "inner_split_seed": 1005,
+    "inner_train_n": 106720,
+    "inner_valid_n": 26680,
+    "baseline_rmse": 0.09836898371558107,
+    "best_specs": {
+      "cat_gate": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_mid": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "cat_tail": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "lgb_tail": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "extra_tail": {
+        "family": "extra",
+        "params": {
+          "n_estimators": 300,
+          "min_samples_leaf": 3
+        }
+      }
+    },
+    "inner_scores": {
+      "cat_gate": 0.10047261906215602,
+      "lgb_gate": 0.09783831734115823,
+      "cat_mid": 0.09780932571816764,
+      "lgb_mid": 0.09803639878877679,
+      "cat_tail": 0.09851283080360512,
+      "lgb_tail": 0.0982357640593453,
+      "extra_tail": 0.09892642652718081
+    },
+    "combo_specs": {
+      "gate": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      },
+      "mid": {
+        "family": "cat",
+        "params": {
+          "iterations": 600,
+          "depth": 8
+        }
+      },
+      "tail": {
+        "family": "lgb",
+        "params": {
+          "n_estimators": 600,
+          "num_leaves": 63
+        }
+      }
+    },
+    "combo_keys": {
+      "gate": "lgb_gate",
+      "mid": "cat_mid",
+      "tail": "lgb_tail"
+    },
+    "combo_rmse": 0.09713497476889009,
+    "combo_fallback": false
+  }
+]
