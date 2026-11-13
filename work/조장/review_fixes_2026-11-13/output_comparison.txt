@@ -1,0 +1,119 @@
+===== CELL 11 differs (images 0 -> 0, chars 1786 -> 1784) | # 5. 특수 값(센티널 후보) 분포 — 같은 값이 많이 반복되는지부터 본다
+    --- 
+    +++ 
+    @@ -10 +9,0 @@
+    -
+    @@ -30 +28,0 @@
+    -
+===== CELL 20 differs (images 0 -> 0, chars 249 -> 248) | # STUDENT TODO — starter summary
+    --- 
+    +++ 
+    @@ -10 +9,0 @@
+    -
+===== CELL 37 differs (images 0 -> 0, chars 1335 -> 1334) | # 분석 2. SFR > 0 학습 은하에서 BH 질량과 SFR — 주계열 잔차로 항성 질량 효과를 뺀다
+    --- 
+    +++ 
+    @@ -3 +3 @@
+    - .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } Pearson Spearman n BH vs log10 SFR (전체 SFR&gt;0) 0.422 0.668 152311 BH vs 주계열 잔차 (전체 SFR&gt;0) -0.220 0
+    + .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } Pearson Spearman n BH vs log10 SFR (전체 SFR&gt;0) 0.422 0.668 152311 BH vs 주계열 잔차 (전체 SFR&gt;0) -0.220 0
+===== CELL 58 differs (images 0 -> 0, chars 431 -> 431) | # DO NOT MODIFY — common ML baseline
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -Training time: 0.3 s
+    +Training time: 0.2 s
+===== CELL 69 differs (images 0 -> 0, chars 50 -> 50) | # 7절: 2단계(hurdle) 모델 — ŷ = P(SFR>0 | x) × E[SFR | SFR>0, x]
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -Training time: 1.1 s
+    +Training time: 0.9 s
+===== CELL 89 differs (images 0 -> 0, chars 660 -> 689) | # 수정본 실행 시작: 실제 환경·입력·순서 기록. 패키지 설치나 네트워크 접근은 없다.
+    --- 
+    +++ 
+    @@ -2 +2 @@
+    -  "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+    +  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    @@ -12 +12 @@
+    -  "csv_sha256": "ae4eef8fce45b909c5e9af3639721c51edff0f372c5e75cbf1afd36798408806",
+    +  "csv_sha256": "0710e7b29f787d79dc6e3eb2ccdc4e36c8fc104399177017c0fb761b266a6a54",
+===== CELL 90 differs (images 0 -> 0, chars 341 -> 341) | # 9.2 최종 모델 코드 — (1) 위치·속도에서 환경 피처를 만든다 (타깃 미사용, 전체 은하의 기하만 사용)
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -환경 피처 17개, 계산 4.5 s
+    +환경 피처 17개, 계산 2.9 s
+===== CELL 91 differs (images 0 -> 0, chars 1341 -> 1341) | # 9.2 최종 모델 코드 — (2) 로그 공간의 2단계 모델
+    --- 
+    +++ 
+    @@ -3 +3 @@
+    -Training time: 6.5 s
+    +Training time: 7.6 s
+===== CELL 93 differs (images 0 -> 0, chars 2431 -> 2431) | # 9.2 보조 (1): 최종 구조를 고른 반복 CV — 학습 분할 안 5-fold × seed 5 = 25 fold. 선택 지표 log10(S
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -반복 CV 285 s
+    +반복 CV 200 s
+===== CELL 99 differs (images 0 -> 0, chars 1410 -> 1395) | # 9.2 알고리즘 비교: 이미 측정한 7구성×5-fold의 기록. 새 학습이나 외부 val 채점은 하지 않는다.
+    --- 
+    +++ 
+    @@ -2 +2 @@
+    -선택: {'selected_model': 'hgb_two_stage_fixed400', 'rule': 'protocol.json에 결과 전에 고정한 순위 기준(5-fold 평균 로그 RMSE, 낮을수록 좋음)의 1위', 'decision_after_benchmark': False}
+    +선택: {'selected_model': 'hgb_two_stage_fixed400', 'rule': '결과 전에 고정한 순위 기준(5-fold 평균 로그 RMSE, 낮을수록 좋음)의 1위', 'decision_after_benchmark': False}
+===== CELL 102 differs (images 0 -> 0, chars 455 -> 454) | # 9.2 보조 (4): 같은 2단계 HGB(트리 400개 고정, 문턱 0.9)에서 입력 34개 대 46개. 학습 분할 안 5-fold × 시드
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -추가 피처 CV 104 s
+    +추가 피처 CV 73 s
+===== CELL 115 differs (images 0 -> 0, chars 3555 -> 3556) | # (a) gate 손실 회계: 기존 최종 모델을 재학습하지 않는다.
+    --- 
+    +++ 
+    @@ -2 +2 @@
+    -gate-soft MSE delta: 4.361643484172622e-07 RMSE delta: 2.318507142898274e-06
+    +gate-soft MSE delta: 4.3616434841726215e-07 RMSE delta: 2.318507142898274e-06
+===== CELL 124 differs (images 0 -> 0, chars 46405 -> 5666) | # STUDENT TODO — update model_name and notes; keep required keys.
+    --- 
+    +++ 
+    @@ -10,829 +9,0 @@
+    -  },
+    -  "algorithm_comparison": {
+    -    "records": [
+    -      {
+    -        "model": "hgb_single_fixed400",
+    -        "fold": 0,
+    -        "n_train": 133399,
+    -        "n_eval": 33350,
+    -        "rmse_log": 0.1001381424713579,
+    -        "rmse_log_zero": 0.13474133566636212,
+    -        "rmse_log_positive": 0.0961316663079208,
+    -        "rmse_log_high_gt100": 0.5859615078138289,
+    -        "zero_recall": 0.31713120326308636,
+    -        "zero_precision": 0.9925531914893617,
+    -        "positive_predicted_zero_count": 7,
+    -        "training_seconds": 5.682072999996308,
+    -        "prediction_seconds": 0.22838710000360152,
+    -        "classifier_iterations": 0,
+    -        "regressor_iterations": 400
+    -      },
+    -      {
+    -        "model": "hgb_single_fixed400",
+    -        "fold": 1,
+    -        "n_train": 133399,
+    -        "n_eval": 33350,
+    -        "rmse_log": 0.09942128788711024,
+    -        "rmse_log_zero": 0.11566922100143269,
+    -        "rmse_log_positive": 0.09773566082301548,
+    -        "rmse_log_high_gt100": 0.605597008894696,
+    -        "zero_recall": 0.337707182320442,
+    -        "zero_precision": 0.9888776541961577,
+    -        "positive_predicted_zero_count": 11,
+    -        "training_seconds": 5.1467903000011574,
+    -        "prediction_seconds": 0.2793383000025642,
+    -        "classifier_iterations": 0,
+    -        "regressor_iterations": 400
+    -      },
+    ... 1142 more diff lines
+code cells same: 50, differ: 13
+execution_count sequential from 1: True
