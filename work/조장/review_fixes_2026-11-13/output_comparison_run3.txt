@@ -1,0 +1,61 @@
+===== CELL 13 differs (images 0 -> 0, chars 57 -> 58) | # 7. 비유한 값(+inf, -inf) — NaN과 따로 센다
+    --- 
+    +++ 
+    @@ -1 +1,2 @@
+    -숫자형 열: 15 / 15
+    +숫자형 열:
+    + 15 / 15
+===== CELL 69 differs (images 0 -> 0, chars 50 -> 50) | # 7절: 2단계(hurdle) 모델 — ŷ = P(SFR>0 | x) × E[SFR | SFR>0, x]
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -Training time: 0.8 s
+    +Training time: 1.1 s
+===== CELL 90 differs (images 0 -> 0, chars 341 -> 341) | # 9.2 최종 모델 코드 — (1) 위치·속도에서 환경 피처를 만든다 (타깃 미사용, 전체 은하의 기하만 사용)
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -환경 피처 17개, 계산 2.7 s
+    +환경 피처 17개, 계산 3.3 s
+===== CELL 91 differs (images 0 -> 0, chars 1341 -> 1341) | # 9.2 최종 모델 코드 — (2) 로그 공간의 2단계 모델
+    --- 
+    +++ 
+    @@ -3 +3 @@
+    -Training time: 4.6 s
+    +Training time: 6.3 s
+===== CELL 93 differs (images 0 -> 0, chars 2431 -> 2431) | # 9.2 보조 (1): 최종 구조를 고른 반복 CV — 학습 분할 안 5-fold × seed 5 = 25 fold. 선택 지표 log10(S
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -반복 CV 200 s
+    +반복 CV 212 s
+===== CELL 102 differs (images 0 -> 0, chars 454 -> 454) | # 9.2 보조 (4): 같은 2단계 HGB(트리 400개 고정, 문턱 0.9)에서 입력 34개 대 46개. 학습 분할 안 5-fold × 시드
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    -추가 피처 CV 73 s
+    +추가 피처 CV 87 s
+===== CELL 111 differs (images 0 -> 0, chars 1855 -> 1944) | # 11절 보조: 선택 로그 공간에서 최종 모델의 오차 구성 — 참 SFR 구간별, 0 판정, 물리적 부분집합(중심/위성 × 호스트 질량)
+    --- 
+    +++ 
+    @@ -1 +1 @@
+    - .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } n mean_residual_dex RMSE_dex SSE_share baseline RMSE_dex 선형 두 단계(30/13) RMSE_dex true SFR bin (-0.001, 
+    + .dataframe tbody tr th:only-of-type { vertical-align: middle; } .dataframe tbody tr th { vertical-align: top; } .dataframe thead th { text-align: right; } n mean_residual_dex RMSE_dex SSE_share baseline RMSE_dex 선형 두 단계(30/13) RMSE_dex 34개 고정(문턱 0.9) RMSE_de
+    @@ -5 +5 @@
+    -낮은 밀도(≤1.365) 실제 0 은하 115개: FoF 위성 93.0% (낮은 밀도 전체 36.4%), 0 판정 21.7%, 이들의 평균 오차 +0.221 dex
+    +낮은 밀도(≤1.365) 실제 0 은하 115개: FoF 위성 93.0% (낮은 밀도 전체 36.4%), P(SFR > 0) ≤ 0.5인 비율 21.7%, 이들의 평균 오차 +0.221 dex
+===== CELL 115 differs (images 0 -> 0, chars 3556 -> 3557) | # (a) gate 손실 회계: 기존 최종 모델을 재학습하지 않는다.
+    --- 
+    +++ 
+    @@ -9,0 +10 @@
+    +
+===== CELL 124 differs (images 0 -> 0, chars 5665 -> 5667) | # STUDENT TODO — update model_name and notes; keep required keys.
+    --- 
+    +++ 
+    @@ -153 +153 @@
+    -  "training_seconds": 4.60812520980835,
+    +  "training_seconds": 6.276224613189697,
+    @@ -198,0 +199 @@
+    +
+code cells same: 54, differ: 9
+execution_count sequential from 1: True
