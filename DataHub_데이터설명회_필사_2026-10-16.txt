@@ -435,3 +435,170 @@ AI 활용이나 언어에 대한 규칙은 따로 없습니다.
 
 참석자 3 50:38
 감사합니다. 안녕히 계세요.
+
+==================================================
+[보충 2026-11-13] 25:00–40:10 영어 구간 다시 받아쓰기
+==================================================
+
+위 원문에서 '참석자 7' 구간(25:02–39:59, Keita Fukushima 박사 녹화 영상, 영어)은 영어를 한글 소리로 적어서 내용을 알아볼 수 없다.
+그래서 원본 녹화 영상(SNU IDIS DataHub.mp4, 51:10)의 25:00–40:10을 faster-whisper large-v3-turbo(언어: 영어)로 다시 받아썼다.
+
+- 위 원문은 한 글자도 고치지 않았다. 이 구간은 따로 덧붙인 것이다.
+- 받아쓰기 오류(예: "Gylaxies", "subhero ID", "machinami model")는 고치지 않고 그대로 두었다.
+- 시각은 영상 기준 분:초다.
+- 말로 읽지 않고 화면에만 있던 슬라이드 문구는 맨 아래 [화면 문구]에 따로 적었다.
+
+--- 음성 (25:00–40:10) ---
+
+[25:00.0 - 25:03.5] introduce the problem for this competition.
+[25:03.5 - 25:07.9] As the title says, the topic is predicting galaxy's transformation.
+[25:07.9 - 25:18.4] First, I have two images on the title slide, can you guess what they are?
+[25:18.4 - 25:24.6] They actually look similar, both are mostly dark with bright regions distributed in a
+[25:24.6 - 25:26.7] wave-like pattern.
+[25:26.7 - 25:32.5] The image on the left is a night view of Korea talking from space.
+[25:32.5 - 25:38.5] The image on the right shows the distribution of the matter in a cosmological simulation
+[25:38.5 - 25:40.8] of galaxy formation.
+[25:40.8 - 25:49.0] In the image of Korea, there are high density regions shown by orange circle, where many
+[25:49.0 - 25:52.4] buildings, roads and people are concentrated.
+[25:52.4 - 25:57.7] There are also lower regions shown by yellow circle, where there are fewer buildings and
+[25:57.7 - 25:58.7] people.
+[25:59.6 - 26:05.8] And of course, the life of people can be quite different depending on where they live.
+[26:08.5 - 26:16.1] Interestingly, galaxies also show something similar. In the dense region here of the universe,
+[26:16.7 - 26:23.7] we often find more red galaxies while lower regions, they tend to find more blue galaxies.
+[26:26.0 - 26:30.1] So, galaxy evolution is influenced by the surrounding environment.
+[26:30.1 - 26:38.8] The question is, but why? So what is actually different between these galaxies?
+[26:38.8 - 26:45.8] If we compare the two galaxies shown here, one is blue and the other is much redder.
+[26:45.8 - 26:50.8] The shape or morphology also looks different.
+[26:50.8 - 26:55.8] Let us first think about where this color difference comes from.
+[26:55.8 - 27:06.9] Actually, a massive star is very hot, which represents a blue color with short lifetime.
+[27:06.9 - 27:12.9] So massive stars quickly make a supernova.
+[27:12.9 - 27:23.4] And then lower mass stars are cooler and can survive much longer.
+[27:23.4 - 27:37.4] So, if a galaxy is actually forming stars, it continuously produces new massive blue stars, and the galaxy can look blue, like this.
+[27:37.4 - 27:50.4] On the other hand, if the galaxy stops forming new stars, the existing massive blue stars disappear relatively quickly due to the supernova.
+[27:52.7 - 27:58.6] Then what remains is the population dominated by older and redder stars.
+[28:00.0 - 28:10.1] As a result, the galaxy becomes redder. We call these suppressions or stopping of star formation
+[28:10.7 - 28:19.3] quenching. And these galaxies are the quiescent galaxies. Blue galaxies are typically
+[28:20.2 - 28:24.3] actively forming stars while redder galaxies are less active.
+[28:25.4 - 28:36.4] We quantify this using the star formation rate, or SFR, which measures how much stellar mass forms per unit time.
+[28:36.4 - 28:45.5] Gylaxies in denser environments tend to have lower SFR.
+[28:45.5 - 28:48.5] The building asks two important questions.
+[28:50.1 - 29:00.8] Which gylaxie properties or which environmental information contain predictive information about star formations?
+[29:00.8 - 29:03.5] So what controls the SFR of the galaxy?
+[29:04.4 - 29:12.0] Some form from gas, but the SFR also depend on galaxy properties, assembly history, and environment.
+[29:12.7 - 29:22.1] To understand these factors, let's briefly look at how galaxy forms and evolved.
+[29:24.5 - 29:31.0] This picture shows the evolution of the universe. The universe evolved was nearly uniform,
+[29:33.6 - 29:40.7] but over time, matter evolved into the cosmic wave that we observe today like this.
+[29:42.0 - 29:49.6] This point, each point is the galaxies. Then we can observe information about this survey,
+[29:50.6 - 30:00.1] this very early universe through the cosmic microwave background like this. And these
+[30:00.1 - 30:11.1] These small fluctuations that we see in the early universe correspond to small differences in density, like this here.
+[30:11.1 - 30:19.4] If we cut the density distribution here, we can put it like this.
+[30:19.4 - 30:30.4] Over cosmic time, slightly denser regions attract more matter through gravity, they become denser and denser.
+[30:30.4 - 30:36.5] Then this gravitational growth produces a cosmic wave that we observe today.
+[30:37.1 - 30:41.3] Because this evolution becomes non-linear, numerical simulations are needed.
+[30:43.3 - 30:47.1] The evolution also depends on the Cosmetical Model of Radcliffe.
+[30:49.1 - 30:56.0] But assuming these parameters, which come from observations, we can simulate
+[30:56.0 - 30:59.2] of the universe and galaxies.
+[30:59.2 - 31:12.1] The galaxy forms inside of the dark matter halo, which is a concentrated region of the dark matters.
+[31:12.1 - 31:20.1] The gas falls into the halo and cools, then forms stars.
+[31:20.1 - 31:32.6] Supernova happens inside of the galaxies, which pushes over the thermal gas to the outside of the galaxies.
+[31:32.6 - 31:42.7] then the summation here shows a cycle in barion cycle the bion cycle is this continuous cycle
+[31:42.7 - 31:53.6] or the gas inflow some formation and output from this simulation so the such uh what's called
+[31:53.6 - 32:05.5] large-scale structured evolution and with galaxy evolutions. If we focus on the much more
+[32:07.8 - 32:22.1] over dense regions here we can see galaxy clusters and in these regions galaxy interact and merge
+[32:22.1 - 32:30.1] together very often. So galaxy evolution depends on both internal process of variant cycle
+[32:30.8 - 32:43.0] and also the environmental effects of the merger and so on. So to study all of these complex
+[32:44.0 - 32:49.2] processes together numerical simulations are extremely useful. In our cosmological
+[32:49.2 - 32:55.1] hydrangea simulations we start from the initial density fluctuation from dark matter and barium
+[32:55.1 - 33:02.6] matter here then we simulate the evolution of the universe with solving the evolution of the galaxies
+[33:04.5 - 33:15.1] here is the image of our simulations here's a video of the version of the universe in our
+[33:15.1 - 33:23.8] simulation we can see there's a low density fluctuations but which is evolved with time
+[33:25.3 - 33:34.7] then we can see the galaxy clusters form like these regions then each region there is a lot
+[33:34.7 - 33:40.0] of galaxies exist in the over density region and this low density region there's also a
+[33:40.0 - 33:54.1] guarantee form but the number density is super low and this type of simulation is useful to
+[33:56.5 - 34:04.8] understanding the evolution of the galaxies okay then let's move to the
+[34:06.8 - 34:19.1] this problem these competitions we make we simulate the galaxies around 20 000 200 000 galaxies exist
+[34:20.0 - 34:31.0] The things we'd like to ask to you to make a machinami model which represents the star formation rate in each galaxies.
+[34:31.0 - 34:34.0] Here's the CSV file.
+[34:34.0 - 34:42.0] The CSV is structured so that each row corresponds to one galaxy.
+[34:42.0 - 34:49.0] Then the columns describe the different properties of the galaxy.
+[34:49.0 - 34:56.5] galaxy here. The data sets contain several different types of information.
+[34:56.5 - 35:03.5] Galaxy properties, assembly history, local environment, place space information, and
+[35:03.5 - 35:06.5] finally the target SFR.
+[35:06.5 - 35:11.5] Let me briefly explain what some of these quantities mean physically.
+[35:11.5 - 35:18.5] First, halo mass is the total mass of the dark matter halo in which the galaxy lives.
+[35:18.5 - 35:23.5] This is the dark matter signature that I introduced a few slides ago.
+[35:23.5 - 35:31.5] Stellar mass is the total mass of stars that the galaxy has already formed.
+[35:31.5 - 35:39.5] We also provide the black hole mass because the growth of the central black hole as the associated feedback,
+[35:39.5 - 35:45.5] which can suppress star formation, can be related to galaxy evolution.
+[35:45.5 - 35:52.5] so this quantity describes the present-day property of the galaxy and its halo, poshalo.
+[35:54.1 - 35:59.0] We also provide information about the past evolution of each galaxy.
+[35:59.6 - 36:06.0] The main progenitor mass describes the mass of the main progenitor of the galaxy
+[36:06.0 - 36:12.8] in the previous simulation snapshot. Similarly, we provide the stellar mass of the main progenitor.
+[36:12.8 - 36:21.6] The merger mass ratio contains information about the importance of a recent merger event.
+[36:21.6 - 36:28.5] So these quantities tell you something about how the galaxy arrives at its present state
+[36:28.5 - 36:34.3] rather than only describes its current state.
+[36:34.3 - 36:38.5] We also provide information about the environment.
+[36:38.5 - 36:46.3] The over-density tells us how much dark matter is concentrated around the galaxy compared
+[36:46.3 - 36:49.5] with the average density of the universe.
+[36:49.5 - 36:57.9] In the dead set, the local dark matter over-density is measured within a region around nearby galaxies,
+[36:57.9 - 36:59.1] like this.
+[36:59.1 - 37:08.1] So this quantity is a simple way of describing whether a galaxy builds in the dense or face
+[37:08.1 - 37:17.2] environment. Finally, we provide three-dimensional positions and the three-dimensional velocity
+[37:17.2 - 37:23.0] of the galaxies. Together, these give you phase-space information of each galaxies.
+[37:24.0 - 37:29.8] And the final column is quantified that you want to predict the SFR.
+[37:33.2 - 37:39.1] There's a few important notes, most related features in localismic unit,
+[37:39.6 - 37:43.2] while SFR is linear and can be zero.
+[37:43.8 - 37:47.6] The disk set contains both star forming and quiescent galaxies.
+[37:48.4 - 37:53.0] So think carefully about how to model both operations.
+[37:53.8 - 37:59.0] Finally, do not use subhero ID which is also listed on the CSV file
+[37:59.6 - 38:04.9] because that parameter is just an ID of each galaxies.
+[38:05.8 - 38:08.3] So do not use input features.
+[38:11.4 - 38:15.0] Finally, let me briefly introduce our related work.
+[38:15.6 - 38:24.4] We use a graph neural network where galaxies are node and nearby galaxies which are connected by H.
+[38:25.9 - 38:32.2] Here, we predict space-based transformation rate, which is SFR divided by Xcelamax.
+[38:33.0 - 38:36.9] We find that adding information such as galaxy distribution
+[38:37.6 - 38:46.0] and data velocities improves the prediction of the quenching so using GNN you can directly use
+[38:46.6 - 38:53.1] geometrical alternative information which represents the accurate of the
+[38:53.9 - 39:05.5] low SL Hurley compared to without age information by interest by interpreting the trending model
+[39:06.3 - 39:13.0] we can then investigate which environmental information matters. This work will be submitted
+[39:13.0 - 39:20.4] very soon. To summarize, galaxy star formation depends on galaxy properties, assembly history,
+[39:20.4 - 39:27.2] and environment. We provide these quantities from a cosmological simulation and the task is to
+[39:27.2 - 39:35.5] to predict SFR. The dataset contains both star forming and quenched galaxy, so modeling
+[39:35.5 - 39:42.4] both population is important. Beyond prediction accuracy, we also hope your model can tell
+[39:42.4 - 39:49.8] us what controlled galaxy star formation. Here is our contact information. Thank you
+[39:49.8 - 39:51.9] and I look forward to seeing your vision.
+
+--- [화면 문구] 영상 프레임에서 직접 읽음 ---
+
+화면 오른쪽이 Zoom 참가자 창에 가려진 부분은 [가려짐]으로 적었다. 시각은 슬라이드가 바뀐 시점이다.
+
+37:30.9–38:10.4  This is not a simple regression problem
+  • Mass columns are logarithmic
+  • SFR is linear
+  • Linear SFR may emphasize high-SFR        ← 말로는 읽지 않음
+  • log SFR must deal with SFR=0             ← 말로는 읽지 않음
+  • SFR = 0 exists
+  • subhalo_id = identifier only
+  [상자] A good model must deal with both populations
+         (Star forming galaxies: SFR>0 & Quenched galaxies SFR~0)
+  (음성은 "most related features in logarithmic unit, while SFR is linear and can be zero"까지만 말했다.)
+
+38:10.4–39:14.6  Our related work: Environmental quenching usin[가려짐]
+  We investigated whether environmental information improves the pre[가려짐] galaxy quenching (submit soon).
+  GNN without edge / GNN with edge features (Node: a galaxy, Edge: connection be[가려짐])
+  Prediction: sSFR = Star Form[가려짐] / M[가려짐]
+  그림: Predicted sSFR 대 Actual sSFR 산점도 두 개(edge 없음 / edge 있음)
+  [상자] Environment contains predictive information that is not fully encoded in a galaxy's own properties.
+
+39:14.6–39:53.7  Can you predict SFR — and learn what matters?
+  • Galaxy evolution has a fundamental question: Why do some galaxies stop forming stars?
+  • We provide these quantities as a machine-learning dataset
+  • But predicting SFR is difficult because the population contains both star[가려짐] and quenched galaxies
+  • Our ongoing work already shows that environmental information help[가려짐] quenching
+  • Now the challenge is yours: How accurately can you predict SFR, and what can your model teach us about galaxy evolution?
+  Contact: Yiyang Wang (조교 이메일)
+
+--- 확인 범위 ---
+
+- 음성은 25:00–40:10 전체를, 슬라이드는 34:00–40:10을 확인했다. 25:00–34:00(은하 형성 물리 설명)의 슬라이드는 따로 보지 않았다.
+- 이 범위에서 평가 지표나 채점 방법(RMSE, metric, score, 로그 공간 평가 등)은 음성에도 슬라이드에도 나오지 않는다.
