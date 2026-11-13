@@ -1,0 +1,57 @@
+seed 42 fold 0: 8초
+seed 42 fold 1: 9초
+seed 42 fold 2: 8초
+seed 42 fold 3: 7초
+seed 42 fold 4: 7초
+seed 7 fold 0: 8초
+seed 7 fold 1: 7초
+seed 7 fold 2: 7초
+seed 7 fold 3: 7초
+seed 7 fold 4: 7초
+seed 11 fold 0: 8초
+seed 11 fold 1: 8초
+seed 11 fold 2: 7초
+seed 11 fold 3: 8초
+seed 11 fold 4: 7초
+seed 23 fold 0: 7초
+seed 23 fold 1: 8초
+seed 23 fold 2: 8초
+seed 23 fold 3: 7초
+seed 23 fold 4: 7초
+seed 101 fold 0: 8초
+seed 101 fold 1: 7초
+seed 101 fold 2: 6초
+seed 101 fold 3: 7초
+seed 101 fold 4: 7초
+{
+ "D1": {
+  "mean_150": 0.10313811565517464,
+  "mean_400": 0.10278309718470993,
+  "mean_diff": -0.00035501847046470525,
+  "sd": 0.0002455494032752666,
+  "min": -0.0009288750141968755,
+  "max": 3.7110988856947635e-07,
+  "n_neg": 22,
+  "n_iter_400": [
+   149.0,
+   204.0,
+   340.0
+  ]
+ },
+ "D2": {
+  "mean_150": 0.25673015365526536,
+  "mean_400": 0.2562209489180734,
+  "mean_diff": -0.0005092047371919539,
+  "sd": 0.0003375700482236923,
+  "min": -0.001069018388768106,
+  "max": 0.0,
+  "n_neg": 22,
+  "n_iter_400": [
+   141.0,
+   223.0,
+   298.0
+  ]
+ },
+ "verdict_D1": "낫다",
+ "seconds": 187.08597087860107
+}

@@ -1,0 +1,7 @@
+smoke_results/
+results/oof_predictions.npz
+__pycache__/
+company_brief.md
+company_job*.toml
+company_record_send*.log
+smoke*.log

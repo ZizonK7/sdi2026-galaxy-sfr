@@ -1,0 +1,35 @@
+seed 42 fold 0: 10s
+seed 42 fold 1: 18s
+seed 42 fold 2: 26s
+seed 42 fold 3: 31s
+seed 42 fold 4: 37s
+seed 7 fold 0: 43s
+seed 7 fold 1: 49s
+seed 7 fold 2: 55s
+seed 7 fold 3: 61s
+seed 7 fold 4: 67s
+seed 11 fold 0: 73s
+seed 11 fold 1: 81s
+seed 11 fold 2: 86s
+seed 11 fold 3: 93s
+seed 11 fold 4: 99s
+seed 23 fold 0: 105s
+seed 23 fold 1: 111s
+seed 23 fold 2: 118s
+seed 23 fold 3: 124s
+seed 23 fold 4: 131s
+seed 101 fold 0: 138s
+seed 101 fold 1: 144s
+seed 101 fold 2: 150s
+seed 101 fold 3: 157s
+seed 101 fold 4: 162s
+           d1  d1_zero  d1_pos      d2     lin
+model                                         
+M6_30  0.1028   0.1168  0.1013  0.3037  8.5243
+M7_30  0.1029   0.1148  0.1016  0.2788  8.5244
+M6_34  0.0964   0.1087  0.0952  0.2907  8.0813
+M7_34  0.0965   0.1066  0.0955  0.2651  8.0814
+Q5 M7_34 vs M7_30 (D1, 판단) {'mean': -0.00636, 'sd': 0.0008, 'min': -0.00795, 'max': -0.00446, 'n_better': 25, 'verdict': '낫다'}
+참고 M6_34 vs M6_30 (D1) {'mean': -0.00635, 'sd': 0.00084, 'min': -0.00812, 'max': -0.0043, 'n_better': 25, 'verdict': '낫다'}
+참고 M7_34 vs M7_30 (D2) {'mean': -0.01369, 'sd': 0.00281, 'min': -0.01804, 'max': -0.00562, 'n_better': 25, 'verdict': '낫다'}
+참고 M7_34 vs M6_34 (D1, 문턱이 여전히 나빠지지 않나) {'mean': 8e-05, 'sd': 8e-05, 'min': -7e-05, 'max': 0.00025, 'n_better': 3, 'verdict': '낫지 않다'}

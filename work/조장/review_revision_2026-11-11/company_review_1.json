@@ -1,0 +1,61 @@
+{
+  "runId": "77853a91-cb6b-445f-a34a-e20748cf08d5",
+  "status": "succeeded",
+  "model": "claude-opus-5-5",
+  "durationMs": 209842,
+  "usage": {
+    "inputTokens": 46,
+    "outputTokens": 19790,
+    "thinkingTokens": 10664,
+    "cacheReadTokens": 2130944,
+    "cacheWriteTokens": 160865,
+    "totalTokens": 2311645,
+    "costUsd": 2.1099299,
+    "source": "cli_reported",
+    "totalTokensSource": "derived_including_separate_cache_input",
+    "costSource": "cli_reported_api_equivalent_not_actual_billed",
+    "actualBilledCostUsd": null
+  },
+  "review": {
+    "verdict": "approved",
+    "summary": "검토 결과 승인합니다. 최종 노트북 `DataHub_701104_final.ipynb`(119셀, code 60셀)와 `work/조장/review_revision_2026-11-11/` 산출물, `_review_input`의 검토 4건·독립 검산 JSON을 서로 대조했고, 수용 기준 4개가 모두 충족됩니다. 아래 지적은 모두 낮은 심각도의 문서·견고성 보완이며 승인을 막지 않습니다.\n\n(1) LOG_EPS 연동 (strict M2): `log_rmse`·`log_scores`·`selected_log_result_fields`, cell 93의 selected/D1/D2 열 분리, RESULTS의 `metric_audit`·assert가 같은 eps를 씁니다. `validate_revision.py`도 eps=.01일 때 주지표가 D2와 같고 D1과는 다른지 검사합니다.\n\n(2) 로그 정의를 확정하지 않음 (M1): 서두(cell 0), 9.1, 9.3, 13.1, RESULTS의 `primary_metric_is_assumption`에서 log10(SFR+1)을 일관되게 '팀 가정'으로 표시했습니다.\n\n(3) val 재사용과 0.9 문턱 (M3·M4): val을 Part I부터 재사용했음을 공개했습니다. 0.9 문턱은 '경계'·비열등성 아님으로 정정했고, 재실행한 gate 표에서도 +1.93e-5, 19/25 악화, '경계'가 그대로 나옵니다.\n\n(4) tau 버전별 수치 (M5): 기존 실험값 −0.00635632/−0.01368701(25/25)과 −0.00641613/−0.00301627(21/25)이 `independent_checks.json`과 일치합니다.\n\n(5) 물리 해석 과장 (M6): sSFR 동일시, 인과 단정, 가스 입자 처방 관련 과장 표현을 제거하고 12.1에 근거 수준 표를 추가했습니다.\n\n(6) 입력 계약: ID 계약, 동일 합집합 배치·역순 재현 assert가 있고, val 재현 최대 차이 0.00e+00, val만 쓸 때 0.1388이 출력에 남아 있습니다.\n\n(7) 새 대조 실험 수치 검산: `diagnostic_cv.csv`로 직접 다시 계산해 단일−두 단계 평균 0.003824 dex(5/5), E×H MSE interaction +1.564e-4(4/5 양수), 0으로 낸 양수 행 평균 36.2·7.4가 본문·RESULTS와 일치함을 확인했습니다.\n\n(8) gate 손실 분해와 진단 수치: 2at−a² 분해가 맞고, 코드의 assert로도 직접 확인됩니다. 참0 −9.515e-6, 양수 +7.023e-6, 방사 부호 133/208304/135073/73231이 독립 검산과 일치합니다.\n\n(9) 반영표: strict M1–M6과 보조 지적, wild1 W01–W15, wild2 V01–V20, grader 9개 주제를 모두 판정했고 보류 사유도 타당합니다.\n\n(10) 실행 증거: 저장된 노트북에 error·stderr 출력이 0개, PNG 10개, 실행 번호 60개가 있어 `validation_summary`·`execution.log`와 맞습니다. 커널 종료 뒤 joblib KeyError도 공개했습니다.\n\n(11) 운영 기록: 원작업 timeout, 회수·재개, 배정 이유는 `company_worklog.md`에 분리해 남겼습니다.\n\n다만 이번 검토에서 직접 명령을 실행하지는 않았습니다. 따라서 위 판단은 저장된 출력과 로그, 그리고 제가 CSV·JSON 값으로 다시 계산한 결과에 근거합니다.",
+    "findings": [
+      {
+        "severity": "low",
+        "description": "V18(FoF 관절점)을 '수용·계산'으로 판정했지만, wild2 추천 2가 요청한 산출물('관절점 제거 뒤 두 조각이 각각 10개 이상 남는 사례 수·원래/분리 크기')은 계산하지 않았습니다. 실행한 예시는 큰 성분에서 잎 노드 1개가 떨어지는 경우(336+1)입니다. 그래서 '다리 은하가 두 덩어리를 묶는' 상황을 보여 주지 못하고, 그룹 상대속도 변화 1.25도 그룹에서 2개 행이 빠진 데 따른 효과에 가깝습니다. 본문 13.1 #6은 '한 사례'로 한정해 정직하게 썼지만, 반영표의 판정 표현은 실제보다 큽니다.",
+        "evidence": "review_resolution.md V18 행; _review_input/2026-11-11-sdi-final-wild-2.md 279행(후속 산출물 정의); 노트북 cell 110 출력 after_sizes [336, 1], remaining_group_max_changed 1; cell 109 '그룹 통계가 다른 행에도 전달됨을 보이지만'. 최소 수정: V18을 '부분 수용'으로 바꾸고 '양쪽 ≥10 분리 사례 수는 미계산, 예시는 잎 노드 분리'라고 한 줄 덧붙입니다."
+      },
+      {
+        "severity": "low",
+        "description": "cell 104 그림의 축 레이블이 'log10(1 + SFR)'로 고정돼 있고 축 하한도 0입니다. LOG_EPS를 바꾸면 레이블이 틀리고, eps<1일 때 z0<0인 점이 잘려 보이지 않습니다. 계산·RESULTS는 eps에 맞게 연동되지만 이 그림만 연동되지 않아 9.3 '정의 변경' 문단의 약속과 어긋납니다. cell 112 제목은 LOG_EPS를 동적으로 반영합니다.",
+        "evidence": "final_source.md cell 104: ax.set_xlabel(\"true log10(1 + SFR)\"), lims = [0, ...]. 최소 수정: 레이블에 f\"log10(SFR + {LOG_EPS:g})\"를 쓰고 하한을 min(zt_val.min(), VAL_LOG_PREDICTIONS.min())으로 둡니다."
+      },
+      {
+        "severity": "low",
+        "description": "10.1 기록표의 Baseline MAE가 여전히 1.295(0 절단 후 값)입니다. 현재 코드는 원래 예측을 써서 1.295678을 출력하고, 반올림하면 1.296입니다. 표 위 문단에 차이를 설명했지만, 같은 행이 '템플릿 기준선'으로 표시돼 있어 독자가 혼동할 수 있습니다.",
+        "evidence": "cell 102 표 Baseline 행 '1.295'; cell 101 출력 linear MAE 1.295678; strict 4.3 표의 셀 58·83 대 97·98 지적. 최소 수정: 1.296으로 고치거나 해당 칸에 '절단 후' 각주를 붙입니다."
+      },
+      {
+        "severity": "low",
+        "description": "strict 검토의 '하면 좋음' 항목 일부가 반영표에 명시적으로 판정되지 않았습니다. (a) `zero_gate34_cv.py:5`의 '30개' 주석 오류: 팀원·원본 파일 보존 때문에 보류해야 하지만 그 사유가 기록돼 있지 않습니다. (b) Part I cell 15/16·17에서 전체 df 타깃 통계를 출력한 범위 한정: 서두의 val 재사용 안내로 사실상 포괄되지만 명시적 언급이 없습니다.",
+        "evidence": "_review_input/2026-11-11-sdi-final-strict.md 40행, 170행; review_resolution.md 엄격한 눈 표에 해당 행 없음. 최소 수정: 보조 행 하나에 '원본 스크립트 보존으로 미수정, 실제 실행은 34개' 그리고 'Part I 전체 df 타깃 확인 출력도 val 열람 이력에 포함'을 추가합니다."
+      },
+      {
+        "severity": "info",
+        "description": "'고정 코드 9셀 보존'의 9에는 템플릿 고정 셀이 아닌 Part I 분석 셀 2개가 포함됩니다. 주석에 '5절(DO NOT MODIFY)'이라는 문구가 있어 함께 세어졌습니다. 실제 템플릿 DO NOT MODIFY 코드 셀은 7개이고, DATA_PATH 셀은 Part I 84셀 검사가 포괄합니다. 보존 사실 자체는 맞지만 개수 설명이 부정확합니다.",
+        "evidence": "validate_revision.py 52행: \"DO NOT MODIFY\" in source(c); final_source.md 278·395행의 주석 문구; strict 5.2의 고정 셀 목록. 최소 수정: 보고 문구를 '템플릿 고정 7셀 + 문구를 포함한 Part I 2셀'로 정정하거나, 검사를 줄 시작 패턴으로 한정합니다."
+      },
+      {
+        "severity": "info",
+        "description": "cell 110(FoF 진단)은 주변 코드와 작성 방식이 다릅니다. 상자 크기를 BOX_SIZE 대신 200으로 하드코딩했고, 전역 이름 pos/vel/link/pairs를 덮어쓰며, 압축된 스타일을 씁니다. 현재 뒤 셀들이 이 이름을 쓰지 않아 결과에는 영향이 없지만, BOX_SIZE 가정이 바뀌면 이 진단만 어긋납니다.",
+        "evidence": "final_source.md cell 110: pos = ...%200, link = .2*200/..., cKDTree(pos, boxsize=200). 최소 수정: BOX_SIZE를 쓰고 변수 이름에 밑줄 접두사를 붙입니다."
+      },
+      {
+        "severity": "info",
+        "description": "12.1 표는 '0.9 문턱 근처의 보정'을 미확인으로 적었습니다. 그런데 11.2 cell 108에 이미 val 기반 0.88–0.92 구간표가 있습니다. 이 구간의 참0 비율은 164/177≈0.927, 평균 p0는 ≈0.900입니다. 재사용한 val의 제한된 진단임을 밝히고 참조하면 grader의 '최종 확률 구간별 보정' 지적에 더 직접 답할 수 있습니다.",
+        "evidence": "노트북 cell 108 출력: true_zero False n=13, True n=164, p0_mean≈0.900; cell 113 표 '확률 보정' 행; grader 129행."
+      }
+    ],
+    "questions": []
+  }
+}

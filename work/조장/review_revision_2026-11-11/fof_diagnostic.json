@@ -1,0 +1,259 @@
+{
+  "link_fixed": 0.6746342514621309,
+  "top10_components": [
+    {
+      "component_min_row": 0,
+      "n_members": 338,
+      "n_articulation_points": 16,
+      "two_large_side_cases": 3
+    },
+    {
+      "component_min_row": 412,
+      "n_members": 241,
+      "n_articulation_points": 8,
+      "two_large_side_cases": 0
+    },
+    {
+      "component_min_row": 1611,
+      "n_members": 239,
+      "n_articulation_points": 14,
+      "two_large_side_cases": 4
+    },
+    {
+      "component_min_row": 915,
+      "n_members": 235,
+      "n_articulation_points": 14,
+      "two_large_side_cases": 2
+    },
+    {
+      "component_min_row": 1385,
+      "n_members": 234,
+      "n_articulation_points": 20,
+      "two_large_side_cases": 0
+    },
+    {
+      "component_min_row": 664,
+      "n_members": 226,
+      "n_articulation_points": 18,
+      "two_large_side_cases": 0
+    },
+    {
+      "component_min_row": 2677,
+      "n_members": 204,
+      "n_articulation_points": 11,
+      "two_large_side_cases": 5
+    },
+    {
+      "component_min_row": 1854,
+      "n_members": 192,
+      "n_articulation_points": 9,
+      "two_large_side_cases": 0
+    },
+    {
+      "component_min_row": 2280,
+      "n_members": 192,
+      "n_articulation_points": 19,
+      "two_large_side_cases": 3
+    },
+    {
+      "component_min_row": 1143,
+      "n_members": 174,
+      "n_articulation_points": 8,
+      "two_large_side_cases": 2
+    }
+  ],
+  "min_side": 10,
+  "tested_articulations": 137,
+  "two_large_side_cases": [
+    {
+      "component_rank": 0,
+      "removed_row": 132,
+      "before_size": 338,
+      "after_sizes": [
+        309,
+        28
+      ]
+    },
+    {
+      "component_rank": 0,
+      "removed_row": 284,
+      "before_size": 338,
+      "after_sizes": [
+        310,
+        27
+      ]
+    },
+    {
+      "component_rank": 0,
+      "removed_row": 187381,
+      "before_size": 338,
+      "after_sizes": [
+        311,
+        24,
+        2
+      ]
+    },
+    {
+      "component_rank": 2,
+      "removed_row": 1633,
+      "before_size": 239,
+      "after_sizes": [
+        226,
+        12
+      ]
+    },
+    {
+      "component_rank": 2,
+      "removed_row": 1726,
+      "before_size": 239,
+      "after_sizes": [
+        223,
+        15
+      ]
+    },
+    {
+      "component_rank": 2,
+      "removed_row": 1744,
+      "before_size": 239,
+      "after_sizes": [
+        224,
+        13,
+        1
+      ]
+    },
+    {
+      "component_rank": 2,
+      "removed_row": 1772,
+      "before_size": 239,
+      "after_sizes": [
+        221,
+        17
+      ]
+    },
+    {
+      "component_rank": 3,
+      "removed_row": 1031,
+      "before_size": 235,
+      "after_sizes": [
+        222,
+        12
+      ]
+    },
+    {
+      "component_rank": 3,
+      "removed_row": 1097,
+      "before_size": 235,
+      "after_sizes": [
+        223,
+        11
+      ]
+    },
+    {
+      "component_rank": 6,
+      "removed_row": 2731,
+      "before_size": 204,
+      "after_sizes": [
+        186,
+        17
+      ]
+    },
+    {
+      "component_rank": 6,
+      "removed_row": 2812,
+      "before_size": 204,
+      "after_sizes": [
+        184,
+        18,
+        1
+      ]
+    },
+    {
+      "component_rank": 6,
+      "removed_row": 32071,
+      "before_size": 204,
+      "after_sizes": [
+        189,
+        14
+      ]
+    },
+    {
+      "component_rank": 6,
+      "removed_row": 77214,
+      "before_size": 204,
+      "after_sizes": [
+        188,
+        15
+      ]
+    },
+    {
+      "component_rank": 6,
+      "removed_row": 152142,
+      "before_size": 204,
+      "after_sizes": [
+        187,
+        16
+      ]
+    },
+    {
+      "component_rank": 8,
+      "removed_row": 2407,
+      "before_size": 192,
+      "after_sizes": [
+        176,
+        15
+      ]
+    },
+    {
+      "component_rank": 8,
+      "removed_row": 123507,
+      "before_size": 192,
+      "after_sizes": [
+        179,
+        12
+      ]
+    },
+    {
+      "component_rank": 8,
+      "removed_row": 143740,
+      "before_size": 192,
+      "after_sizes": [
+        181,
+        10
+      ]
+    },
+    {
+      "component_rank": 9,
+      "removed_row": 1182,
+      "before_size": 174,
+      "after_sizes": [
+        153,
+        20
+      ]
+    },
+    {
+      "component_rank": 9,
+      "removed_row": 1248,
+      "before_size": 174,
+      "after_sizes": [
+        158,
+        15
+      ]
+    }
+  ],
+  "two_large_side_case_count": 19,
+  "scope": "Only the largest ten components; input-only, fixed link, no data deletion or model refit.",
+  "example": {
+    "component_rank": 0,
+    "removed_row": 132,
+    "before_size": 338,
+    "after_sizes": [
+      309,
+      28
+    ],
+    "removed_subhalo_id": 132,
+    "remaining_group_max_changed": 28,
+    "remaining_central_indicator_changed": 1,
+    "median_abs_dv_group_change_non_singletons": 60.59171113274306,
+    "selection": "Largest qualifying component, then smallest original row index."
+  }
+}

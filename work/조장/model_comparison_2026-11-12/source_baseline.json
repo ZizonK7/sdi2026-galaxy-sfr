@@ -1,0 +1,10 @@
+{
+  "commit": "6bc3988dd7effb7694192ce059f515fa496fa499",
+  "preserved_source_sha256": {
+    "DataHub_701104_final.ipynb": "0bdb1881dcdf87295985f570d5b84a6bf45752c4b6acbdf43e198b06a2ca320b",
+    "DataHub_701104_mid.ipynb": "414b8ae184fc49e858ad6aca9c896fb042b37921468d4fc3a1c32480ee8a63ce",
+    "DataHub_Midterm_Final_Report_Template.ipynb": "7be950f80172554567dcf3426bbca09565e897c0cd1c9391131aaa9192244adf",
+    "Galaxy Features with Position and Velocity for Star Formation Rate Prediction.csv": "ae4eef8fce45b909c5e9af3639721c51edff0f372c5e75cbf1afd36798408806"
+  },
+  "python": "3.13.13 (tags/v3.13.13:01104ce, Apr  7 2026, 19:25:48) [MSC v.1944 64 bit (AMD64)]"
+}

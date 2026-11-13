@@ -1,0 +1,42 @@
+seed 42 fold 0: 7s
+seed 42 fold 1: 11s
+seed 42 fold 2: 15s
+seed 42 fold 3: 17s
+seed 42 fold 4: 20s
+seed 7 fold 0: 23s
+seed 7 fold 1: 27s
+seed 7 fold 2: 30s
+seed 7 fold 3: 33s
+seed 7 fold 4: 35s
+seed 11 fold 0: 38s
+seed 11 fold 1: 41s
+seed 11 fold 2: 44s
+seed 11 fold 3: 47s
+seed 11 fold 4: 51s
+seed 23 fold 0: 53s
+seed 23 fold 1: 56s
+seed 23 fold 2: 60s
+seed 23 fold 3: 62s
+seed 23 fold 4: 65s
+seed 101 fold 0: 68s
+seed 101 fold 1: 72s
+seed 101 fold 2: 74s
+seed 101 fold 3: 77s
+seed 101 fold 4: 80s
+             d1  d1_zero  d1_pos      d2     lin  zero_exact_share  pos_set_zero_per_fold  pos_set_zero_max_sfr
+rule                                                                                                           
+soft     0.0964   0.1087  0.0952  0.2907  8.0813            0.0000                   0.00                0.0000
+tau0.5   0.0976   0.0962  0.0977  0.2616  8.0822            0.9178                 175.76               87.5430
+tau0.7   0.0968   0.1042  0.0960  0.2607  8.0815            0.8768                  94.96               87.5430
+tau0.8   0.0965   0.1066  0.0955  0.2651  8.0814            0.8411                  62.96               30.4496
+tau0.9   0.0965   0.1082  0.0952  0.2758  8.0813            0.7688                  36.28               22.9243
+tau0.95  0.0964   0.1086  0.0952  0.2828  8.0813            0.6882                  21.64               22.9243
+tau0.99  0.0964   0.1087  0.0952  0.2901  8.0813            0.4151                   5.68               22.9243
+        mean_diff        sd       min       max n_worse n_better verdict
+tau0.5   0.001174  0.000419  0.000556  0.002198      25        0     나빠짐
+tau0.7    0.00032  0.000171   0.00009  0.000694      25        0     나빠짐
+tau0.8   0.000079  0.000084  -0.00007  0.000247      22        3     나빠짐
+tau0.9   0.000019  0.000029 -0.000028    0.0001      19        6      경계
+tau0.95  0.000001  0.000007  -0.00001  0.000014      15       10      같음
+tau0.99       0.0  0.000001      -0.0  0.000003       9       16      같음
+고른 τ: 0.9

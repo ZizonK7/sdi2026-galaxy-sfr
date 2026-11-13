@@ -1,0 +1,42 @@
+seed 42 fold 0: 7s
+seed 42 fold 1: 10s
+seed 42 fold 2: 14s
+seed 42 fold 3: 16s
+seed 42 fold 4: 19s
+seed 7 fold 0: 22s
+seed 7 fold 1: 25s
+seed 7 fold 2: 28s
+seed 7 fold 3: 30s
+seed 7 fold 4: 33s
+seed 11 fold 0: 36s
+seed 11 fold 1: 40s
+seed 11 fold 2: 43s
+seed 11 fold 3: 46s
+seed 11 fold 4: 49s
+seed 23 fold 0: 52s
+seed 23 fold 1: 56s
+seed 23 fold 2: 59s
+seed 23 fold 3: 63s
+seed 23 fold 4: 66s
+seed 101 fold 0: 69s
+seed 101 fold 1: 72s
+seed 101 fold 2: 75s
+seed 101 fold 3: 78s
+seed 101 fold 4: 81s
+             d1  d1_zero  d1_pos      d2     lin  zero_exact_share  pos_set_zero_per_fold  pos_set_zero_max_sfr
+rule                                                                                                           
+soft     0.1028   0.1168  0.1013  0.3037  8.5243            0.0000                   0.00                0.0000
+tau0.5   0.1040   0.1055  0.1038  0.2756  8.5252            0.9033                 179.96               87.5430
+tau0.7   0.1031   0.1124  0.1021  0.2741  8.5245            0.8602                  94.72               87.5430
+tau0.8   0.1029   0.1148  0.1016  0.2788  8.5244            0.8231                  62.68               87.5430
+tau0.9   0.1028   0.1163  0.1014  0.2890  8.5244            0.7498                  35.84               30.4496
+tau0.95  0.1028   0.1167  0.1014  0.2961  8.5243            0.6671                  22.00               22.9243
+tau0.99  0.1028   0.1168  0.1013  0.3030  8.5243            0.3870                   6.28               22.9243
+        mean_diff        sd       min       max n_worse n_better verdict
+tau0.5   0.001195  0.000321  0.000653  0.001804      25        0     나빠짐
+tau0.7   0.000267  0.000179 -0.000051  0.000679      23        2     나빠짐
+tau0.8   0.000085  0.000118 -0.000083  0.000386      19        6      경계
+tau0.9   0.000015  0.000023  -0.00003  0.000064      20        5      경계
+tau0.95  0.000004  0.000011 -0.000008  0.000041      12       13      같음
+tau0.99       0.0  0.000001      -0.0  0.000003      12       13      같음
+고른 τ: 0.8

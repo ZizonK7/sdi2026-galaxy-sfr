@@ -1,0 +1,127 @@
+{
+  "executed_code_cells": 60,
+  "total_cells": 119,
+  "execution_counts_sequential": true,
+  "error_outputs": 0,
+  "saved_png_outputs": 10,
+  "seconds": 401.125,
+  "runtime": {
+    "source_commit": "c8ae0de",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "matplotlib_backend": "module://matplotlib_inline.backend_inline",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2"
+    },
+    "csv_name": "Galaxy Features with Position and Velocity for Star Formation Rate Prediction.csv",
+    "csv_sha256": "ae4eef8fce45b909c5e9af3639721c51edff0f372c5e75cbf1afd36798408806",
+    "execution_order": "처음부터 Part I → 환경 → 최종 모델/입력계약 → 기존25fold → 제한5fold → 비교/진단 → RESULTS",
+    "selection_policy": "기존 모델 동결; 추가 진단으로 val에서 재선택하지 않음"
+  },
+  "stdout_results_and_metrics_consistent": true,
+  "matches_original_D1": true,
+  "D1": 0.0963616037779292,
+  "D2_same_predictions": 0.27613616012385983,
+  "linear_RMSE": 8.820961180048807,
+  "PartI_source_cells_preserved": 84,
+  "DO_NOT_MODIFY_marker_cells_preserved": 9,
+  "template_fixed_code_cells_preserved": 7,
+  "additional_marker_reference_cells": 2,
+  "metric_regression_eps": [
+    1,
+    0.01
+  ],
+  "prediction_contract_checks": {
+    "validation_reproduction": true,
+    "row_order": true,
+    "fixed_union_batches": true,
+    "duplicate_null_missing_conflicting_ID_rejected": true
+  },
+  "diagnostic_mean": {
+    "E0H0_13": {
+      "fold": 2.0,
+      "n_features": 13.0,
+      "RMSE": 0.10772619203333397,
+      "MSE": 0.011605896330130008,
+      "zero_recall": 0.62290893386839,
+      "zero_precision": 0.9710652390285712,
+      "positive_set_zero": 53.6,
+      "classifier_trees": 202.8,
+      "regressor_trees": 211.8
+    },
+    "E0H1_17": {
+      "fold": 2.0,
+      "n_features": 17.0,
+      "RMSE": 0.10093332420336823,
+      "MSE": 0.01018809525169964,
+      "zero_recall": 0.6688541956191271,
+      "zero_precision": 0.9738129088872256,
+      "positive_set_zero": 52.0,
+      "classifier_trees": 241.4,
+      "regressor_trees": 148.4
+    },
+    "E1H0_30": {
+      "fold": 2.0,
+      "n_features": 30.0,
+      "RMSE": 0.1029376628751244,
+      "MSE": 0.01059690495886806,
+      "zero_recall": 0.7467752242688519,
+      "zero_precision": 0.9846601856847824,
+      "positive_set_zero": 33.6,
+      "classifier_trees": 211.2,
+      "regressor_trees": 216.4
+    },
+    "E1H1_34": {
+      "fold": 2.0,
+      "n_features": 34.0,
+      "RMSE": 0.09661900268837387,
+      "MSE": 0.009335525800103803,
+      "zero_recall": 0.7708692494592252,
+      "zero_precision": 0.9840167512384635,
+      "positive_set_zero": 36.2,
+      "classifier_trees": 227.8,
+      "regressor_trees": 167.4
+    },
+    "single_log_34": {
+      "fold": 2.0,
+      "n_features": 34.0,
+      "RMSE": 0.10044309683572547,
+      "MSE": 0.010090624123974495,
+      "zero_recall": 0.32182711526227903,
+      "zero_precision": 0.9921119201885544,
+      "positive_set_zero": 7.4,
+      "classifier_trees": 0.0,
+      "regressor_trees": 236.0
+    }
+  },
+  "same34_single_minus_two_stage_mean_RMSE": 0.0038240941473516006,
+  "two_stage_better_folds": 5,
+  "MSE_interaction_mean": 0.00015642191966611235,
+  "MSE_interaction_positive_folds": 4,
+  "stderr_summary": [],
+  "kernel_shutdown_traceback": true,
+  "review_coverage": {
+    "strict_M": 6,
+    "wild1_W": 15,
+    "wild2_V": 20,
+    "grader_topics": 9
+  },
+  "source_cells_changed_since_first_review": [
+    0,
+    102,
+    104,
+    109,
+    110,
+    113,
+    114
+  ],
+  "code_cells_changed_since_first_review": [
+    104,
+    110
+  ],
+  "model_training_code_unchanged_since_first_review": true,
+  "plot_regression_eps0_01_passed": true
+}

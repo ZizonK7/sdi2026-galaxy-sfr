@@ -1,0 +1,6 @@
+# Keep the byte-level inputs and notebook hashes reproducible on checkout.
+.gitattributes text eol=lf
+DataHub_701104_final.ipynb text eol=crlf
+DataHub_701104_mid.ipynb text eol=crlf
+DataHub_Midterm_Final_Report_Template.ipynb text eol=crlf
+"Galaxy Features with Position and Velocity for Star Formation Rate Prediction.csv" text eol=crlf

@@ -1,0 +1,26 @@
+{
+  "DataHub_701104_final.ipynb": {
+    "bytes": 1651754,
+    "sha256": "0bdb1881dcdf87295985f570d5b84a6bf45752c4b6acbdf43e198b06a2ca320b"
+  },
+  "work/조장/editorial_revision_2026-11-12/review_resolution.md": {
+    "bytes": 4037,
+    "sha256": "74fff6c4f89d31bccfe6ba9cc574e494e13511973f5722f4a6432290c72f98ef"
+  },
+  "work/조장/editorial_revision_2026-11-12/results.json": {
+    "bytes": 13784,
+    "sha256": "b1ad561b5c02fbdbcb8c0c7df32e99aa9c5ccc198535e8ca39c959f5b33dbe5f"
+  },
+  "work/조장/editorial_revision_2026-11-12/validate_revision.py": {
+    "bytes": 12903,
+    "sha256": "93f18faa7c025c705b1a9ba5158745d9f939a0d538eaf3f36c268799ba69d601"
+  },
+  "work/조장/editorial_revision_2026-11-12/validation_summary.json": {
+    "bytes": 1390,
+    "sha256": "4e95f412f2f47ed3ff8f653ef454b69d4bd545fdcf440fb4c97174a876877ada"
+  },
+  "work/조장/editorial_revision_2026-11-12/validation.log": {
+    "bytes": 446,
+    "sha256": "9e1f7370cf63fbba77b5023532268f3757bc35d81e2257bf02ba5562271c67e8"
+  }
+}
